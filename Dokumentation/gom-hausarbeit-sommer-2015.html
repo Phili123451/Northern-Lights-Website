@@ -1,0 +1,284 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>gom-hausarbeit-sommer-2015</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+* { padding: 0; margin: 0; }
+body { font-family: 'Georgia','Lucida Grande','Lucida Sans Unicode',Verdana; font-size: 16px; color: #333; line-height: 1.5em; background-color: #FFF; margin: 2em; }
+/* TYPO */
+h1, h2, h3, h4, h5, h6, .submitted
+        .breadcrumb, #nav { font-family: 'Consolas','Lucida Grande','Lucida Sans Unicode',Verdana; font-weight: normal; color: #ff9900; }
+h1 { font-size: 2em; margin-bottom: 0.25em; line-height: 1em; }
+h2 { margin-top: 1em; font-size: 1.5em; margin-bottom: 0.25em; line-height: 1em; }
+h3 { font-size: 1.285em; height: 1.222em; margin-bottom: 0.388em; border-bottom: 1px dashed #ff9900; }
+h4 { font-size: 1.285em }
+h5 { font-weight: bold; font-size: 1em; }
+h6 { font-size: 1em; font-style: italic; }
+h1+h2 { margin-top: 1em }
+h2+h3 { margin-top: 0.5em }
+p { margin-bottom: 1em }
+p+p { margin-top: -0.5em }
+ul,ol { margin-bottom: 1em }
+li { margin-left: 1.5em }
+li ul { margin-top: 0; margin-bottom: 0.5em; }
+a { color: #f90; text-decoration: underline; }
+a:link, a:visited { }
+a:hover, a:focus, a:active { text-decoration: none; color: #fff; background-color: #f90; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none }
+body { max-width: 600px;margin-left:auto;margin-right:auto;}
+pre { padding-left: 1em; border-left: 1px dashed #f90; margin-bottom: 1em; }
+p.cc { font-size: 0.8em; margin-top: 2em; }
+img { max-width: 80%; border: none; float: none; }
+pre,
+code,
+kbd,
+samp,
+tt{
+  font-family:'Consolas',monospace,monospace;
+  font-size:1em;
+  background:#f8f8f8;
+  padding:0.2em 0.2em 0.1em;
+  border:1px solid #ddd;
+  border-radius: 3px;
+}
+
+h1 code, h2 code, h3 code, h4 code, pre code {  
+  background:transparent;
+  padding:0;
+  border:none;
+  }
+  
+dt {
+  padding-top:1em;
+}
+dd {
+  padding-left:1em;
+}
+
+.threeinarow img {
+max-width:32%;
+height:auto;
+}
+#mkreplaced-toc{list-style-position:inside;padding:0;margin:0 0 0 1rem;list-style-type:none}#mkreplaced-toc li::before{content:''}#mkreplaced-toc li{font-size:1.5rem;line-height:1.5;font-weight:normal}#mkreplaced-toc li ul{font-size:1.3rem;font-weight:300;padding:.5rem 0;margin:0 0 0 1rem}#mkreplaced-toc li.missing{list-style-type:none !important}#mkreplaced-toc.max-1 ul,#mkreplaced-toc.max1 ul{display:none}#mkreplaced-toc.max-2 ul ul,#mkreplaced-toc.max2 ul ul{display:none}#mkreplaced-toc.max-3 ul ul ul,#mkreplaced-toc.max3 ul ul ul{display:none}#mkreplaced-toc.max-4 ul ul ul ul,#mkreplaced-toc.max4 ul ul ul ul{display:none}#mkreplaced-toc.max-5 ul ul ul ul ul,#mkreplaced-toc.max5 ul ul ul ul ul{display:none}
+
+@media print{
+#wrapper #generated-toc-clone,#generated-toc{display:none!important}
+}
+#wrapper #generated-toc-clone, #wrapper #mkreplaced-toc, #wrapper #generated-toc-clone ul, #wrapper #mkreplaced-toc ul {
+    list-style-position: inside
+}
+#wrapper #generated-toc-clone li.missing, #wrapper #mkreplaced-toc li.missing {
+    list-style-type: none!important
+}
+#wrapper #generated-toc-clone, #wrapper #mkreplaced-toc {
+    list-style-type: upper-roman
+}
+#wrapper #generated-toc-clone>li>ul, #wrapper #mkreplaced-toc>li>ul  {
+    list-style-type: decimal
+}
+#wrapper #generated-toc-clone>li>ul>li>ul, #wrapper #mkreplaced-toc>li>ul>li>ul {
+    list-style-type: decimal-leading-zero
+}
+#wrapper #generated-toc-clone>li>ul>li>ul>li>ul, #wrapper #mkreplaced-toc>li>ul>li>ul>li>ul {
+    list-style-type: lower-greek
+}
+#wrapper #generated-toc-clone>li>ul>li>ul>li>ul>li>ul, #wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul {
+    list-style-type: disc
+}
+#wrapper #generated-toc-clone>li>ul>li>ul>li>ul>li>ul>li>ul, #wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul {
+    list-style-type: square
+}
+#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{list-style-position:outside!important;margin-left:3rem;}
+</style>
+
+</head>
+<body class="normal">
+  <div id="wrapper">
+      <h1>Gestaltung Online-Medien</h1>
+
+<p>Entwerfen und realisieren Sie das Frontend einer Website.</p>
+
+<h2>Fachschaft MI</h2>
+
+<p>Die neue Fachschaft MI benötig wieder eine Website. Mögliche Inhalte sind z.B.</p>
+
+<ul>
+<li>Aufgaben / Angaben der Fachschaft</li>
+<li>Forum</li>
+<li>Tauschbörse für Bücher, Hilfe, …</li>
+<li>Informationen / Hilfen zum Studium</li>
+<li>…</li>
+</ul>
+
+<p>Überlegen Sie, was Ihnen für Inhalte sinnvoll erscheinen.</p>
+
+<h2>Alternative Aufgabe</h2>
+
+<p>Entwerfen Sie für eine reale Person, Firma oder Institution eine Website. Wichtig dabei: Es müssen reale Inhalte und die Einwilligung der Firma bzw. Institution vorliegen.</p>
+
+<h2>Vorgehen</h2>
+
+<p>Für die gewählte Website ist ein modernes, zeitgemäßes Design zu entwickeln. Das Design muss sich an unterschiedliche Endgeräte anpassen. Das Design ist zunächst als Style-Tiles zu entwerfen und später mit HTML5 und CSS für aktuelle Browser als responsiven Frontend-Prototyp umzusetzen.</p>
+
+<h3>Inhalte</h3>
+
+<p>Entwicklen Sie realistische Inhalte (Text und Bild) oder nutzen reale Inhalte für die Website.</p>
+
+<h3>Entwürfe als Style-Tiles</h3>
+
+<p>Entwickeln Sie zunächst drei <em>alternative</em> Entwürfe als Style-Tiles.</p>
+
+<p>Die Entwürfe können Sie mit Indesign, Illustrator, o.Ä., oder als HTML/CSS erstellen.</p>
+
+<p>Konzentrieren Sie sich dabei auf die Elemente der Inhaltsseiten und fügen evtl. weitere Elemente wie Logo, Fließtext, Eingabefelder, Buttons hinzu.</p>
+
+<h3>Entwicklung von Modulen</h3>
+
+<p>Aus diesen Style-Tiles entwickeln Sie dann komplexere Module (z.B. Suche-Feld, Anzeige eines Covers, …), als Element-Kollagen, die Sie mit HTML/CSS umsetzen.</p>
+
+<h3>HTML-Prototypen</h3>
+
+<p>Aus diesen Modulen entwickeln Sie dann einen responsiven HTML-Prototypen. Wichtig: Entwerfen Sie zunächst für mobile Endgeräte und passen das Design für immer größere Endgeräte an. (Mobile first)</p>
+
+<h2>Besprechung der Entwürfe</h2>
+
+<p>Bitte nutzen Sie die Chance die Entwürfe in den Laboren mit dem Dozenten und Tutoren zu besprechen.</p>
+
+<h2>Umfang des Prototypen</h2>
+
+<p>Für alle Sites gilt:</p>
+
+<p>Der Prototyp soll mindestens 4 verschiedene <strong>Typen</strong> von Inhaltsseiten in Variationen und die Startseite umfassen.</p>
+
+<p>Unter anderem:</p>
+
+<ul>
+<li>Übersichtsseite (mehrere Artikel, Texte, Produkte, Forumseinträge, etc). In Variationen mit viel und wenig Inhalten.</li>
+<li>Inhaltsseiten (einzelne Artikel, Text, Produkt, Forumsbeitrag, etc). In mehren Variationen mit viel und wenig Inhalten.</li>
+<li>Formular (Kontaktformular, Bestellformular, Eingabe ins Forum, …)</li>
+<li>Seite mit längerem Text (z.B. Über uns, o.Ä.)</li>
+<li>Impressum</li>
+<li>Startseite</li>
+</ul>
+
+<h2>Anforderungen an HTML, CSS usw.</h2>
+
+<p>Die Website ist mit HTML5 und CSS 3 umsetzen.</p>
+
+<ul>
+<li>HTML und CSS müssen valide sein.</li>
+<li>Semantisches HTML.</li>
+<li>Mobile First.</li>
+<li>Anpassung an verschieden Endgeräte über Mediaqueries.</li>
+<li>Klare Struktur im CSS (SMACSS / BEM).</li>
+<li>Klare Trennung von Struktur, Präsentation, Verhalten.</li>
+</ul>
+
+<p>Die Website wird in aktuellen Versionen von Chrome, Firefox und Safari getestet. Auf veraltet Browser brauchen Sie keine Rücksicht zu nehmen.</p>
+
+<p>Sie sollten einen Preprozessor für CSS (SCSS/LESS) verwenden. Sie müssen allerdings Quellcode <em>und</em> kompiliertes CSS abgeben.</p>
+
+<p>Browserspezifische CSS-Erweiterungen (-mox-…, -webkit-…, -o-…) dürfen Sie verwenden – allerdings muss die Website auch ohne diese Erweiterungen lesbar/verwendbar sein. Verwenden Sie jeweils alle sinnvollen Prefixe – nicht nur einen.</p>
+
+<p>Zusätzliche Web-Schriften – eingebunden über Typekit oder als freie Webfonts – sollten Sie verwenden. Bei der Nutzung von Typekit müssen Sie die Website zusätzlich auf einem externen Server (evtl. Passwort geschützt) zur Verfügung stellen.</p>
+
+<p>Sie dürfen gerne zusätzliche Interaktionen mit Javascript realisieren – die Informationen und Inhalte müssen allerdings auch ohne Javascript zugänglich sein.</p>
+
+<p>Severseitige Programmierung ist nicht nötig: Webshop, Forum etc müssen ohne Funktion sein.</p>
+
+<h2>Bewertung mit 5,0</h2>
+
+<p>Für folgende Sachverhalte wird die Arbeit mit 5,0 bewertet:</p>
+
+<ul>
+<li>Keine ausreichende Auseinandersetzung mit der Gestaltung</li>
+<li>Gestaltung ohne realistische Inhalte</li>
+<li>Tabellen für Layout (auch für Formulare)</li>
+<li>Inline-Styles</li>
+<li>Inline Javascript (z.B. <code>onclick=&quot;call_js(&quot;No!&quot;);&quot;</code>)</li>
+<li>Site ohne Javascript nur eingeschränkt zu nutzen</li>
+<li>Viele Validationsfehler</li>
+<li>Nicht-semantisches HTML (z.B. <code>&lt;div class=&quot;ueberschrift&quot;&gt;</code> statt <code>&lt;h1&gt;</code>)</li>
+<li>Nicht responsives Webdesign</li>
+</ul>
+
+<h2>Dokumentation</h2>
+
+<p>Folgende Fragen sollten in der Dokumentation behandeln:</p>
+
+<ul>
+<li>Idee und Grafisches Konzept
+ (<strong>keine Bildbeschreibung</strong>, sondern Beschreibung der gestalterischen Motivation)</li>
+<li>Styletiles</li>
+<li>Auswahl des Styletiles mit Begründung</li>
+<li>Veränderungen gegenüber dem ersten Entwurfsschritt mit Begründung</li>
+<li>Überlegungen zu Typografie, Farben, Layout, Raster (Warum wurde so gestaltet?)</li>
+<li>Angaben zu Typografie, Farben, Layout, Raster (Werte und Beispiele)</li>
+<li>Überlegungen zum Responsive Webdesign und dessen Umsetzung.</li>
+<li>Erklärung, dass sie über die nötigen Bildrechte verfügen, ggf. mit URL der Bilder. Keine Ausdrucke der AGBs beifügen!</li>
+</ul>
+
+<h2>Zeitleiste</h2>
+
+<p>Dokumentieren Sie den Entwurfsprozess als Projekt-Zeitleiste analog zu <a href="https://github.com/danielmall/project-hub">Daniel Malls Project Hub</a>. </p>
+
+<p>Dabei soll die Zeit von oben nach unten fortschreiten, das Ergebnis also am Ende. Bauen Sie kleine Screenshots – verlinkt mit der Original-Datei – ein, nicht nur Links zu Dateien.</p>
+
+<h2>Form der Abgabe</h2>
+
+<p>Die Abgabe erfolgt (fast) rein digital:</p>
+
+<ul>
+<li>Die Dokumentation ist im Design der Site ebenfalls in HTML und CSS zu erstellen (Nutzen Sie Markdown zur Erzeugung der Texte).</li>
+<li>Ebenso ist die Zeitleiste in HTML und CSS zu erstellen.</li>
+<li>Die Projekt-Zeitleiste und die Dokumentation sollen von der Site verlinkt sein.</li>
+<li>Ihr Name, Loginname und Matrikelnummer muss in der Dokumentation zu finden sein.</li>
+<li>Der Ordner-Name muss Ihren Loginnamen enthalten.</li>
+</ul>
+
+<p>Benennen Sie den Ordner mit <code>GOM-HA-[Loginname]</code>. In dem Unterordner <code>dokumentation</code> sollen Dokumentation und Projekt-Zeitleiste zu finden sein. Den komprimierten Ordner laden Sie bitte auf StudIP hoch – oder senden mir einen Link zum Download (Nur eigenen Webspace, <a href="http://owncloud.org/">OwnCloud</a>, <a href="https://www.sync.com/">Sync</a> oder Dropbox).</p>
+
+<p>Lediglich die Erklärung zu den Nutzungsrechten ist unterschrieben in Papierform abzugeben. (Postfach #5)</p>
+
+<h2>Bewertungskriterien</h2>
+
+<p>Ohne Anspruch auf Vollständigkeit:</p>
+
+<ul>
+<li>Gestalterische Idee</li>
+<li>Alternative Entwürfe</li>
+<li>Gestalterische Qualität: Typografie, Farben, Layout, Raster, Bilder</li>
+<li>Begründung der Gestaltung (Typografie, Farben, Layout, Raster, Bilder)</li>
+<li>Valides HTML5, CSS</li>
+<li>Semantisches Markup</li>
+<li>Organisation CSS bzw. SCSS</li>
+<li>Mobile First</li>
+<li>Responsive Webdesign: Umfang, Aufwand, Qualität der Anpassungen an unterschiedliche Endgeräte</li>
+<li>Trennung von Struktur, Präsentation, Verhalten</li>
+<li>Evtl. zusätzliche Interaktion mittels Javascript</li>
+<li>Umfang</li>
+<li>Dokumentation des Entwurfsprozesses</li>
+<li>Qualität der Dokumentation</li>
+</ul>
+
+<h2>Arbeitsform</h2>
+
+<ul>
+<li>Einzelarbeit</li>
+</ul>
+
+<h2>Abgaben und Termine</h2>
+
+<ul>
+<li>Abgabe: Donnerstag, 25. Juni, 15h</li>
+</ul>
+
+<p>Tobias Hiep<br/>
+April 2015</p>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>
