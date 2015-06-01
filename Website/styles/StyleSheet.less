@@ -1,0 +1,284 @@
+﻿
+
+/*Import LESS Files*/
+@import "variables.less";
+@import "mixins.less";
+
+/*Import der genutzen Schriftarten (Google Fonts)*/
+@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500);
+@import url(http://fonts.googleapis.com/css?family=Kreon);
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans);
+@import url(http://fonts.googleapis.com/css?family=Scada:400,700);
+
+body 
+{
+    font-size: @font-size-standard;
+    background-color:white;
+    color:black;
+    box-sizing:border-box;
+}
+
+/*BEGINN TESTBEREICH FÜR MODULE*/
+.container
+{
+    width: @max-site-width;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.middle
+{
+    width: @max-column-width;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div
+{
+    /*
+    border-left:solid;
+    border-right:solid;
+    border-width:1px;*/
+}
+/*ENDE TESTBEREICH FÜR MODULE*/
+
+/*Überschriften*/
+h1, h2, h3
+{
+    color: @light-sea-green;
+    font-family: 'Cabin', 'Arial' , sans-serif;
+
+    padding-top: @padding-standard;
+    padding-bottom: @padding-standard;
+
+    margin-top: @margin-top-h;
+    margin-bottom: @margin-bottom-h;
+}
+
+h1
+{
+    font-weight:@font-weight-bold;
+    font-size:32px;
+
+
+}
+
+h2
+{
+    font-weight:@font-weight-semi-bold;
+    font-size:22px;
+
+
+}
+
+h3
+{
+    font-weight:@font-weight-medium;
+    font-size:18px;
+
+
+}
+
+/*Links*/
+a
+{
+    .link;
+}
+
+p
+{
+    font-family: 'Kreon', 'Times New Roman' ,serif;
+    font-weight: @font-weight-normal;
+    font-size: @font-size-standard;
+
+}
+
+/*Fließtext*/
+.fliesstext
+{
+    p
+    {
+        margin-top: 0.25em;
+        margin-bottom: 1.5em;
+    }
+}
+
+.infotext
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: @font-weight-normal;
+    font-size: 0.75em;
+}
+
+/*Klassen*/
+.quellenangabe
+{
+    font-size: 14px;
+
+    a
+    {
+        .link(14px);
+    }
+}
+
+/*MENÜS*/
+.menu
+{
+    background-color: @dark-green;
+    position:fixed;
+    a
+    {
+        display:block;
+        font-family: 'Scada', sans-serif;
+        color: black;
+    }
+
+    a:hover
+    {
+        text-decoration:none;
+        background-color: @light-green;
+    }
+
+    /*FIXME: kann weg*/
+    div:hover
+    {
+        background-color: @light-green;
+    }
+}
+
+/*FIXME: Mit Variablen ergänzen*/
+.main-menu
+{
+    font-weight: @font-weight-normal;
+    width: 940px;
+    height: 100px;
+
+    top:0px;
+
+    /*FIXME: kann weg*/
+    /*
+    div
+    {
+        width: 180px;
+        height: 100px;
+        float: left;
+        text-align:center;
+    }*/
+
+    a
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+        float:left;
+        font-size:1.25em;
+        line-height:100px;
+        vertical-align:middle;
+    }
+}
+
+
+.sub-menu
+{
+    font-weight: @font-weight-normal;
+    left:50px;
+
+    a
+    {
+        font-size: 1em;
+    }
+}
+
+.content
+{
+    margin-top: 250px;
+}
+
+/*FORMS*/
+.formular
+{
+
+}
+/*
+button
+{
+
+    border:none;
+    outline:none;
+    
+    background-color: @dark-green;
+    padding: 10px;
+    
+
+    font-family: 'Scada', sans-serif;
+    font-weight: @font-weight-bold;
+    font-size: 1em;
+    color:black;
+    text-shadow: 1px 1px 3px #666666;
+    text-align:center;
+}
+    */
+
+button
+{
+    /*Button Design*/
+    border-width:1px;
+    border-style:solid;
+    border-color:@dark-green;
+    background-color: white;
+    padding: 10px;
+    
+    /*Button Text*/
+    font-family: 'Scada', sans-serif;
+    font-weight: @font-weight-bold;
+    font-size: 1em;
+    color:black;
+
+    text-align:center;
+}
+
+button:hover, button:active
+{
+    background-color: @light-green;
+}
+
+
+input,
+textarea,
+select,
+option
+{
+    border-color: @dark-green;
+    opacity:1;
+    color:black;
+}
+
+
+input:focus, 
+input:hover, 
+textarea:focus, 
+textarea:hover,
+select:hover
+{
+    background-color: @light-green-hsla;
+    border-color: @dark-green;
+    outline-color: @light-green;
+}
+
+*::selection
+{
+    background-color:@light-green;
+}
+
+*::-moz-selection
+{
+    background-color:@light-green;
+}
+
+
+
+/*Bilder*/
+img
+{
+    width:300px;
+    height:auto;
+}
