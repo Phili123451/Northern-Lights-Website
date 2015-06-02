@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500);
-@import url(http://fonts.googleapis.com/css?family=Kreon);
+@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans);
 @import url(http://fonts.googleapis.com/css?family=Scada:400,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
 /*Import LESS Files*/
 /*Farben*/
 /*Eucalyptus*/
@@ -21,11 +21,28 @@
 /*Blogeintrag*/
 /*Anpassung Padding, etc.*/
 /*Import der genutzen Schriftarten (Google Fonts)*/
+/*@import url(http://fonts.googleapis.com/css?family=Kreon);*/
+/*wenn noto dann raus*/
+/*TEST*/
+/*
+*, *:before, *:after
+{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ box-sizing: border-box;
+ 
+}*/
+*::selection {
+  background-color: #2ecc71;
+}
+*::-moz-selection {
+  background-color: #2ecc71;
+}
 body {
   font-size: 16px;
   background-color: white;
   color: black;
-  box-sizing: border-box;
 }
 /*BEGINN TESTBEREICH FÜR MODULE*/
 .container {
@@ -84,9 +101,9 @@ a:visited {
   text-decoration: none;
 }
 p {
-  font-family: 'Kreon', 'Times New Roman', serif;
+  font-family: 'Noto Serif', 'Times New Roman', serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
 }
 /*Fließtext*/
 .fliesstext p {
@@ -94,7 +111,7 @@ p {
   margin-bottom: 1.5em;
 }
 .infotext {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 0.75em;
 }
@@ -136,7 +153,6 @@ p {
 }
 /*FIXME: Mit Variablen ergänzen*/
 .main-menu {
-  font-weight: 400;
   width: 940px;
   height: 100px;
   top: 0px;
@@ -151,19 +167,24 @@ p {
     }*/
 }
 .main-menu a {
+  font-weight: 400;
   padding-left: 10px;
   padding-right: 10px;
   float: left;
-  font-size: 1.25em;
+  font-size: 2em;
   line-height: 100px;
   vertical-align: middle;
 }
 .sub-menu {
-  font-weight: 400;
   left: 50px;
 }
 .sub-menu a {
+  font-weight: 700;
   font-size: 1em;
+}
+.footer-menu {
+  position: static;
+  bottom: 0px;
 }
 .content {
   margin-top: 250px;
@@ -190,9 +211,7 @@ button
     */
 button {
   /*Button Design*/
-  border-width: 1px;
-  border-style: solid;
-  border-color: #26a65b;
+  border: 1px solid #26a65b;
   background-color: white;
   padding: 10px;
   /*Button Text*/
@@ -209,28 +228,64 @@ button:active {
 input,
 textarea,
 select,
-option {
-  border-color: #26a65b;
-  opacity: 1;
+option,
+label {
+  /*Text*/
+  font-family: 'Scada', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+input,
+textarea,
+select {
+  /*Design*/
+  border: 1px solid #26a65b;
   color: black;
 }
 input:focus,
 input:hover,
 textarea:focus,
 textarea:hover,
-select:hover {
+select:hover,
+select:focus {
   background-color: rgba(46, 204, 112, 0.1);
   border-color: #26a65b;
   outline-color: #2ecc71;
 }
-*::selection {
-  background-color: #2ecc71;
+/*FIXME*/
+/*Checkbox Design anpassen*/
+input[type="checkbox"] {
+  display: none;
 }
-*::-moz-selection {
-  background-color: #2ecc71;
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  background: url('../images/symbols/checkbox_unchecked.png') top left no-repeat;
+  cursor: pointer;
 }
+input[type="checkbox"]:checked + label span {
+  background: url('../images/symbols/checkbox_checked.png');
+}
+/*FIXME*/
+/*Radio Button Design anpassen*/
 /*Bilder*/
-img {
+.bild {
   width: 300px;
   height: auto;
+  padding: 1em;
+}
+.bild img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bild p {
+  padding-top: 0.5em;
+  width: 100%;
+  text-align: center;
 }

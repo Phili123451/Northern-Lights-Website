@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/bootstrap.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!-- InstanceBeginEditable name="doctitle" -->
+    <title>Understanding the Bootstrap 3 Grid System - Tutorial Republic</title>
+    <meta name="description" content="Bootstrap grid system is the fastest and convenient way to create responsive website layouts. Bootstrap's default grid system is based on 12 column grid.">
+    <!-- InstanceEndEditable -->
+        	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="fb:admins" content="100001054961582">
+<meta property="fb:app_id" content="1404574483159557">
+<meta property="og:image" content="http://www.tutorialrepublic.com/lib/images/signature.png">
+<link href="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/css.css" rel="stylesheet" type="text/css">
+<link type="image/x-icon" href="http://www.tutorialrepublic.com/favicon.ico" rel="shortcut icon">
+<link href="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/default.css" media="all" type="text/css" rel="stylesheet">        
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+    
+    <script async="" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/cbgapi.loaded_1"></script><script async="" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/cbgapi.loaded_0"></script><script src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/sdk.js" id="facebook-jssdk"></script><script src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/widgets.js" async="" id="twitter-wjs"></script><script type="text/javascript" async="" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/quant.js"></script><script src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/analytics.js" async=""></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40117907-1', 'auto');
+  ga('send', 'pageview');
+</script><script src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/bsa.js" async="" type="text/javascript"></script></head>
+<body>
+    <!--Header-->
+    <!-- BuySellAds Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds Ad Code -->
+<div class="header-wrapper" id="top">
+    <div class="header">
+        <div class="logo">
+            <a href="http://www.tutorialrepublic.com/"><img src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/logo.png" alt="Tutorial Republic" width="330" height="62"></a>
+        </div>
+        <div class="widget">
+            <div class="submenu">
+                <ul>
+                    <li><a href="http://www.tutorialrepublic.com/about-us.php">About</a></li>
+                    <li><a href="http://www.tutorialrepublic.com/contact-us.php">Contact</a></li>
+                    <li><a href="http://www.tutorialrepublic.com/advertise-with-us.php">Advertise</a></li>
+                </ul>
+            </div>
+            <form action="http://www.google.com/search" method="get" target="_blank" class="site-search">
+                <input value="www.tutorialrepublic.com" name="sitesearch" type="hidden">
+                <input name="q" value="Google Search" onfocus="if(this.value=='Google Search'){this.value=''}" onblur="if(this.value==''){this.value='Google Search'}" class="search" type="text">
+                <input value="" class="search-btn" type="submit">
+            </form>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/tutorialrepublic" target="_blank" class="facebook">&nbsp;</a></li>
+                    <li><a href="https://twitter.com/tutrepublic" target="_blank" class="twitter">&nbsp;</a></li>
+                    <li><a href="https://plus.google.com/u/0/106987116359359710902" target="_blank" class="google-plus">&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="clear">&nbsp;</div>
+    </div>
+</div>
+<!--Sub Menu-->
+<div class="menu-wrapper">
+    <div class="menu">
+        <ul>
+        	<li><a href="http://www.tutorialrepublic.com/">HOME</a></li>
+            <li><a href="http://www.tutorialrepublic.com/html-tutorial/">HTML5</a></li>
+            <li><a href="http://www.tutorialrepublic.com/xhtml-tutorial.php">XHTML</a></li>
+            <li><a href="http://www.tutorialrepublic.com/css-tutorial/">CSS3</a></li>
+            <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-2.3.2-tutorial/">BOOTSTRAP 2.3.2</a></li>
+            <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/">BOOTSTRAP 3</a></li>
+			<li><a href="http://www.tutorialrepublic.com/php-tutorial/">PHP 5</a></li>           
+	     	<li><a href="http://www.tutorialrepublic.com/references.php">REFERENCES</a></li>
+			<li><a href="http://www.tutorialrepublic.com/practice-examples.php">EXAMPLES</a></li>
+            <li><a href="http://www.tutorialrepublic.com/faq.php">FAQ</a></li>
+        </ul>
+	<div class="recent-update"><a href="http://www.tutorialrepublic.com/twitter-bootstrap-button-generator.php" target="_blank">Bootstrap&nbsp;3&nbsp;Button&nbsp;Generator</a></div>
+        <div class="clear">&nbsp;</div>
+    </div>
+</div>    <!--End:Header-->
+    <!--Leader Board-->
+    <div class="top-ad-wrapper">
+        <div class="leaderboard">
+            <div class="ad-box">
+            	<div class="custom-ad">
+                	
+<!--Advertise Here Placeholder-->
+<a href="http://www.tutorialrepublic.com/advertise-with-us.php">
+    <img src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/banner.jpg" alt="Advertise Here" width="245" height="90">
+</a>                </div>
+                <div class="lead-ad">
+                	<!--Change Leaderboard Code at 2 more Places: CodeLab, Bootstrap Button Generator-->
+
+<!--Default Leaderboard Placement-->                </div>
+            <div class="clear">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!--End:Leader Board-->
+    <div class="wrapper">
+    <!--Container-->
+    <div class="container">
+        <div class="leftcolumn" id="myNav">
+		
+        <h2 style="letter-spacing: -0.06em;"><span>BOOTSTRAP</span> BASIC</h2>
+<ul class="chapters">
+    <li><a class="" href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/">Bootstrap Home</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-introduction.php">Bootstrap Introduction</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-get-started.php">Bootstrap Get Started</a></li>
+    <li><a class="selected" href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php">Bootstrap Grid System</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-fixed-layout.php">Bootstrap Fixed Layout</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-fluid-layout.php">Bootstrap Fluid Layout</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-responsive-layout.php">Bootstrap Responsive Layout</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-typography.php">Bootstrap Typography</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-tables.php">Bootstrap Tables</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-lists.php">Bootstrap Lists</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-forms.php">Bootstrap Forms</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-images.php">Bootstrap Images</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-icons.php">Bootstrap Icons</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-navs.php">Bootstrap Navs</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-navbar.php">Bootstrap Navbar</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-panels.php">Bootstrap Panels</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-breadcrumbs.php">Bootstrap Breadcrumbs</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-pagination.php">Bootstrap Pagination</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-labels-and-badges.php">Bootstrap Labels &amp; Badges</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-progress-bars.php">Bootstrap Progress Bars</a></li>
+	<li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php">Bootstrap Helper Classes</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-miscellaneous.php">Bootstrap Miscellaneous</a></li>
+</ul>
+<h2 style="letter-spacing: -0.06em;"><span>BOOTSTRAP</span> ADVANCE</h2>
+<ul class="chapters">
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-buttons.php">Bootstrap Buttons</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-dropdowns.php">Bootstrap Dropdowns</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-tooltips.php">Bootstrap Tooltips</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-popovers.php">Bootstrap Popovers</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-alerts.php">Bootstrap Alerts</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-tabs.php">Bootstrap Tabs</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-modals.php">Bootstrap Modals</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-accordion.php">Bootstrap Accordion</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-carousel.php">Bootstrap Carousel</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-typeahead.php">Bootstrap Typeahead</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-scrollspy.php">Bootstrap ScrollSpy</a></li>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-affix.php">Bootstrap Affix</a></li>
+</ul>
+<h2 style="letter-spacing: -0.06em;"><span>BOOTSTRAP</span> EXAMPLES</h2>
+<ul>
+    <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-examples.php">Bootstrap Practice Examples</a></li>
+</ul>        
+        <h2 class="affiliate"><span>WEB</span> HOSTING <i></i></h2>
+<ul>
+	<li><a rel="nofollow" href="https://www.ipage.com/join/index.bml?AffID=776760" target="_blank">Unlimited Hosting $1.99/mo</a></li>
+	<li><a rel="nofollow" href="https://www.ipage.com/join/index.bml?AffID=776760" target="_blank" style="word-spacing: -1.5px;">WordPress Hosting $3.75/mo</a></li>
+    <li><a rel="nofollow" href="https://www.digitalocean.com/?refcode=483236c4ce2b" target="_blank">Cloud Hosting Only $5/mo</a></li>
+    <li><a href="http://www.tutorialrepublic.com/advertise-with-us.php">Advertise Here</a></li>
+</ul>
+
+<!-- Social widget (affiliate link section) -->
+<div class="social-widget">
+	<div class="widget-row">
+        <!-- Facebook Like (HTML5) -->
+        <div class="fb-like" data-href="https://www.facebook.com/tutorialrepublic" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+	</div>
+    <div class="widget-row compact">
+        <!-- Facebook Share (HTML5) -->
+		<div class="fb-share-button" data-type="button"></div>
+    </div>
+	<div class="widget-row">
+        <!-- Tweet Button -->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a>
+    </div>
+	<div class="widget-row compact ultra-compact">
+        <!-- Follow Button -->
+		<a href="https://twitter.com/tutrepublic" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow</a>
+    </div>
+	<div class="widget-row">
+        <!-- Google Plus +1 Button -->
+		<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px;"><iframe title="+1" data-gapiattached="true" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/fastbutton.htm" name="I0_1433248961332" id="I0_1433248961332" vspace="0" tabindex="0" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" width="100%" frameborder="0"></iframe></div>
+    </div>
+</div>        </div>
+        <div class="centercolumn">
+            <div class="tutorialbox">
+                <!--Text Content-->
+                <div class="content">
+                <!-- InstanceBeginEditable name="main_content" -->
+                <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-get-started.php" class="previous-page" title="Go to Previous Page"></a>
+            	<a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-fixed-layout.php" class="next-page" title="Go to Next Page"></a>
+                <h1>Bootstrap <span>Grid System</span></h1>
+                <p class="definition">Bootstrap grid system is the fastest and easy way to create layout.</p>
+                <h2>What is Bootstrap Grid System</h2>
+                <p>The Bootstrap grid system provides the fast and easy way to create layouts of web pages. As opposed to the <a href="http://www.tutorialrepublic.com/twitter-bootstrap-2.3.2-tutorial/bootstrap-grid-system.php">previous grid system</a>
+ which is fixed by default, the new version, i.e. Bootstrap 3 introduces
+ the responsive mobile first fluid grid system that appropriately scales
+ up to 12 columns as the device or viewport size increases.</p>
+                <p class="space">Bootstrap 3 includes predefined grid 
+classes for quickly making grid layouts for different types of devices 
+like cell phones, tablets, desktops, etc. For example, you can use the <code>.col-xs-</code> class to create grid columns for extra small devices like cell phone similarly the <code>.col-sm-</code> for small screen devices like tablets, the <code>.col-md-</code> class for medium size devices like desktop and the <code>.col-lg-</code> for large desktop screens. The following table summarizes some of the key features of the new grid system</p>
+                <div class="shadow break" id="grid-features">
+                    <table class="data">
+                        <tbody><tr>
+                            <th>Features <br><span class="device">Bootstrap 3 Grid System</span></th>
+                            <th>Extra small devices <br><span class="device">Phones (&lt;768px)</span></th>
+                            <th>Small devices <br><span class="device">Tablets (≥768px)</span></th>
+                            <th>Medium devices <br><span class="device">Desktops (≥992px)</span></th>
+                            <th>Large devices <br><span class="device">Desktops (≥1200px)</span></th>
+                        </tr>
+                        <tr>
+                            <td>Max container width</td>
+                            <td>None (auto)</td>
+                            <td><code>750px</code></td>
+                            <td><code>970px</code></td>
+                            <td><code>1170px</code></td>
+                        </tr>
+                        <tr>
+                            <td>Class prefix</td>
+                            <td><code>.col-xs-</code></td>
+                            <td><code>.col-sm-</code></td>
+                            <td><code>.col-md-</code></td>
+                            <td><code>.col-lg-</code></td>
+                        </tr>
+                        <tr>
+                            <td>Max column width</td>
+                            <td><code>Auto</code></td>
+                            <td><code>~62px</code></td>
+                            <td><code>~81px</code></td>
+                            <td><code>~97px</code></td>
+                        </tr>
+                        <tr>
+                            <td>Gutter width</td>
+                            <td colspan="4"><code>15px</code> on each side of a column (i.e. <code>30px</code>)</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+                <p>The above table demonstrates one important thing — Applying any <code>.col-sm-</code>
+ class to an element will not only affect its styling on small devices, 
+but also on medium and large devices having a screen size greater than 
+or equal to <code>768px</code> (i.e. <code>≥768px</code>) if <code>.col-md-</code> and <code>.col-lg-</code> class is not present. Similarly the <code>.col-md-</code> class will not only affect the styling of elements on medium devices, but also on large devices if a <code>.col-lg-</code> class is not present.</p>
+                <hr>
+                <h2>How to Create Layouts with Bootstrap 3 Grid System</h2>
+                <p>With the new Bootstrap 3 mobile first grid system you
+ can easily control how your website layout will render on different 
+types of devices that have different screen sizes like cell phones, 
+tablets, desktops, etc. Let's consider the following illustration.</p>
+                <div class="grid-system-illustration"><img src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/grid-system-illustration.jpg" alt="Bootstrap Grid System Illustration" width="530" height="148"></div>
+                <p>In the above illustration there are total 12 content 
+boxes in all devices, but its placement varies according to the device 
+screen size, like in mobile device layout is rendered as one column grid
+ layout which has 1 column and 12 rows placed above one another, whereas
+ in the tablet it is rendered as two column grid layout which has 2 
+columns and 6 rows. Similarly, in medium screen size devices like laptop
+ and desktop it is rendered as three column grid layout which as 3 
+columns and 4 rows, and finally in large screen devices like large 
+desktop it is rendered as four column grid layout which has 4 columns 
+and 3 rows.</p>
+                <p>Now the question arises how we can create such 
+responsive layouts using this Bootstrap new mobile first grid system. 
+Let's start with the medium device that can be a laptop or normal 
+desktop. Since our medium device layout has 3 columns and 4 rows (i.e. 
+3x4 grid layout). So go ahead and type the following markup.</p>
+                <!--Code box-->
+                <div class="codebox-wrapper break">
+                    <div class="codebox">
+                        <div class="codebox-title"><h4>Example</h4><a title="Try this code using online Editor" class="try-btn" target="_blank" href="http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&amp;file=grid-layout-for-medium-devices">Try this code <span>»</span></a><span class="box-size"><i title="Maximize"></i></span></div>
+                        <ul class="syntax-highlighter lead-zero scroll">
+                            <li><pre><span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li class="alt"><pre>    <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"row"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 1<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 2<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 3<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 4<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 5<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 6<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 7<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 8<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 9<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 10<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 11<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 12<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>    <span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre><span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End:Code box-->
+                <p>If you see the output of the above example in a laptop or desktop having screen or viewport width greater than or equal to <code>992px</code> and less than <code>1200px</code> you will find it has 4 rows where each row has 3 equal columns resulting in 3x4 grid layout.</p>
+                <p>But just wait, the above example has a major 
+alignment issue. If height of any column is taller than the other it 
+doesn't clear properly and break the layout. To fix this, use the 
+combination of a <code>.clearfix</code> class and the responsive utility classes.</p>
+                <!--Code box-->
+                <div class="codebox-wrapper break">
+                    <div class="codebox">
+                        <div class="codebox-title"><h4>Example</h4><a title="Try this code using online Editor" class="try-btn" target="_blank" href="http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&amp;file=clearing-floats-for-medium-devices">Try this code <span>»</span></a><span class="box-size"><i title="Maximize"></i></span></div>
+                        <ul class="syntax-highlighter lead-zero scroll">
+                            <li><pre><span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li class="alt"><pre>    <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"row"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 1<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 2<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 3<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 4<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 5<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 6<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 7<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 8<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 9<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 10<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 11<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 12<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>    <span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                            <li><pre><span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End:Code box-->
+                <p>Since the default gird system has 12 columns and in our layout sum of the every three column number, i.e. <code>col-md-*</code>
+ is equal to 12 that's why we cleared columns after every third 
+occurrence. In any other scenario where columns numbers are different 
+for every column you should use <code>.clearfix</code> after the column that makes the complete 12 column grid.</p>
+                <!--Note box-->
+				<div class="color-box break">
+					<div class="shadow">
+						<div title="Important Notes" class="info-tab note-icon">&nbsp;</div>
+						<div class="note-box">
+							<p><strong>Note:</strong>The <a href="#responsive-class">responsive utility class</a> <code>.visible-md-block</code> makes the <code>.clearfix</code> class effective only on medium size devices and it is hidden on other devices.</p>
+						</div>
+					</div>
+				</div>
+				<!--End:Note box-->
+                <p>Now it's time to customize our layout for other 
+devices. First customize it for tablet. Since inside the tablet our 
+layout rendered as 2x6 grids (i.e. 2 columns and 6 rows). So, go ahead 
+and add the class <code>.col-sm-6</code> on every column.</p>
+                <!--Code box-->
+                <div class="codebox-wrapper break">
+                    <div class="codebox">
+                        <div class="codebox-title"><h4>Example</h4><a title="Try this code using online Editor" class="try-btn" target="_blank" href="http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&amp;file=grid-layout-for-small-and-medium-devices">Try this code <span>»</span></a><span class="box-size"><i title="Maximize"></i></span></div>
+                        <ul class="syntax-highlighter lead-zero scroll">
+                            <li><pre><span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li class="alt"><pre>    <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"row"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 1<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 2<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 3<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 4<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 5<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 6<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 7<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 8<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 9<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 10<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 11<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 12<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>    <span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                            <li><pre><span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End:Code box-->
+                <p>Now, since the sum of every two column number, i.e. <code>col-sm-*</code> is equal to 12, so clear floats after every second occurrence of columns.</p>
+                <p>After clearing floats for small devices our final code would be:</p>
+                <!--Code box-->
+                <div class="codebox-wrapper break">
+                    <div class="codebox">
+                        <div class="codebox-title"><h4>Example</h4><a title="Try this code using online Editor" class="try-btn" target="_blank" href="http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&amp;file=clearing-floats-for-small-devices">Try this code <span>»</span></a><span class="box-size"><i title="Maximize"></i></span></div>
+                        <ul class="syntax-highlighter lead-zero scroll">
+                            <li><pre><span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li class="alt"><pre>    <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"row"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 1<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 2<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 3<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 4<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 5<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 6<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 7<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 8<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 9<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 10<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 11<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 12<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>    <span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre><span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End:Code box-->
+				<!--Tip Box-->
+				<div class="color-box break">
+					<div class="shadow">
+						<div class="info-tab tip-icon" title="Useful Tips">&nbsp;</div>
+						<div class="tip-box">
+							<p><strong>Tip:</strong>For convenience choose your primary 
+target device and create layout for that device first after that add 
+classes to make it responsive for other devices.</p>
+						</div>
+					</div>
+				</div>
+				<!--End:Tip Box-->
+                <p>Similarly, you can customize the layout for larger devices like a large desktop screen.</p>
+                <!--Code box-->
+                <div class="codebox-wrapper break">
+                    <div class="codebox">
+                        <div class="codebox-title"><h4>Example</h4><a title="Try this code using online Editor" class="try-btn" target="_blank" href="http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&amp;file=grid-layout-for-all-devices">Try this code <span>»</span></a><span class="box-size"><i title="Maximize"></i></span></div>
+                        <ul class="syntax-highlighter lead-zero scroll">
+                            <li><pre><span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li class="alt"><pre>    <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"row"</span><span class="cm-tag">&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 1<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 2<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 3<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 4<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-lg-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 5<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 6<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 7<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 8<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-lg-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 9<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-md-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 10<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"clearfix visible-sm-block"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 11<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre>        <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"col-sm-6 col-md-4 col-lg-3"</span><span class="cm-tag">&gt;&lt;p&gt;</span>Box 12<span class="cm-tag">&lt;/p&gt;&lt;/div&gt;</span></pre></li>
+                            <li><pre>    <span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                            <li class="alt"><pre><span class="cm-tag">&lt;/div&gt;</span></pre></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End:Code box-->
+                <!--Tip Box-->
+				<div class="color-box break">
+					<div class="shadow">
+						<div class="info-tab tip-icon" title="Useful Tips">&nbsp;</div>
+						<div class="tip-box">
+							<p><strong>Tip:</strong>According to the above illustration there
+ is no need to customize the layout for extra small devices like mobile 
+phones; since columns on extra small devices are always horizontal and 
+rendered as one column grid layout by default.</p>
+						</div>
+					</div>
+				</div>
+				<!--End:Tip Box-->
+                <hr>
+                <h2 id="responsive-class">Bootstrap Responsive Utilities Classes</h2>
+				<p>You can use the following responsive classes to enable the 
+visibility of elements on certain devices that screen sizes falls with 
+the specific range.</p>
+				<p>As of v3.2.0, the <code>.visible-*-*</code> classes for each breakpoint come in three variations, one for each CSS <code><a href="http://www.tutorialrepublic.com/css-reference/css-display-property.php">display</a></code> property value: <code>inline</code>, <code>block</code> and <code>inline-block</code>.</p>
+				<div class="shadow">
+					<table class="data">
+						<thead>
+							<tr>
+								<th>Class</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><pre><code>.visible-xs-*</code></pre></td>
+								<td>Makes the element visible only on extra small devices having screen width less than <code>768px</code>. Hidden on others.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.visible-sm-*</code></pre></td>
+								<td>Makes the element visible only on small devices having screen width greater than or equal to <code>768px</code> (i.e. <code>≥768px</code>) but less than <code>992px</code>. Hidden on others.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.visible-md-*</code></pre></td>
+								<td>Makes the element visible only on medium devices having screen width greater than or equal to <code>992px</code> (i.e. <code>≥992px</code>) but less than <code>1200px</code>. Hidden on others.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.visible-lg-*</code></pre></td>
+								<td>Makes the element visible only on large devices having screen width greater than or equal to <code>1200px</code> (i.e. <code>≥1200px</code>). Hidden on others.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--Code box-->
+				<!--Tip Box-->
+				<div class="color-box">
+					<div class="shadow">
+						<div class="info-tab tip-icon" title="Useful Tips">&nbsp;</div>
+						<div class="tip-box">
+							<p><strong>Tip:</strong>You can also mix these classes to make the elements visible on multiple devices. For example, you can apply the class <code>.visible-xs-*</code> and <code>.visible-md-*</code> on any element to make it visible on extra small and medium devices.</p>
+						</div>
+					</div>
+				</div>
+				<!--End:Tip Box-->
+				<div class="codebox-wrapper break">
+					<div class="codebox">
+						<div class="codebox-title"><h4>Example</h4><a href="http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&amp;file=visible-responsive-classes" target="_blank" class="try-btn" title="Try this code using online Editor">Try this code <span>»</span></a></div>
+						<ul class="syntax-highlighter">
+							<li><pre><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"visible-xs-block"</span><span class="cm-tag">&gt;</span>This paragraph is visible only on extra small devices.<span class="cm-tag">&lt;/p&gt;</span></pre></li>
+							<li class="alt"><pre><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"visible-sm-block"</span><span class="cm-tag">&gt;</span>This paragraph is visible only on small devices.<span class="cm-tag">&lt;/p&gt;</span></pre></li>
+							<li><pre><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"visible-md-block"</span><span class="cm-tag">&gt;</span>This paragraph is visible only on medium devices.<span class="cm-tag">&lt;/p&gt;</span></pre></li>
+							<li class="alt"><pre><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"visible-lg-block"</span><span class="cm-tag">&gt;</span>This paragraph is visible only on large devices.<span class="cm-tag">&lt;/p&gt;</span></pre></li>
+						</ul>
+					</div>
+				</div>
+				<!--End:Code box-->
+				<p>Similarly you can use these hidden utility classes to hide the elements on certain devices.</p>
+				<div class="shadow">
+					<table class="data">
+						<thead>
+							<tr>
+								<th>Class</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><pre><code>.hidden-xs</code></pre></td>
+								<td>Hide the elements only on extra small devices having screen width less than <code>768px</code>. Visible on others.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.hidden-sm</code></pre></td>
+								<td>Hide the elements only on small devices having screen width greater than or equal to <code>768px</code> (i.e. <code>≥768px</code>) but less than <code>992px</code>. Visible on others.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.hidden-md</code></pre></td>
+								<td>Hide the elements only on medium devices having screen width greater than or equal to <code>992px</code> (i.e. <code>≥992px</code>) but less than <code>1200px</code>. Visible on others.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.hidden-lg</code></pre></td>
+								<td>Hide the elements only on large devices having screen width greater than or equal to <code>1200px</code> (i.e. <code>≥1200px</code>). Visible on others.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--Code box-->
+				<!--Tip Box-->
+				<div class="color-box">
+					<div class="shadow">
+						<div class="info-tab tip-icon" title="Useful Tips">&nbsp;</div>
+						<div class="tip-box">
+							<p><strong>Tip:</strong>You can also mix these classes to make the elements hidden on multiple devices. For example you can apply the class <code>.hidden-xs</code> and <code>.hidden-md</code> on any element to make it hidden on extra small and medium devices.</p>
+						</div>
+					</div>
+				</div>
+				<!--End:Tip Box-->
+				<div class="codebox-wrapper break">
+					<div class="codebox">
+						<div class="codebox-title"><h4>Example</h4><a href="http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&amp;file=hidden-responsive-classes" target="_blank" class="try-btn" title="Try this code using online Editor">Try this code <span>»</span></a></div>
+						<ul class="syntax-highlighter">
+							<li><pre><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"hidden-xs"</span><span class="cm-tag">&gt;</span>This paragraph is hidden only on extra small devices.<span class="cm-tag">&lt;/p&gt;</span></pre></li>
+							<li class="alt"><pre><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"hidden-sm"</span><span class="cm-tag">&gt;</span>This paragraph is hidden only on small devices.<span class="cm-tag">&lt;/p&gt;</span></pre></li>
+							<li><pre><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"hidden-md"</span><span class="cm-tag">&gt;</span>This paragraph is hidden only on medium devices.<span class="cm-tag">&lt;/p&gt;</span></pre></li>
+							<li class="alt"><pre><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"hidden-lg"</span><span class="cm-tag">&gt;</span>This paragraph is hidden only on large devices.<span class="cm-tag">&lt;/p&gt;</span></pre></li>
+						</ul>
+					</div>
+				</div>
+				<!--End:Code box-->
+				<p>Similar to the regular responsive classes, you can use the 
+following utility classes to show or hide certain elements for printing 
+purpose or devices.</p>
+				<div class="shadow">
+					<table class="data">
+						<thead>
+							<tr>
+								<th>Class</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><pre><code>.visible-print-block</code></pre></td>
+								<td>Hide block elements for browser rendering while visible for print.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.visible-print-inline</code></pre></td>
+								<td>Hide inline elements for browser rendering while visible for print.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.visible-print-inline-block</code></pre></td>
+								<td>Hide inline-block elements for browser rendering while visible for print.</td>
+							</tr>
+							<tr>
+								<td><pre><code>.hidden-print</code></pre></td>
+								<td>Hide elements for printing while visible on browser.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+                <!--Bottom Navigation-->
+                <div class="bottom-link">
+                    <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-get-started.php" class="previous-page-bottom">Previous Page</a>
+                    <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-fixed-layout.php" class="next-page-bottom">Next Page</a>
+                <div class="clear">&nbsp;</div>
+                </div>
+                <!--End:Bottom Navigation--> 
+                <!-- InstanceEndEditable -->
+                </div>
+                <!--End:Text Content-->
+                <!--Bottom Ads-->
+                <div class="bottom-ad">
+                    
+<!--Leaderboard Positioned-->
+<div class="lead-ad-positioned">
+
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1302131" class="bsarocks bsap_00a787d849a91d6d88fed0d60c28506f"></div>
+<!-- End BuySellAds Zone Code -->
+</div>
+<!--End:Leaderboard Positioned-->
+
+
+<!--Rectangle Left-->
+<div class="rectangle-left">
+    
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1302152" class="bsarocks bsap_00a787d849a91d6d88fed0d60c28506f"></div>
+<!-- End BuySellAds Zone Code -->
+
+</div>
+<!--End:Rectangle Left-->
+
+
+<!--Rectangle Right-->
+<div class="rectangle-right">
+
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1302153" class="bsarocks bsap_00a787d849a91d6d88fed0d60c28506f"></div>
+<!-- End BuySellAds Zone Code -->
+
+</div>
+<!--End:Rectangle Right-->                <div class="clear">&nbsp;</div>
+                </div>
+                <!--End:Bottom Ads-->
+            </div>
+            <!--Feedback Form-->
+            
+<div class="report-error">
+    <div class="contact-form">
+        <span class="close">Close</span>
+        <form id="feedback-form" action="#">
+            <h3>Your Feedback:</h3>
+            <div>
+                <p class="fl"><label>Your Name (optional) <input name="user-name" id="user-name" class="name" type="text"></label></p>
+                <p class="fr"><label>Your E-mail (optional) <input name="user-email" id="user-email" class="email" type="text"></label></p>
+            <div class="clear">&nbsp;</div>
+            </div>
+            <p><label>Page address <input value="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php" name="page-url" id="page-url" disabled="disabled" type="text"></label></p>
+            <p><label>Description <textarea name="description" id="description"></textarea></label></p>
+            <p id="feedback-error">We will be happy if you say something.</p>
+            <p><input value="Send" class="blue-btn" onclick="sendFeedback()" type="button"></p>
+        </form>
+        <div id="response"></div>
+    <div class="clear">&nbsp;</div>
+    </div>           
+</div>            <!--End:Feedback Form-->
+        </div>
+        <div class="sidebar">
+            <div class="button-ad">
+                <a href="http://www.tutorialrepublic.com/advertise-with-us.php" class="ad-link">Advertisements</a>
+
+
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1302108" class="bsarocks bsap_00a787d849a91d6d88fed0d60c28506f"></div>
+<!-- End BuySellAds Zone Code -->
+
+
+<!--Skyscraper-->
+<div class="skyscraper primary">
+
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1302133" class="bsarocks bsap_00a787d849a91d6d88fed0d60c28506f"></div>
+<!-- End BuySellAds Zone Code -->
+
+</div>
+<!--End:Skyscraper-->
+
+            </div>
+        </div>
+    <div class="clear">&nbsp;</div>
+    </div>
+    <!--End:Container-->
+    </div>
+    <!--Footer-->
+	<div class="footer-wrapper">
+	<p class="social-media-link"><span class="appeal-text">Is this page helpful to you? Please give us a Google +1, or share your <a href="javascript:void(0);" class="feedback">feedback</a>. Connect with us on <a href="https://www.facebook.com/tutorialrepublic" target="_blank">Facebook</a>, <a href="https://twitter.com/tutrepublic" target="_blank">Twitter</a> and <a href="https://plus.google.com/u/0/106987116359359710902" target="_blank">Google+</a> for the updates.</span></p>
+    <div class="footer">
+        <div class="bottom-menu">
+        	<a href="http://www.tutorialrepublic.com/" class="logo-footer">
+            	<img src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/logo-transparent.png" alt="Tutorial Republic" width="257" height="48">
+            </a>
+            <p class="copyright-text">Copyright © 2015 Tutorial Republic</p>
+            <ul>
+                <li><a href="http://www.tutorialrepublic.com/terms-of-use.php">Terms of Use</a></li>
+                <li><a href="http://www.tutorialrepublic.com/privacy-policy.php">Privacy Policy</a></li>
+				<li><a class="feedback" href="javascript:void(0);">Report Error</a></li>
+                <li><a href="#top" target="_top">Top</a></li>
+            </ul>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <p class="tools-list" id="tools">
+            <strong>Interactive Tools:</strong> 
+            <a href="http://www.tutorialrepublic.com/codelab.php" target="_blank">CodeLab (HTML Editor)</a>, 
+            <a href="http://www.tutorialrepublic.com/html-reference/html-color-picker.php">Color Picker</a>,
+            <a href="http://www.tutorialrepublic.com/twitter-bootstrap-button-generator.php" target="_blank">Bootstrap Button Generator</a>,
+            <a href="http://www.tutorialrepublic.com/html-tutorial/html-url-encode.php#url-encoder">URL Encoder</a>,<br> 
+            <a href="http://www.tutorialrepublic.com/faq/what-is-the-maximum-length-of-title-and-meta-description-tag.php">Title &amp; Meta Length Calculator</a>, 
+            <a href="http://www.tutorialrepublic.com/faq/how-to-find-number-of-characters-in-a-string-using-jquery.php#string-length-calculator">String Length Calculator</a>.
+        </p>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/jquery.js"></script>
+<script type="text/javascript" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/default-1.js"></script>
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-BEwufvrYbTtyZ"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-BEwufvrYbTtyZ.gif" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript><!-- End:Quantcast Tag -->
+
+<!-- Google plus share button script -->
+<script gapi_processed="true" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/platform.js" async="" defer="defer"></script>
+
+<!-- Twitter share button script -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Facebook share button script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- BSA fancybar script -->
+<script async="" type="text/javascript" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/fancybar.js" id="_fancybar_js"></script>
+    <!--End:Footer-->
+
+<iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="Understanding%20the%20Bootstrap%203%20Grid%20System%20-%20Tutorial%20Republic-Dateien/postmessageRelay.htm" id="oauth2relay539158462" name="oauth2relay539158462"></iframe></body><!-- InstanceEnd --></html>

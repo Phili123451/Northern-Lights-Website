@@ -5,17 +5,40 @@
 @import "mixins.less";
 
 /*Import der genutzen Schriftarten (Google Fonts)*/
-@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500);
-@import url(http://fonts.googleapis.com/css?family=Kreon);
+@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
+/*@import url(http://fonts.googleapis.com/css?family=Kreon);*/ /*wenn noto dann raus*/
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans);
 @import url(http://fonts.googleapis.com/css?family=Scada:400,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif); /*TEST*/
+
+/*
+*, *:before, *:after
+{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ box-sizing: border-box;
+ 
+}*/
+
+*::selection
+{
+    background-color:@light-green;
+}
+
+*::-moz-selection
+{
+    background-color:@light-green;
+}
+
+
+
 
 body 
 {
     font-size: @font-size-standard;
     background-color:white;
     color:black;
-    box-sizing:border-box;
 }
 
 /*BEGINN TESTBEREICH FÜR MODULE*/
@@ -87,9 +110,10 @@ a
 
 p
 {
-    font-family: 'Kreon', 'Times New Roman' ,serif;
+    //font-family: 'Kreon', 'Times New Roman' ,serif;
+    font-family: 'Noto Serif', 'Times New Roman',serif;
     font-weight: @font-weight-normal;
-    font-size: @font-size-standard;
+    font-size: 1em;
 
 }
 
@@ -105,7 +129,7 @@ p
 
 .infotext
 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', 'Arial' , sans-serif;
     font-weight: @font-weight-normal;
     font-size: 0.75em;
 }
@@ -149,7 +173,6 @@ p
 /*FIXME: Mit Variablen ergänzen*/
 .main-menu
 {
-    font-weight: @font-weight-normal;
     width: 940px;
     height: 100px;
 
@@ -167,10 +190,11 @@ p
 
     a
     {
+        font-weight: @font-weight-normal;
         padding-left: 10px;
         padding-right: 10px;
         float:left;
-        font-size:1.25em;
+        font-size:2em;
         line-height:100px;
         vertical-align:middle;
     }
@@ -179,13 +203,19 @@ p
 
 .sub-menu
 {
-    font-weight: @font-weight-normal;
     left:50px;
 
     a
     {
+        font-weight: @font-weight-bold;
         font-size: 1em;
     }
+}
+
+.footer-menu
+{
+    position:static;
+    bottom:0px;
 }
 
 .content
@@ -221,9 +251,7 @@ button
 button
 {
     /*Button Design*/
-    border-width:1px;
-    border-style:solid;
-    border-color:@dark-green;
+    border:1px solid @dark-green;
     background-color: white;
     padding: 10px;
     
@@ -245,10 +273,21 @@ button:hover, button:active
 input,
 textarea,
 select,
-option
+option,
+label
 {
-    border-color: @dark-green;
-    opacity:1;
+    /*Text*/
+    font-family: 'Scada', 'Arial' , sans-serif;
+    font-weight: @font-weight-normal;
+    font-size: 1em;
+}
+
+input,
+textarea,
+select
+{
+    /*Design*/
+    border:1px solid @dark-green;
     color:black;
 }
 
@@ -257,28 +296,77 @@ input:focus,
 input:hover, 
 textarea:focus, 
 textarea:hover,
-select:hover
+select:hover,
+select:focus
 {
     background-color: @light-green-hsla;
     border-color: @dark-green;
     outline-color: @light-green;
 }
 
-*::selection
+/*FIXME*/
+/*Checkbox Design anpassen*/
+input[type="checkbox"]
 {
-    background-color:@light-green;
+    display:none;
 }
 
-*::-moz-selection
-{
-    background-color:@light-green;
-}
+    input[type="checkbox"] + label span
+    {
+        display:inline-block;
+        width:19px;
+        height:19px;
+        margin:-1px 4px 0 0;
+        vertical-align:middle;
+        background:url('../images/symbols/checkbox_unchecked.png') top left no-repeat;
+        cursor:pointer;
+    }
+
+    input[type="checkbox"]:checked + label span
+    {
+        background:url('../images/symbols/checkbox_checked.png');
+    }
+
+/*FIXME*/
+/*Radio Button Design anpassen*/
+
+
 
 
 
 /*Bilder*/
-img
+.bild
 {
-    width:300px;
-    height:auto;
+    width: 300px;
+    height: auto;
+   
+    padding: 1em;
+
+    img
+    {
+        width: 80%;
+        height: auto;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    p
+    {
+        padding-top:0.5em;
+        width:100%;
+        text-align:center;
+    }
+}
+
+.bild-galerie
+{
+
+    p
+    {
+    }
+
+    h3
+    {
+    }
 }
