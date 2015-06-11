@@ -1,0 +1,295 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
+/*Import LESS Files*/
+/*Farben*/
+/*Font Weights*/
+/*Schriftgrößen*/
+/*Standard Padding*/
+/*Abstände zwischen Textblöcken, Überschriften, etc.*/
+/*h1*/
+/*h2*/
+/*h3*/
+/*Breite und Höhe*/
+/*Import LESS Files*/
+/*Links*/
+/*Impressum Überschriften*/
+/*Blogeintrag*/
+/*Anpassung Padding, etc.*/
+/*Import der genutzen Schriftarten (Google Fonts)*/
+/*
+*, *:before, *:after
+{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ box-sizing: border-box;
+ 
+}
+
+*::selection
+{
+    background-color:@color-secondary-orange;
+}
+
+*::-moz-selection
+{
+    background-color:@color-secondary-orange; 
+}*/
+body {
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+/*BEGINN TESTBEREICH FÜR MODULE*/
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.middle {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div {
+  /*
+    border-left:solid;
+    border-right:solid;
+    border-width:1px;*/
+}
+/*ENDE TESTBEREICH FÜR MODULE*/
+/*Überschriften*/
+h1,
+h2,
+h3 {
+  font-family: 'Cabin', 'Arial', sans-serif;
+  /*FIXME: letter-spacing*/
+  letter-spacing: 0.1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  margin-top: 0.25em;
+  margin-bottom: 0.15em;
+}
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #1ba39e;
+}
+h2 {
+  font-weight: 600;
+  font-size: 22px;
+  color: black;
+}
+h3 {
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+/*Links*/
+a {
+  color: black;
+  font-family: 'Cabin', 'Arial', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffb42a;
+  text-decoration: underline;
+}
+a:visited {
+  text-decoration: none;
+}
+p {
+  font-family: 'Merriweather', 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 0.95em;
+  letter-spacing: 0.1em;
+  line-height: 150%;
+}
+/*Fließtext*/
+.fliesstext p {
+  margin-top: 0.25em;
+  margin-bottom: 1.5em;
+}
+.infotext {
+  font-family: 'Cabin', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 0.75em;
+}
+/*Klassen*/
+.quellenangabe {
+  font-size: 1em;
+}
+.quellenangabe a {
+  font-size: 1em;
+}
+/*Header*/
+.header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100px;
+  background-color: #1ba39e;
+}
+.header-text {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: right;
+}
+/*MENÜS*/
+.menu {
+  background-color: white;
+  position: absolute;
+}
+.menu a {
+  display: block;
+  font-family: 'Cabin', sans-serif;
+  color: black;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #1ba39e;
+}
+.menu a:active {
+  background-color: #ffb42a;
+}
+/*FIXME: Mit Variablen ergänzen*/
+.main-menu {
+  width: 940px;
+  height: 40px;
+  top: 100px;
+}
+.main-menu a {
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: left;
+  font-size: 2em;
+  line-height: 40px;
+  vertical-align: middle;
+}
+.sub-menu {
+  left: 50px;
+}
+.sub-menu a {
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 1em;
+  line-height: normal;
+}
+.footer-menu {
+  position: static;
+  bottom: 0px;
+  background-color: #1ba39e;
+  width: 100%;
+  height: 40px;
+}
+.footer-menu a {
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+}
+.footer-menu a.hover {
+  color: #ffb42a;
+}
+.content {
+  margin-top: 250px;
+}
+/*FORMS*/
+/*
+button
+{
+
+    border:none;
+    outline:none;
+    
+    background-color: @color-secondary-blue;
+    padding: 10px;
+    
+
+    font-family: 'Cabin', sans-serif;
+    font-weight: @font-weight-bold;
+    font-size: 1em;
+    color:black;
+    text-shadow: 1px 1px 3px #666666;
+    text-align:center;
+}
+    */
+button {
+  /*Button Design*/
+  border: 1px solid #2c57b1;
+  background-color: white;
+  padding: 10px;
+  /*Button Text*/
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: black;
+  text-align: center;
+}
+button:hover,
+button:active {
+  background-color: #2c57b1;
+  color: white;
+}
+input,
+textarea,
+select,
+option,
+label {
+  /*Text*/
+  font-family: 'Cabin', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+input,
+textarea,
+select {
+  /*Design*/
+  border: 1px solid #2c57b1;
+  color: black;
+}
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+select:hover,
+select:focus {
+  background-color: rgba(46, 204, 112, 0.1);
+  border-color: #2c57b1;
+  outline-color: #2c57b1;
+}
+/*FIXME*/
+/*Checkbox Design anpassen*/
+/*Bilder*/
+.bild {
+  width: 240px;
+  height: auto;
+}
+.bild img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bild p {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: #1ba39e;
+  color: white;
+  font-size: 16px;
+}
+.bild:hover {
+  width: 260px;
+  height: auto;
+  cursor: pointer;
+}

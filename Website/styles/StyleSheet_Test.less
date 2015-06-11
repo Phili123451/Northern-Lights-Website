@@ -1,0 +1,407 @@
+﻿
+
+/*Import LESS Files*/
+@import "variables_Test.less";
+@import "mixins_Test.less";
+
+/*Import der genutzen Schriftarten (Google Fonts)*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
+
+/*
+*, *:before, *:after
+{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ box-sizing: border-box;
+ 
+}
+
+*::selection
+{
+    background-color:@color-secondary-orange;
+}
+
+*::-moz-selection
+{
+    background-color:@color-secondary-orange; 
+}*/
+
+
+
+
+body 
+{
+    font-size: @font-size-standard;
+    background-color:white;
+    color:black;
+}
+
+/*BEGINN TESTBEREICH FÜR MODULE*/
+.container
+{
+    width: @max-site-width;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.middle
+{
+    width: @max-column-width;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div
+{
+    /*
+    border-left:solid;
+    border-right:solid;
+    border-width:1px;*/
+}
+/*ENDE TESTBEREICH FÜR MODULE*/
+
+/*Überschriften*/
+h1, h2, h3
+{
+
+    font-family: 'Cabin', 'Arial' , sans-serif;
+    /*FIXME: letter-spacing*/
+    letter-spacing: 0.1em;
+
+    padding-top: @padding-standard;
+    padding-bottom: @padding-standard;
+
+    margin-top: @margin-top-h;
+    margin-bottom: @margin-bottom-h;
+}
+
+h1
+{
+    font-weight:@font-weight-bold;
+    font-size:40px;
+    color: @color-primary-green;
+
+}
+
+h2
+{
+    font-weight:@font-weight-semi-bold;
+    font-size:22px;
+    color: black;
+
+}
+
+h3
+{
+    font-weight:@font-weight-medium;
+    font-size:18px;
+    color:black;
+
+}
+
+/*Links*/
+a
+{
+    color: black;
+    font-family: 'Cabin', 'Arial', sans-serif;
+    font-weight: @font-weight-bold;
+    text-decoration: none;
+
+    &:hover
+    {
+        color: @color-secondary-orange;
+        text-decoration:underline;
+    }
+
+    &:visited
+    {
+        text-decoration:none;
+    }
+}
+
+p
+{
+    //font-family: 'Kreon', 'Times New Roman' ,serif;
+    font-family: 'Merriweather', 'Times New Roman',serif;
+    font-weight: @font-weight-normal;
+    font-size: 0.95em;
+    letter-spacing: 0.1em;
+    line-height: 150%;
+}
+
+/*Fließtext*/
+.fliesstext
+{
+    p
+    {
+        margin-top: 0.25em;
+        margin-bottom: 1.5em;
+
+    }
+}
+
+.infotext
+{
+    font-family: 'Cabin', 'Arial' , sans-serif;
+    font-weight: @font-weight-normal;
+    font-size: 0.75em;
+}
+
+/*Klassen*/
+.quellenangabe
+{
+    font-size: 1em;
+
+    a
+    {
+       font-size: 1em;
+    }
+}
+
+/*Header*/
+.header
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:100px;
+
+    background-color: @color-primary-green;
+}
+
+.header-text
+{
+    width: 940px;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+    text-align:right;
+}
+
+
+/*MENÜS*/
+.menu
+{
+    background-color: white;
+    position: absolute;
+
+    a
+    {
+        display: block;
+        font-family: 'Cabin', sans-serif;
+        color: black;
+    }
+
+        a:hover
+        {
+            text-decoration: none;
+            color: black;
+            background-color: @color-primary-green;
+        }
+
+        a:active
+        {
+            background-color: @color-secondary-orange;
+        }
+}
+
+/*FIXME: Mit Variablen ergänzen*/
+.main-menu
+{
+    width: 940px;
+    height: 40px;
+
+    top:100px;
+
+    a
+    {
+        font-weight: @font-weight-normal;
+        padding-left: 25px;
+        padding-right: 25px;
+        float:left;
+        font-size:2em;
+        line-height:40px;
+        vertical-align:middle;
+    }
+}
+
+
+.sub-menu
+{
+    
+    left:50px;
+
+    a
+    {
+        font-weight: @font-weight-bold;
+        font-size: 1.2em;
+        padding: 1em;
+        line-height: normal;
+    }
+}
+
+.footer-menu
+{
+    position: static;
+    bottom: 0px;
+    background-color: @color-primary-green;
+    width: 100%;
+    height:40px;
+
+    a
+    {
+        float: left;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: white;
+    }
+
+        a.hover
+        {
+            color:@color-secondary-orange;
+        }
+}
+
+.content
+{
+    margin-top: 250px;
+}
+
+/*FORMS*/
+.formular
+{
+
+}
+/*
+button
+{
+
+    border:none;
+    outline:none;
+    
+    background-color: @color-secondary-blue;
+    padding: 10px;
+    
+
+    font-family: 'Cabin', sans-serif;
+    font-weight: @font-weight-bold;
+    font-size: 1em;
+    color:black;
+    text-shadow: 1px 1px 3px #666666;
+    text-align:center;
+}
+    */
+
+button
+{
+    /*Button Design*/
+    border:1px solid @color-secondary-blue;
+    background-color: white;
+    padding: 10px;
+    
+    /*Button Text*/
+    font-family: 'Cabin', sans-serif;
+    font-weight: @font-weight-bold;
+    font-size: 1em;
+    color:black;
+
+    text-align:center;
+}
+
+button:hover, button:active
+{
+    background-color: @color-secondary-blue;
+    color: white;
+}
+
+
+input,
+textarea,
+select,
+option,
+label
+{
+    /*Text*/
+    font-family: 'Cabin', 'Arial' , sans-serif;
+    font-weight: @font-weight-normal;
+    font-size: 1em;
+}
+
+input,
+textarea,
+select
+{
+    /*Design*/
+    border:1px solid @color-secondary-blue;
+    color:black;
+}
+
+
+input:focus, 
+input:hover, 
+textarea:focus, 
+textarea:hover,
+select:hover,
+select:focus
+{
+    background-color: @color-secondary-blue-hsla;
+    border-color: @color-secondary-blue;
+    outline-color: @color-secondary-blue;
+}
+
+/*FIXME*/
+/*Checkbox Design anpassen*/
+
+
+
+/*Bilder*/
+.bild
+{
+    width: 240px;
+    height: auto;
+   
+    //padding: 1em;
+
+    img
+    {
+        width: 100%;
+        height: auto;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    p
+    {
+        padding-top:0.8em;
+        padding-bottom:0.8em;
+        margin-top: 0px;
+        width:100%;
+        text-align:center;
+        background-color: @color-primary-green;
+        color: white;
+        font-size: @font-size-standard;
+    }
+}
+
+    .bild:hover
+    {
+        width: 260px;
+        height: auto;
+        cursor:pointer;
+    }
+
+.bild-galerie
+{
+
+    p
+    {
+    }
+
+    h3
+    {
+    }
+}
