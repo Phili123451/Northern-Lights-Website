@@ -7,7 +7,7 @@
 /*Import der genutzen Schriftarten (Google Fonts)*/
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
 @import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
-
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
 /*
 *, *:before, *:after
 {
@@ -389,9 +389,13 @@ select:focus
 
     .bild:hover
     {
-        width: 260px;
-        height: auto;
-        cursor:pointer;
+        cursor: pointer;
+
+        p
+        {
+            background-color: @color-secondary-orange;
+            color: black;
+        }
     }
 
 .bild-galerie

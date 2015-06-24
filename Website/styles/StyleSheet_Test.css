@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
 @import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
 /*Import LESS Files*/
 /*Farben*/
 /*Font Weights*/
@@ -289,7 +290,9 @@ select:focus {
   font-size: 16px;
 }
 .bild:hover {
-  width: 260px;
-  height: auto;
   cursor: pointer;
+}
+.bild:hover p {
+  background-color: #ffb42a;
+  color: black;
 }
