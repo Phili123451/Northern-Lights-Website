@@ -1,16 +1,13 @@
 ﻿
 
 /*Import LESS Files*/
-@import "variables.less";
-@import "mixins.less";
+@import "variables_Test.less";
+@import "mixins_Test.less";
 
 /*Import der genutzen Schriftarten (Google Fonts)*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
 @import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
-/*@import url(http://fonts.googleapis.com/css?family=Kreon);*/ /*wenn noto dann raus*/
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans);
-@import url(http://fonts.googleapis.com/css?family=Scada:400,700);
-@import url(http://fonts.googleapis.com/css?family=Noto+Serif); /*TEST*/
-
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
 /*
 *, *:before, *:after
 {
@@ -19,17 +16,17 @@
  -ms-box-sizing: border-box;
  box-sizing: border-box;
  
-}*/
+}
 
 *::selection
 {
-    background-color:@light-green;
+    background-color:@color-secondary-orange;
 }
 
 *::-moz-selection
 {
-    background-color:@light-green;
-}
+    background-color:@color-secondary-orange; 
+}*/
 
 
 
@@ -42,19 +39,14 @@ body
 }
 
 /*BEGINN TESTBEREICH FÜR MODULE*/
-.container
+/*.wrapper
 {
     width: @max-site-width;
     margin-left:auto;
     margin-right:auto;
 }
+    */
 
-.middle
-{
-    width: @max-column-width;
-    margin-left:auto;
-    margin-right:auto;
-}
 
 div
 {
@@ -68,8 +60,10 @@ div
 /*Überschriften*/
 h1, h2, h3
 {
-    color: @light-sea-green;
+
     font-family: 'Cabin', 'Arial' , sans-serif;
+    /*FIXME: letter-spacing*/
+    letter-spacing: 0.1em;
 
     padding-top: @padding-standard;
     padding-bottom: @padding-standard;
@@ -81,8 +75,8 @@ h1, h2, h3
 h1
 {
     font-weight:@font-weight-bold;
-    font-size:32px;
-
+    font-size:40px;
+    color: @color-primary-green;
 
 }
 
@@ -90,7 +84,7 @@ h2
 {
     font-weight:@font-weight-semi-bold;
     font-size:22px;
-
+    color: black;
 
 }
 
@@ -98,23 +92,38 @@ h3
 {
     font-weight:@font-weight-medium;
     font-size:18px;
-
+    color:black;
 
 }
 
 /*Links*/
 a
 {
-    .link;
+    color: black;
+    font-family: 'Cabin', 'Arial', sans-serif;
+    font-weight: @font-weight-bold;
+    text-decoration: none;
+
+    &:hover
+    {
+        color: @color-secondary-orange;
+        text-decoration:underline;
+    }
+
+    &:visited
+    {
+        text-decoration:none;
+    }
 }
 
 p
 {
     //font-family: 'Kreon', 'Times New Roman' ,serif;
-    font-family: 'Noto Serif', 'Times New Roman',serif;
+    font-family: 'Merriweather', 'Times New Roman',serif;
     font-weight: @font-weight-normal;
-    font-size: 1em;
-
+    font-size: 0.95em;
+    letter-spacing: 0.1em;
+    line-height: 150%;
 }
 
 /*Fließtext*/
@@ -124,99 +133,145 @@ p
     {
         margin-top: 0.25em;
         margin-bottom: 1.5em;
+
     }
 }
 
 .infotext
 {
-    font-family: 'Fira Sans', 'Arial' , sans-serif;
+    font-family: 'Cabin', 'Arial' , sans-serif;
     font-weight: @font-weight-normal;
     font-size: 0.75em;
 }
 
-/*Klassen*/
+/*
+    Klassen
+*/
 .quellenangabe
 {
-    font-size: 14px;
+    font-size: 1em;
 
     a
     {
-        .link(14px);
+       font-size: 1em;
     }
 }
+
+/*Header*/
+header
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:100px;
+
+    background-color: @color-primary-green;
+}
+
+.header-text
+{
+    width: 940px;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+    text-align:right;
+}
+
 
 /*MENÜS*/
 .menu
 {
-    background-color: @dark-green;
-    position:fixed;
+    background-color: white;
+    position: absolute;
+
     a
     {
-        display:block;
-        font-family: 'Scada', sans-serif;
+        display: block;
+        font-family: 'Cabin', sans-serif;
         color: black;
     }
 
-    a:hover
-    {
-        text-decoration:none;
-        background-color: @light-green;
-    }
+        a:hover
+        {
+            text-decoration: none;
+            color: black;
+            background-color: @color-primary-green;
+        }
 
-    /*FIXME: kann weg*/
-    div:hover
-    {
-        background-color: @light-green;
-    }
+        a:active
+        {
+            background-color: @color-secondary-orange;
+        }
 }
 
 /*FIXME: Mit Variablen ergänzen*/
 .main-menu
 {
     width: 940px;
-    height: 100px;
+    height: 40px;
+    top: 100px;
 
-    top:0px;
-
-    /*FIXME: kann weg*/
-    /*
-    div
+    li
     {
-        width: 180px;
-        height: 100px;
-        float: left;
-        text-align:center;
-    }*/
+        list-style:none;
+    }
 
     a
     {
         font-weight: @font-weight-normal;
-        padding-left: 10px;
-        padding-right: 10px;
-        float:left;
-        font-size:2em;
-        line-height:100px;
-        vertical-align:middle;
+        padding-left: 25px;
+        padding-right: 25px;
+        float: left;
+        font-size: 2em;
+        line-height: 40px;
+        vertical-align: middle;
     }
 }
 
-
+//Untermenü in der linken Spalte
 .sub-menu
 {
+    
     left:50px;
 
     a
     {
         font-weight: @font-weight-bold;
-        font-size: 1em;
+        font-size: 1.2em;
+        padding: 1em;
+        line-height: normal;
     }
 }
 
+//Footer Menü am unteren Ende der Seite
 .footer-menu
 {
-    position:static;
-    bottom:0px;
+    position: static;
+    bottom: 0px;
+    background-color: @color-primary-green;
+    width: 100%;
+    height: 40px;
+
+    li
+    {
+        list-style:none;
+    }
+
+    a
+    {
+        float: left;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: white;
+    }
+
+        a.hover
+        {
+            color: @color-secondary-orange;
+        }
 }
+
 
 .content
 {
@@ -235,11 +290,11 @@ button
     border:none;
     outline:none;
     
-    background-color: @dark-green;
+    background-color: @color-secondary-blue;
     padding: 10px;
     
 
-    font-family: 'Scada', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: @font-weight-bold;
     font-size: 1em;
     color:black;
@@ -251,12 +306,12 @@ button
 button
 {
     /*Button Design*/
-    border:1px solid @dark-green;
+    border:1px solid @color-secondary-blue;
     background-color: white;
     padding: 10px;
     
     /*Button Text*/
-    font-family: 'Scada', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: @font-weight-bold;
     font-size: 1em;
     color:black;
@@ -266,7 +321,8 @@ button
 
 button:hover, button:active
 {
-    background-color: @light-green;
+    background-color: @color-secondary-blue;
+    color: white;
 }
 
 
@@ -277,7 +333,7 @@ option,
 label
 {
     /*Text*/
-    font-family: 'Scada', 'Arial' , sans-serif;
+    font-family: 'Cabin', 'Arial' , sans-serif;
     font-weight: @font-weight-normal;
     font-size: 1em;
 }
@@ -287,7 +343,7 @@ textarea,
 select
 {
     /*Design*/
-    border:1px solid @dark-green;
+    border:1px solid @color-secondary-blue;
     color:black;
 }
 
@@ -299,52 +355,27 @@ textarea:hover,
 select:hover,
 select:focus
 {
-    background-color: @light-green-hsla;
-    border-color: @dark-green;
-    outline-color: @light-green;
+    background-color: @color-secondary-blue-hsla;
+    border-color: @color-secondary-blue;
+    outline-color: @color-secondary-blue;
 }
 
 /*FIXME*/
 /*Checkbox Design anpassen*/
-input[type="checkbox"]
-{
-    display:none;
-}
-
-    input[type="checkbox"] + label span
-    {
-        display:inline-block;
-        width:19px;
-        height:19px;
-        margin:-1px 4px 0 0;
-        vertical-align:middle;
-        background:url('../images/symbols/checkbox_unchecked.png') top left no-repeat;
-        cursor:pointer;
-    }
-
-    input[type="checkbox"]:checked + label span
-    {
-        background:url('../images/symbols/checkbox_checked.png');
-    }
-
-/*FIXME*/
-/*Radio Button Design anpassen*/
-
-
 
 
 
 /*Bilder*/
 .bild
 {
-    width: 300px;
+    width: 240px;
     height: auto;
    
-    padding: 1em;
+    //padding: 1em;
 
     img
     {
-        width: 80%;
+        width: 100%;
         height: auto;
         display:block;
         margin-left:auto;
@@ -353,11 +384,27 @@ input[type="checkbox"]
 
     p
     {
-        padding-top:0.5em;
+        padding-top:0.8em;
+        padding-bottom:0.8em;
+        margin-top: 0px;
         width:100%;
         text-align:center;
+        background-color: @color-primary-green;
+        color: white;
+        font-size: @font-size-standard;
     }
 }
+
+    .bild:hover
+    {
+        cursor: pointer;
+
+        p
+        {
+            background-color: @color-secondary-orange;
+            color: black;
+        }
+    }
 
 .bild-galerie
 {

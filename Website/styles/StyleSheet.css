@@ -1,12 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
 @import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans);
-@import url(http://fonts.googleapis.com/css?family=Scada:400,700);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif);
 /*Import LESS Files*/
 /*Farben*/
-/*Eucalyptus*/
-/*Shamrock*/
-/*Light Sea Green*/
 /*Font Weights*/
 /*Schriftgrößen*/
 /*Standard Padding*/
@@ -21,9 +17,6 @@
 /*Blogeintrag*/
 /*Anpassung Padding, etc.*/
 /*Import der genutzen Schriftarten (Google Fonts)*/
-/*@import url(http://fonts.googleapis.com/css?family=Kreon);*/
-/*wenn noto dann raus*/
-/*TEST*/
 /*
 *, *:before, *:after
 {
@@ -32,29 +25,30 @@
  -ms-box-sizing: border-box;
  box-sizing: border-box;
  
+}
+
+*::selection
+{
+    background-color:@color-secondary-orange;
+}
+
+*::-moz-selection
+{
+    background-color:@color-secondary-orange; 
 }*/
-*::selection {
-  background-color: #2ecc71;
-}
-*::-moz-selection {
-  background-color: #2ecc71;
-}
 body {
   font-size: 16px;
   background-color: white;
   color: black;
 }
 /*BEGINN TESTBEREICH FÜR MODULE*/
-.container {
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
+/*.wrapper
+{
+    width: @max-site-width;
+    margin-left:auto;
+    margin-right:auto;
 }
-.middle {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    */
 div {
   /*
     border-left:solid;
@@ -66,8 +60,9 @@ div {
 h1,
 h2,
 h3 {
-  color: #1ba39c;
   font-family: 'Cabin', 'Arial', sans-serif;
+  /*FIXME: letter-spacing*/
+  letter-spacing: 0.1em;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
   margin-top: 0.25em;
@@ -75,35 +70,39 @@ h3 {
 }
 h1 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 40px;
+  color: #1ba39e;
 }
 h2 {
   font-weight: 600;
   font-size: 22px;
+  color: black;
 }
 h3 {
   font-weight: 500;
   font-size: 18px;
+  color: black;
 }
 /*Links*/
 a {
-  color: #1ba39c;
+  color: black;
   font-family: 'Cabin', 'Arial', sans-serif;
   font-weight: 700;
-  font-size: 16px;
   text-decoration: none;
 }
 a:hover {
-  color: #2ecc71;
+  color: #ffb42a;
   text-decoration: underline;
 }
 a:visited {
   text-decoration: none;
 }
 p {
-  font-family: 'Noto Serif', 'Times New Roman', serif;
+  font-family: 'Merriweather', 'Times New Roman', serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.95em;
+  letter-spacing: 0.1em;
+  line-height: 150%;
 }
 /*Fließtext*/
 .fliesstext p {
@@ -111,68 +110,69 @@ p {
   margin-bottom: 1.5em;
 }
 .infotext {
-  font-family: 'Fira Sans', 'Arial', sans-serif;
+  font-family: 'Cabin', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 0.75em;
 }
-/*Klassen*/
+/*
+    Klassen
+*/
 .quellenangabe {
-  font-size: 14px;
+  font-size: 1em;
 }
 .quellenangabe a {
-  color: #1ba39c;
-  font-family: 'Cabin', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
+  font-size: 1em;
 }
-.quellenangabe a:hover {
-  color: #2ecc71;
-  text-decoration: underline;
+/*Header*/
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100px;
+  background-color: #1ba39e;
 }
-.quellenangabe a:visited {
-  text-decoration: none;
+.header-text {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: right;
 }
 /*MENÜS*/
 .menu {
-  background-color: #26a65b;
-  position: fixed;
-  /*FIXME: kann weg*/
+  background-color: white;
+  position: absolute;
 }
 .menu a {
   display: block;
-  font-family: 'Scada', sans-serif;
+  font-family: 'Cabin', sans-serif;
   color: black;
 }
 .menu a:hover {
   text-decoration: none;
-  background-color: #2ecc71;
+  color: black;
+  background-color: #1ba39e;
 }
-.menu div:hover {
-  background-color: #2ecc71;
+.menu a:active {
+  background-color: #ffb42a;
 }
 /*FIXME: Mit Variablen ergänzen*/
 .main-menu {
   width: 940px;
-  height: 100px;
-  top: 0px;
-  /*FIXME: kann weg*/
-  /*
-    div
-    {
-        width: 180px;
-        height: 100px;
-        float: left;
-        text-align:center;
-    }*/
+  height: 40px;
+  top: 100px;
+}
+.main-menu li {
+  list-style: none;
 }
 .main-menu a {
   font-weight: 400;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
   float: left;
   font-size: 2em;
-  line-height: 100px;
+  line-height: 40px;
   vertical-align: middle;
 }
 .sub-menu {
@@ -180,11 +180,28 @@ p {
 }
 .sub-menu a {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.2em;
+  padding: 1em;
+  line-height: normal;
 }
 .footer-menu {
   position: static;
   bottom: 0px;
+  background-color: #1ba39e;
+  width: 100%;
+  height: 40px;
+}
+.footer-menu li {
+  list-style: none;
+}
+.footer-menu a {
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+}
+.footer-menu a.hover {
+  color: #ffb42a;
 }
 .content {
   margin-top: 250px;
@@ -197,11 +214,11 @@ button
     border:none;
     outline:none;
     
-    background-color: @dark-green;
+    background-color: @color-secondary-blue;
     padding: 10px;
     
 
-    font-family: 'Scada', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: @font-weight-bold;
     font-size: 1em;
     color:black;
@@ -211,11 +228,11 @@ button
     */
 button {
   /*Button Design*/
-  border: 1px solid #26a65b;
+  border: 1px solid #2c57b1;
   background-color: white;
   padding: 10px;
   /*Button Text*/
-  font-family: 'Scada', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-weight: 700;
   font-size: 1em;
   color: black;
@@ -223,7 +240,8 @@ button {
 }
 button:hover,
 button:active {
-  background-color: #2ecc71;
+  background-color: #2c57b1;
+  color: white;
 }
 input,
 textarea,
@@ -231,7 +249,7 @@ select,
 option,
 label {
   /*Text*/
-  font-family: 'Scada', 'Arial', sans-serif;
+  font-family: 'Cabin', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 1em;
 }
@@ -239,7 +257,7 @@ input,
 textarea,
 select {
   /*Design*/
-  border: 1px solid #26a65b;
+  border: 1px solid #2c57b1;
   color: black;
 }
 input:focus,
@@ -249,43 +267,37 @@ textarea:hover,
 select:hover,
 select:focus {
   background-color: rgba(46, 204, 112, 0.1);
-  border-color: #26a65b;
-  outline-color: #2ecc71;
+  border-color: #2c57b1;
+  outline-color: #2c57b1;
 }
 /*FIXME*/
 /*Checkbox Design anpassen*/
-input[type="checkbox"] {
-  display: none;
-}
-input[type="checkbox"] + label span {
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  margin: -1px 4px 0 0;
-  vertical-align: middle;
-  background: url('../images/symbols/checkbox_unchecked.png') top left no-repeat;
-  cursor: pointer;
-}
-input[type="checkbox"]:checked + label span {
-  background: url('../images/symbols/checkbox_checked.png');
-}
-/*FIXME*/
-/*Radio Button Design anpassen*/
 /*Bilder*/
 .bild {
-  width: 300px;
+  width: 240px;
   height: auto;
-  padding: 1em;
 }
 .bild img {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .bild p {
-  padding-top: 0.5em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-top: 0px;
   width: 100%;
   text-align: center;
+  background-color: #1ba39e;
+  color: white;
+  font-size: 16px;
+}
+.bild:hover {
+  cursor: pointer;
+}
+.bild:hover p {
+  background-color: #ffb42a;
+  color: black;
 }

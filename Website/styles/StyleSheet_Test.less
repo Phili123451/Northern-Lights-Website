@@ -39,19 +39,14 @@ body
 }
 
 /*BEGINN TESTBEREICH FÜR MODULE*/
-.container
+/*.wrapper
 {
     width: @max-site-width;
     margin-left:auto;
     margin-right:auto;
 }
+    */
 
-.middle
-{
-    width: @max-column-width;
-    margin-left:auto;
-    margin-right:auto;
-}
 
 div
 {
@@ -149,7 +144,9 @@ p
     font-size: 0.75em;
 }
 
-/*Klassen*/
+/*
+    Klassen
+*/
 .quellenangabe
 {
     font-size: 1em;
@@ -161,7 +158,7 @@ p
 }
 
 /*Header*/
-.header
+header
 {
     position:absolute;
     top:0px;
@@ -213,22 +210,26 @@ p
 {
     width: 940px;
     height: 40px;
+    top: 100px;
 
-    top:100px;
+    li
+    {
+        list-style:none;
+    }
 
     a
     {
         font-weight: @font-weight-normal;
         padding-left: 25px;
         padding-right: 25px;
-        float:left;
-        font-size:2em;
-        line-height:40px;
-        vertical-align:middle;
+        float: left;
+        font-size: 2em;
+        line-height: 40px;
+        vertical-align: middle;
     }
 }
 
-
+//Untermenü in der linken Spalte
 .sub-menu
 {
     
@@ -243,13 +244,19 @@ p
     }
 }
 
+//Footer Menü am unteren Ende der Seite
 .footer-menu
 {
     position: static;
     bottom: 0px;
     background-color: @color-primary-green;
     width: 100%;
-    height:40px;
+    height: 40px;
+
+    li
+    {
+        list-style:none;
+    }
 
     a
     {
@@ -261,9 +268,10 @@ p
 
         a.hover
         {
-            color:@color-secondary-orange;
+            color: @color-secondary-orange;
         }
 }
+
 
 .content
 {
