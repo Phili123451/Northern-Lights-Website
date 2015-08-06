@@ -88,14 +88,14 @@ a {
   color: black;
   font-family: 'Cabin', 'Arial', sans-serif;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: #ffb42a;
   text-decoration: underline;
 }
 a:visited {
-  text-decoration: none;
+  text-decoration: underline;
 }
 p {
   font-family: 'Merriweather', 'Times New Roman', serif;
@@ -148,6 +148,7 @@ header {
   display: block;
   font-family: 'Cabin', sans-serif;
   color: black;
+  text-decoration: none;
 }
 .menu a:hover {
   text-decoration: none;
@@ -155,6 +156,9 @@ header {
   background-color: #1ba39e;
 }
 .menu a:active {
+  background-color: #ffb42a;
+}
+.link-active {
   background-color: #ffb42a;
 }
 /*FIXME: Mit Variablen ergänzen*/
@@ -199,9 +203,11 @@ header {
   padding-left: 25px;
   padding-right: 25px;
   color: white;
+  text-decoration: none;
 }
-.footer-menu a.hover {
+.footer-menu a:hover {
   color: #ffb42a;
+  text-decoration: underline;
 }
 .content {
   margin-top: 250px;
@@ -266,7 +272,7 @@ textarea:focus,
 textarea:hover,
 select:hover,
 select:focus {
-  background-color: rgba(46, 204, 112, 0.1);
+  background-color: rgba(44, 86, 175, 0.2);
   border-color: #2c57b1;
   outline-color: #2c57b1;
 }
@@ -300,4 +306,15 @@ select:focus {
 .bild:hover p {
   background-color: #ffb42a;
   color: black;
+}
+/*Blog*/
+.blog-article {
+  /*Abstände*/
+}
+/*Referenzen*/
+.referenzen-article {
+  background-color: rgba(44, 86, 175, 0.2);
+}
+.corp-logo {
+  color: green;
 }

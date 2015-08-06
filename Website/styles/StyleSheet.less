@@ -1,8 +1,8 @@
 ﻿
 
 /*Import LESS Files*/
-@import "variables_Test.less";
-@import "mixins_Test.less";
+@import "variables.less";
+@import "mixins.less";
 
 /*Import der genutzen Schriftarten (Google Fonts)*/
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
@@ -102,7 +102,7 @@ a
     color: black;
     font-family: 'Cabin', 'Arial', sans-serif;
     font-weight: @font-weight-bold;
-    text-decoration: none;
+    text-decoration: underline;
 
     &:hover
     {
@@ -112,7 +112,7 @@ a
 
     &:visited
     {
-        text-decoration:none;
+        text-decoration:underline;
     }
 }
 
@@ -190,6 +190,7 @@ header
         display: block;
         font-family: 'Cabin', sans-serif;
         color: black;
+        text-decoration:none;
     }
 
         a:hover
@@ -203,6 +204,11 @@ header
         {
             background-color: @color-secondary-orange;
         }
+}
+
+.link-active
+{
+    background-color:@color-secondary-orange;
 }
 
 /*FIXME: Mit Variablen ergänzen*/
@@ -264,11 +270,13 @@ header
         padding-left: 25px;
         padding-right: 25px;
         color: white;
+        text-decoration:none;
     }
 
-        a.hover
+        a:hover
         {
             color: @color-secondary-orange;
+            text-decoration:underline;
         }
 }
 
@@ -416,4 +424,25 @@ select:focus
     h3
     {
     }
+}
+
+/*Blog*/
+.blog-article
+{
+    /*Abstände*/
+    
+}
+
+
+/*Referenzen*/
+.referenzen-article
+{
+    background-color:@color-secondary-blue-hsla;
+}
+
+//Firmenlogo (Referenzen)
+.corp-logo
+{
+    //Logo
+    color:green;
 }
