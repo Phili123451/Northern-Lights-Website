@@ -5,10 +5,21 @@
 @import "mixins.less";
 
 /*Import der genutzen Schriftarten (Google Fonts)*/
+/*
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
 @import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif);
-/*
+*/
+
+@font-face
+{
+    font-family: Merriweather;
+    //src: url(../fonts/merriweather/Merriweather-Regular.ttf);
+    src:url(http://fonts.googleapis.com/css?family=Merriweather);
+}
+
+
+
 *, *:before, *:after
 {
  -webkit-box-sizing: border-box;
@@ -17,7 +28,7 @@
  box-sizing: border-box;
  
 }
-
+/*
 *::selection
 {
     background-color:@color-secondary-orange;
@@ -58,7 +69,7 @@ div
 /*ENDE TESTBEREICH FÜR MODULE*/
 
 /*Überschriften*/
-h1, h2, h3
+h1, h2, h3, h4
 {
 
     font-family: 'Cabin', 'Arial' , sans-serif;
@@ -83,7 +94,7 @@ h1
 h2
 {
     font-weight:@font-weight-semi-bold;
-    font-size:22px;
+    font-size:30px;
     color: black;
 
 }
@@ -91,9 +102,16 @@ h2
 h3
 {
     font-weight:@font-weight-medium;
-    font-size:18px;
+    font-size:22px;
     color:black;
 
+}
+
+h4
+{
+    font-weight:@font-weight-medium;
+    font-size:18px;
+    color:black;
 }
 
 /*Links*/
@@ -118,8 +136,8 @@ a
 
 p
 {
-    //font-family: 'Kreon', 'Times New Roman' ,serif;
     font-family: 'Merriweather', 'Times New Roman',serif;
+    //font-family: 'Noto Serif', serif;
     font-weight: @font-weight-normal;
     font-size: 0.95em;
     letter-spacing: 0.1em;
@@ -149,17 +167,18 @@ p
 */
 .quellenangabe
 {
-    font-size: 1em;
+    font-size: 0.75em;
 
     a
     {
-       font-size: 1em;
+
     }
 }
 
 /*Header*/
 header
 {
+    /*FIXME: Positionierung muss in die media queries*/
     position:absolute;
     top:0px;
     left:0px;
@@ -183,7 +202,12 @@ header
 .menu
 {
     background-color: white;
-    position: absolute;
+    //position: absolute;
+
+    li
+    {
+        list-style:none;
+    }
 
     a
     {
@@ -214,14 +238,13 @@ header
 /*FIXME: Mit Variablen ergänzen*/
 .main-menu
 {
+    /*
     width: 940px;
     height: 40px;
     top: 100px;
-
-    li
-    {
-        list-style:none;
-    }
+        */
+    margin-left:auto;
+    margin-right:auto;
 
     a
     {
@@ -239,7 +262,7 @@ header
 .sub-menu
 {
     
-    left:50px;
+    //left:50px;
 
     a
     {
@@ -259,11 +282,6 @@ header
     width: 100%;
     height: 40px;
 
-    li
-    {
-        list-style:none;
-    }
-
     a
     {
         float: left;
@@ -280,6 +298,19 @@ header
         }
 }
 
+.footer-list-main
+{
+
+}
+
+.footer-list-sub
+{
+    li
+    {
+
+    }
+}
+
 
 .content
 {
@@ -291,25 +322,11 @@ header
 {
 
 }
-/*
-button
+
+.form-required-sign
 {
-
-    border:none;
-    outline:none;
-    
-    background-color: @color-secondary-blue;
-    padding: 10px;
-    
-
-    font-family: 'Cabin', sans-serif;
-    font-weight: @font-weight-bold;
-    font-size: 1em;
-    color:black;
-    text-shadow: 1px 1px 3px #666666;
-    text-align:center;
+    color:red;
 }
-    */
 
 button
 {
@@ -334,16 +351,41 @@ button:hover, button:active
 }
 
 
+/*FIXME: Width für die Elemente wie Label, Textarea, etc. setzen --> aber für responsive*/
+
 input,
 textarea,
 select,
 option,
-label
+label,
+legend,
+fieldset,
+form
 {
     /*Text*/
     font-family: 'Cabin', 'Arial' , sans-serif;
     font-weight: @font-weight-normal;
     font-size: 1em;
+    
+    /* Aus der Vorlesung
+    vertical-align:baseline;
+    padding:0;
+    margin:0;
+        */
+}
+
+label
+{
+    display:block;
+    float:left;
+
+}
+
+fieldset
+{
+    //border-width:0;
+    border-color:@color-secondary-blue;
+    padding-left:0.25em;
 }
 
 input,
@@ -367,10 +409,6 @@ select:focus
     border-color: @color-secondary-blue;
     outline-color: @color-secondary-blue;
 }
-
-/*FIXME*/
-/*Checkbox Design anpassen*/
-
 
 
 /*Bilder*/
@@ -426,18 +464,32 @@ select:focus
     }
 }
 
-/*Blog*/
+/*Blog*/ //FIXME: Sollte in den media query teil
 .blog-article
 {
     /*Abstände*/
-    
+    //p
+    //{
+        //font-size:5em;
+    //}
+}
+
+//FIXME: Sollte in den media query teil
+.blog-text
+{
+    //Formatierung 
 }
 
 
 /*Referenzen*/
 .referenzen-article
 {
-    background-color:@color-secondary-blue-hsla;
+    
+}
+
+.referenz-small
+{
+
 }
 
 //Firmenlogo (Referenzen)
@@ -446,3 +498,55 @@ select:focus
     //Logo
     color:green;
 }
+
+/*Kontakt Sidebar*/
+.contact-info
+{
+    background-color:@color-secondary-blue-hsla;
+}
+
+/*Zitat*/
+blockquote
+{
+}
+
+.zitat
+{
+    //font-family: 'Merriweather', 'Times New Roman',serif;
+    color:@color-secondary-blue;
+    font-weight:@font-weight-normal-italic;
+}
+
+    .zitat:before
+    {
+        content:open-quote;
+    }
+
+    .zitat:after
+    {
+        content:close-quote;
+    }
+
+.autor
+{
+    //font-family: 'Merriweather', 'Times New Roman',serif;
+    font-weight:@font-weight-normal;
+}
+
+/*
+cite
+{
+
+}
+
+cite:before
+{
+    content:open-quote;
+}
+
+cite::after
+{
+    content:close-quote;
+}*/
+
+//FIXME: Zitat + Copyright + R
