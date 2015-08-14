@@ -1,0 +1,21 @@
+/*Import LESS Files*/
+/*Farben*/
+/*Font Weights*/
+/*Schriftgrößen*/
+/*Standard Padding*/
+/*Abstände zwischen Textblöcken, Überschriften, etc.*/
+/*h1*/
+/*h2*/
+/*h3*/
+/*Breite und Höhe*/
+/*Import LESS Files*/
+/*Links*/
+/*Impressum Überschriften*/
+/*Blogeintrag*/
+/*Anpassung Padding, etc.*/
+@media screen and (min-width: 481px) {
+  h1 {
+    font-size: 100px;
+    color: #f00;
+  }
+}

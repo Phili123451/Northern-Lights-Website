@@ -1,0 +1,635 @@
+﻿
+
+/*Import LESS Files*/
+@import "variables.less";
+@import "mixins.less";
+
+/*Import der genutzen Schriftarten (Google Fonts)*/
+/*FIXME: MUss hier raus
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
+*/
+
+///////////////////////////////////////////////////
+// Schriftarten
+///////////////////////////////////////////////////
+
+/*Zitate*/
+@font-face 
+{
+    font-family: 'merriweatheritalic';
+    src: url('../fonts/merriweather/merriweather-italic-webfont.eot');
+    src: url('../fonts/merriweather/merriweather-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merriweather/merriweather-italic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather/merriweather-italic-webfont.woff') format('woff'),
+         url('../fonts/merriweather/merriweather-italic-webfont.ttf') format('truetype'),
+         url('../fonts/merriweather/merriweather-italic-webfont.svg#merriweatheritalic') format('svg');
+    font-weight: @font-weight-normal;
+    font-style: italic;
+
+}
+
+/*Fließtext*/
+@font-face 
+{
+    font-family: 'merriweatherregular';
+    src: url('../fonts/merriweather/merriweather-regular-webfont.eot');
+    src: url('../fonts/merriweather/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merriweather/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather/merriweather-regular-webfont.woff') format('woff'),
+         url('../fonts/merriweather/merriweather-regular-webfont.ttf') format('truetype'),
+         url('../fonts/merriweather/merriweather-regular-webfont.svg#merriweatherregular') format('svg');
+    font-weight: @font-weight-normal;
+    font-style: normal;
+
+}
+
+/*Serifenlose Schrift für Infotext, Links und Überschriften*/
+@font-face 
+{
+    font-family: 'cabinbold';
+    src: url('../fonts/cabin/cabin-bold-webfont.eot');
+    src: url('../fonts/cabin/cabin-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin/cabin-bold-webfont.woff2') format('woff2'),
+         url('../fonts/cabin/cabin-bold-webfont.woff') format('woff'),
+         url('../fonts/cabin/cabin-bold-webfont.ttf') format('truetype'),
+         url('../fonts/cabin/cabin-bold-webfont.svg#cabinbold') format('svg');
+    font-weight: @font-weight-bold;
+    font-style: normal;
+
+}
+
+/*Serifenlose Schrift für Infotext, Links und Überschriften*/
+@font-face 
+{
+    font-family: 'cabinmedium';
+    src: url('../fonts/cabin/cabin-medium-webfont.eot');
+    src: url('../fonts/cabin/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin/cabin-medium-webfont.woff2') format('woff2'),
+         url('../fonts/cabin/cabin-medium-webfont.woff') format('woff'),
+         url('../fonts/cabin/cabin-medium-webfont.ttf') format('truetype'),
+         url('../fonts/cabin/cabin-medium-webfont.svg#cabinmedium') format('svg');
+    font-weight: @font-weight-normal;
+    font-style: normal;
+
+}
+
+/*Serifenlose Schrift für Infotext, Links und Überschriften*/
+@font-face 
+{
+    font-family: 'cabinregular';
+    src: url('../fonts/cabin/cabin-regular-webfont.eot');
+    src: url('../fonts/cabin/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin/cabin-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cabin/cabin-regular-webfont.woff') format('woff'),
+         url('../fonts/cabin/cabin-regular-webfont.ttf') format('truetype'),
+         url('../fonts/cabin/cabin-regular-webfont.svg#cabinregular') format('svg');
+    font-weight: @font-weight-normal;
+    font-style: normal;
+
+}
+
+/*Serifenlose Schrift für Infotext, Links und Überschriften*/
+@font-face 
+{
+    font-family: 'cabinsemibold';
+    src: url('../fonts/cabin/cabin-semibold-webfont.eot');
+    src: url('../fonts/cabin/cabin-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin/cabin-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/cabin/cabin-semibold-webfont.woff') format('woff'),
+         url('../fonts/cabin/cabin-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/cabin/cabin-semibold-webfont.svg#cabinsemibold') format('svg');
+    font-weight: @font-weight-semi-bold;
+    font-style: normal;
+
+}
+
+
+///////////////////////////////////////////////////
+// Basisdesign
+///////////////////////////////////////////////////
+
+*, *:before, *:after
+{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ box-sizing: border-box;
+ 
+}
+/*
+*::selection
+{
+    background-color:@color-secondary-orange;
+}
+
+*::-moz-selection
+{
+    background-color:@color-secondary-orange; 
+}*/
+
+
+
+
+body 
+{
+    font-size: @font-size-standard;
+    background-color:white;
+    color:black;
+}
+
+/*BEGINN TESTBEREICH FÜR MODULE*/
+.wrapper //FIXME: Muss in die media-queries
+{
+    //width: @max-site-width;
+    //position:absolute;
+    //top:0px;
+    margin-left:auto;
+    margin-right:auto;
+/*    margin-top:0px;
+    padding-top:0;
+    */
+
+    padding-left:15px;
+    padding-right:15px;
+}
+
+
+
+div
+{
+    /*
+    border-left:solid;
+    border-right:solid;
+    border-width:1px;*/
+}
+/*ENDE TESTBEREICH FÜR MODULE*/
+
+/*Überschriften*/
+h1, h2, h3, h4
+{
+
+    font-family: 'Cabin', 'Arial' , sans-serif;
+    /*FIXME: letter-spacing*/
+    letter-spacing: 0.1em;
+
+    //FIXME: Muss hier raus
+    /*
+    padding-top: @padding-standard;
+    padding-bottom: @padding-standard;
+
+    margin-top: @margin-top-h;
+    margin-bottom: @margin-bottom-h;
+    */
+}
+
+h1
+{
+    font-family: 'cabinbold', 'Arial' , sans-serif;
+    font-size:40px; //FIXME: Muss hier raus
+    color: @color-primary-green;
+
+}
+
+h2
+{
+    font-family: 'cabinsemibold', 'Arial' , sans-serif;
+    font-size:30px; //FIXME: Muss hier raus
+    color: black;
+
+}
+
+h3
+{
+    font-family: cabinmedium, 'Arial' , sans-serif;
+    font-size:22px; //FIXME: Muss hier raus
+    color:black;
+
+}
+
+h4
+{
+    font-family: 'cabinmedium', 'Arial' , sans-serif;
+    font-size:18px;//FIXME: Muss hier raus
+    color:black;
+}
+
+/*Links*/
+a
+{
+    font-family: cabinbold, 'Arial', sans-serif;
+    text-decoration: underline;
+    color: black;
+
+    &:hover
+    {
+        color: @color-secondary-orange;
+        text-decoration:underline;
+    }
+
+    &:visited
+    {
+        text-decoration:underline;
+    }
+}
+
+p
+{
+    font-family: 'merriweatherregular', 'Times New Roman',serif;
+    //font-family: 'Noto Serif', serif;
+    //font-weight: @font-weight-normal;
+    font-size: 0.95em; //FIXME: Muss hier raus
+    letter-spacing: 0.1em;
+    line-height: 150%;
+}
+
+
+/*
+    Klassen
+*/
+/*Fließtext*/
+.fliesstext //FIXME: Muss hier raus
+{
+    p
+    {
+        margin-top: 0.25em;
+        margin-bottom: 1.5em;
+
+    }
+}
+
+.infotext
+{
+    font-family: 'cabinregular', 'Arial' , sans-serif;
+    font-size: 0.75em; //FIXME: Muss hier raus
+}
+
+.quellenangabe
+{
+    font-size: 0.75em;
+
+    a
+    {
+
+    }
+}
+
+/*Header*/
+header
+{
+    /*FIXME: Positionierung muss in die media queries*/
+/*    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:100px;
+    */
+
+    background-color: @color-primary-green;
+}
+
+.header-text //FIXME: Muss hier raus
+{
+    //width: 940px;
+    margin-left:auto;
+    margin-right:auto;
+    color: white; //Das bleibt hier
+    text-align:right;
+}
+
+
+/*MENÜS*/
+.menu
+{
+    background-color: white;
+    //position: absolute;
+
+    li
+    {
+        list-style:none;
+    }
+
+    a
+    {
+        display: block;
+        font-family: cabinregular, 'Arial', sans-serif;
+        color: black;
+        text-decoration:none;
+    }
+
+        a:hover
+        {
+            text-decoration: none;
+            color: black;
+            background-color: @color-primary-green;
+        }
+
+        a:active
+        {
+            background-color: @color-secondary-orange;
+        }
+}
+
+.link-active
+{
+    background-color:@color-secondary-orange;
+}
+
+/*FIXME: Mit Variablen ergänzen*/
+.main-menu //FIXME: Muss hier raus
+{
+    /*
+    width: 940px;
+    height: 40px;
+    top: 100px;
+        */
+    margin-left:auto;
+    margin-right:auto;
+
+    a
+    {
+        padding-left: 25px;
+        padding-right: 25px;
+        float: left;
+        font-size: 2em;
+        line-height: 40px;
+        vertical-align: middle;
+    }
+}
+
+//Untermenü in der linken Spalte
+.sub-menu //FIXME: Muss hier raus
+{
+    
+    //left:50px;
+
+    a
+    {
+        font-family: cabinbold, 'Arial', sans-serif;
+        font-size: 1.2em;
+        padding: 1em;
+        line-height: normal;
+    }
+}
+
+//Footer Menü am unteren Ende der Seite
+.footer-menu //FIXME: Muss hier raus
+{
+//    position: static;
+//    bottom: 0px;
+    background-color: @color-primary-green;
+//    width: 100%;
+//    height: 40px;
+
+    a
+    {
+        float: left;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: white;
+        text-decoration:none;
+    }
+
+        a:hover
+        {
+            color: @color-secondary-orange;
+            text-decoration:underline;
+        }
+}
+
+.footer-list-main
+{
+
+}
+
+.footer-list-sub
+{
+    li
+    {
+
+    }
+}
+
+//FIXME: Kann wahrscheinlich komplett raus, da bootstrap Klasse .container
+.content
+{
+    margin-top: 250px;
+}
+
+/*FORMS*/
+.formular
+{
+
+}
+
+.form-required-sign
+{
+    color:red;
+}
+
+button
+{
+    /*Button Design*/
+    border:1px solid @color-secondary-blue;
+    background-color: white;
+    padding: 10px;
+    
+    /*Button Text*/
+    font-family: 'Cabin', sans-serif;
+    font-weight: @font-weight-bold;
+    font-size: 1em;
+    color:black;
+
+    text-align:center;
+}
+
+button:hover, button:active
+{
+    background-color: @color-secondary-blue;
+    color: white;
+}
+
+
+/*FIXME: Width für die Elemente wie Label, Textarea, etc. setzen --> aber für responsive*/
+
+input,
+textarea,
+select,
+option,
+label,
+legend,
+fieldset,
+form
+{
+    /*Text*/
+    font-family: cabinregular, 'Arial' , sans-serif;
+    //font-weight: @font-weight-normal;
+    font-size: 1em;
+    
+    /* Aus der Vorlesung
+    vertical-align:baseline;
+    padding:0;
+    margin:0;
+        */
+}
+
+label
+{
+    display:block;
+    float:left;
+
+}
+
+fieldset
+{
+    //border-width:0;
+    border-color:@color-secondary-blue;
+    padding-left:0.25em;
+}
+
+input,
+textarea,
+select
+{
+    /*Design*/
+    border:1px solid @color-secondary-blue;
+    color:black;
+}
+
+
+input:focus, 
+input:hover, 
+textarea:focus, 
+textarea:hover,
+select:hover,
+select:focus
+{
+    background-color: @color-secondary-blue-hsla;
+    border-color: @color-secondary-blue;
+    outline-color: @color-secondary-blue;
+}
+
+
+/*Bilder*/
+.bild
+{
+    width: 240px;
+    height: auto;
+   
+    //padding: 1em;
+
+    img
+    {
+        width: 100%;
+        height: auto;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    p
+    {
+        padding-top:0.8em;
+        padding-bottom:0.8em;
+        margin-top: 0px;
+        width:100%;
+        text-align:center;
+        background-color: @color-primary-green;
+        color: white;
+        font-size: @font-size-standard;
+    }
+}
+
+    .bild:hover
+    {
+        cursor: pointer;
+
+        p
+        {
+            background-color: @color-secondary-orange;
+            color: black;
+        }
+    }
+
+.bild-galerie
+{
+
+    p
+    {
+    }
+
+    h3
+    {
+    }
+}
+
+/*Blog*/ //FIXME: Sollte in den media query teil
+.blog-article
+{
+    /*Abstände*/
+    //p
+    //{
+        //font-size:5em;
+    //}
+}
+
+//FIXME: Sollte in den media query teil
+.blog-text
+{
+    //Formatierung 
+}
+
+
+/*Referenzen*/
+.referenzen-article
+{
+    
+}
+
+.referenz-small
+{
+
+}
+
+//Firmenlogo (Referenzen)
+.corp-logo
+{
+    //Logo
+    color:green;
+}
+
+/*Kontakt Sidebar*/
+.contact-info
+{
+    background-color:@color-secondary-blue-hsla;
+}
+
+/*Zitat*/
+blockquote
+{
+}
+
+.zitat
+{
+    font-family: 'merriweatheritalic', 'Times New Roman',serif;
+    color:@color-secondary-blue;
+}
+
+.zitat:before
+{
+    content:open-quote;
+}
+
+.zitat:after
+{
+    content:close-quote;
+}
+
+.autor
+{
+    //font-family: 'Merriweather', 'Times New Roman',serif;
+    //font-weight:@font-weight-normal;
+}
+
+//FIXME: Zitat + Copyright + R
