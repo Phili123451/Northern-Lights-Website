@@ -1,0 +1,89 @@
+/*Import LESS Files*/
+/*Farben*/
+/*Font Weights*/
+/*Schriftgrößen*/
+/*Standard Padding*/
+/*Abstände zwischen Textblöcken, Überschriften, etc.*/
+/*h1*/
+/*h2*/
+/*h3*/
+/*Breite und Höhe*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  /*mobile Menü */
+  /*Überschriften
+    h1, h2, h3, h4
+    {
+        letter-spacing: 0.1em;
+    }
+
+    h1
+    {
+        font-size:40px; //FIXME: Muss hier raus
+    }
+
+    h2
+    {
+        font-size:30px; //FIXME: Muss hier raus
+    }
+
+    h3
+    {
+        font-size:22px; //FIXME: Muss hier raus
+    }
+
+    h4
+    {
+        font-size:18px;//FIXME: Muss hier raus
+    }
+    */
+  p {
+    font-size: 0.95em;
+    letter-spacing: 0.1em;
+    line-height: 150%;
+  }
+  /*Fließtext*/
+  .fliesstext p {
+    margin-top: 0.25em;
+    margin-bottom: 1.5em;
+  }
+  .infotext {
+    font-size: 0.75em;
+  }
+  .quellenangabe {
+    font-size: 0.75em;
+  }
+  .header-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+  }
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    /*    margin-top:0px;
+        padding-top:0;
+        */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-menu {
+    /*
+        width: 940px;
+        height: 40px;
+        top: 100px;
+            */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-menu a {
+    padding-left: 25px;
+    padding-right: 25px;
+    float: left;
+    font-size: 2em;
+    line-height: 40px;
+    vertical-align: middle;
+  }
+}

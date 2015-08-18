@@ -8,11 +8,6 @@
 /*h2*/
 /*h3*/
 /*Breite und Höhe*/
-/*Import LESS Files*/
-/*Links*/
-/*Impressum Überschriften*/
-/*Blogeintrag*/
-/*Anpassung Padding, etc.*/
 /*Import der genutzen Schriftarten (Google Fonts)*/
 /*FIXME: MUss hier raus
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
@@ -86,20 +81,10 @@
     background-color:@color-secondary-orange; 
 }*/
 body {
-  font-size: 16px;
   background-color: white;
   color: black;
 }
 /*BEGINN TESTBEREICH FÜR MODULE*/
-.wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  /*    margin-top:0px;
-    padding-top:0;
-    */
-  padding-left: 15px;
-  padding-right: 15px;
-}
 div {
   /*
     border-left:solid;
@@ -108,39 +93,20 @@ div {
 }
 /*ENDE TESTBEREICH FÜR MODULE*/
 /*Überschriften*/
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Cabin', 'Arial', sans-serif;
-  /*FIXME: letter-spacing*/
-  letter-spacing: 0.1em;
-  /*
-    padding-top: @padding-standard;
-    padding-bottom: @padding-standard;
-
-    margin-top: @margin-top-h;
-    margin-bottom: @margin-bottom-h;
-    */
-}
 h1 {
-  font-family: 'cabinbold', 'Arial', sans-serif;
-  font-size: 40px;
+  font-family: cabinbold, 'Arial', sans-serif;
   color: #1ba39e;
 }
 h2 {
   font-family: 'cabinsemibold', 'Arial', sans-serif;
-  font-size: 30px;
   color: black;
 }
 h3 {
-  font-family: cabinmedium, 'Arial', sans-serif;
-  font-size: 22px;
+  font-family: 'cabinmedium', 'Arial', sans-serif;
   color: black;
 }
 h4 {
   font-family: 'cabinmedium', 'Arial', sans-serif;
-  font-size: 18px;
   color: black;
 }
 /*Links*/
@@ -158,24 +124,12 @@ a:visited {
 }
 p {
   font-family: 'merriweatherregular', 'Times New Roman', serif;
-  font-size: 0.95em;
-  letter-spacing: 0.1em;
-  line-height: 150%;
 }
 /*
     Klassen
 */
-/*Fließtext*/
-.fliesstext p {
-  margin-top: 0.25em;
-  margin-bottom: 1.5em;
-}
 .infotext {
   font-family: 'cabinregular', 'Arial', sans-serif;
-  font-size: 0.75em;
-}
-.quellenangabe {
-  font-size: 0.75em;
 }
 /*Header*/
 header {
@@ -189,10 +143,8 @@ header {
   background-color: #1ba39e;
 }
 .header-text {
-  margin-left: auto;
-  margin-right: auto;
+  font-family: cabinbold, Arial, sans-serif;
   color: white;
-  text-align: right;
 }
 /*MENÜS*/
 .menu {
@@ -219,23 +171,7 @@ header {
   background-color: #ffb42a;
 }
 /*FIXME: Mit Variablen ergänzen*/
-.main-menu {
-  /*
-    width: 940px;
-    height: 40px;
-    top: 100px;
-        */
-  margin-left: auto;
-  margin-right: auto;
-}
-.main-menu a {
-  padding-left: 25px;
-  padding-right: 25px;
-  float: left;
-  font-size: 2em;
-  line-height: 40px;
-  vertical-align: middle;
-}
+/*FIXME: Ab hier weitermachen*/
 .sub-menu a {
   font-family: cabinbold, 'Arial', sans-serif;
   font-size: 1.2em;

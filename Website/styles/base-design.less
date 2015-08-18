@@ -134,26 +134,12 @@
 
 body 
 {
-    font-size: @font-size-standard;
     background-color:white;
     color:black;
 }
 
 /*BEGINN TESTBEREICH FÜR MODULE*/
-.wrapper //FIXME: Muss in die media-queries
-{
-    //width: @max-site-width;
-    //position:absolute;
-    //top:0px;
-    margin-left:auto;
-    margin-right:auto;
-/*    margin-top:0px;
-    padding-top:0;
-    */
 
-    padding-left:15px;
-    padding-right:15px;
-}
 
 
 
@@ -167,51 +153,27 @@ div
 /*ENDE TESTBEREICH FÜR MODULE*/
 
 /*Überschriften*/
-h1, h2, h3, h4
-{
-
-    font-family: 'Cabin', 'Arial' , sans-serif;
-    /*FIXME: letter-spacing*/
-    letter-spacing: 0.1em;
-
-    //FIXME: Muss hier raus
-    /*
-    padding-top: @padding-standard;
-    padding-bottom: @padding-standard;
-
-    margin-top: @margin-top-h;
-    margin-bottom: @margin-bottom-h;
-    */
-}
-
 h1
 {
-    font-family: 'cabinbold', 'Arial' , sans-serif;
-    font-size:40px; //FIXME: Muss hier raus
+    font-family: cabinbold, 'Arial' , sans-serif;
     color: @color-primary-green;
-
 }
 
 h2
 {
     font-family: 'cabinsemibold', 'Arial' , sans-serif;
-    font-size:30px; //FIXME: Muss hier raus
     color: black;
-
 }
 
 h3
 {
-    font-family: cabinmedium, 'Arial' , sans-serif;
-    font-size:22px; //FIXME: Muss hier raus
+    font-family: 'cabinmedium', 'Arial' , sans-serif;
     color:black;
-
 }
 
 h4
 {
     font-family: 'cabinmedium', 'Arial' , sans-serif;
-    font-size:18px;//FIXME: Muss hier raus
     color:black;
 }
 
@@ -237,43 +199,19 @@ a
 p
 {
     font-family: 'merriweatherregular', 'Times New Roman',serif;
-    //font-family: 'Noto Serif', serif;
-    //font-weight: @font-weight-normal;
-    font-size: 0.95em; //FIXME: Muss hier raus
-    letter-spacing: 0.1em;
-    line-height: 150%;
 }
 
 
 /*
     Klassen
 */
-/*Fließtext*/
-.fliesstext //FIXME: Muss hier raus
-{
-    p
-    {
-        margin-top: 0.25em;
-        margin-bottom: 1.5em;
 
-    }
-}
 
 .infotext
 {
     font-family: 'cabinregular', 'Arial' , sans-serif;
-    font-size: 0.75em; //FIXME: Muss hier raus
 }
 
-.quellenangabe
-{
-    font-size: 0.75em;
-
-    a
-    {
-
-    }
-}
 
 /*Header*/
 header
@@ -291,11 +229,8 @@ header
 
 .header-text //FIXME: Muss hier raus
 {
-    //width: 940px;
-    margin-left:auto;
-    margin-right:auto;
+    font-family: cabinbold, Arial, sans-serif;
     color: white; //Das bleibt hier
-    text-align:right;
 }
 
 
@@ -337,26 +272,8 @@ header
 }
 
 /*FIXME: Mit Variablen ergänzen*/
-.main-menu //FIXME: Muss hier raus
-{
-    /*
-    width: 940px;
-    height: 40px;
-    top: 100px;
-        */
-    margin-left:auto;
-    margin-right:auto;
 
-    a
-    {
-        padding-left: 25px;
-        padding-right: 25px;
-        float: left;
-        font-size: 2em;
-        line-height: 40px;
-        vertical-align: middle;
-    }
-}
+/*FIXME: Ab hier weitermachen*/
 
 //Untermenü in der linken Spalte
 .sub-menu //FIXME: Muss hier raus
