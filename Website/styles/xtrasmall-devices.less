@@ -4,58 +4,77 @@
 
 @media screen and (max-width: 767px)
 {
+
+    html
+    {
+        min-width:320px;
+    }
+
     body
     {
         font-size: @font-size-standard;
     }
+
 
 /*mobile Menü */
 
 
 
 
-/*Überschriften
+/*Überschriften*/
     h1, h2, h3, h4
     {
         letter-spacing: 0.1em;
+        margin-bottom:0.1em;
     }
 
     h1
     {
-        font-size:40px; //FIXME: Muss hier raus
+        font-size:3em; //FIXME: Muss hier raus
+        //padding-bottom:0.1em;
+        
     }
 
     h2
     {
-        font-size:30px; //FIXME: Muss hier raus
+        font-size:2em; //FIXME: Muss hier raus
     }
 
     h3
     {
-        font-size:22px; //FIXME: Muss hier raus
+        font-size:1.25em; //FIXME: Muss hier raus
     }
 
     h4
     {
-        font-size:18px;//FIXME: Muss hier raus
+        font-size:1.1em;//FIXME: Muss hier raus
     }
-    */
 
-    p
+    header
     {
-        font-size: 0.95em; //FIXME: Muss hier raus
+    }
+
+    p,a
+    {
+        font-size: 1em; //FIXME: Muss hier raus
         letter-spacing: 0.1em;
         line-height: 150%;
+        
+        //FIXME: Blocksatz Darstellung (unschöne Lücken)
+        /*
+        hyphens:auto;
+        text-align:justify;
+        */
     }
 
+
     /*Fließtext*/
-    .fliesstext //FIXME: Muss hier raus
+    .fliesstext //FIXME: Prüfen ob überhaupt sinnvoll
     {
         p
         {
-            margin-top: 0.25em;
+            padding-top: 3.25em;
             margin-bottom: 1.5em;
-
         }
     }
 
@@ -76,14 +95,15 @@
 
     .header-text //FIXME: Muss hier raus
     {
-        //width: 940px;
+        font-size:2em;
         margin-left:auto;
         margin-right:auto;
         text-align:right;
+        vertical-align:central;
     }
 
 
-    .wrapper //FIXME: Muss in die media-queries
+    .wrapper //FIXME: Kann hier eigentlich raus
     {
         //width: @max-site-width;
         //position:absolute;
@@ -98,6 +118,10 @@
         padding-right:15px;
     }
 
+
+///////////////////////////////////////////////////
+// Menüs
+///////////////////////////////////////////////////
     .main-menu //FIXME: Muss hier raus
     {
         /*
@@ -108,7 +132,7 @@
         margin-left:auto;
         margin-right:auto;
 
-        a
+        /*a
         {
             padding-left: 25px;
             padding-right: 25px;
@@ -116,8 +140,319 @@
             font-size: 2em;
             line-height: 40px;
             vertical-align: middle;
+        }*/
+    }
+
+    .mobile-menu
+    {
+        button
+        {
+            background-color: @color-primary-green;
+            border-width: 0px;
+        }
+
+        img
+        {
+            max-width: 30%;
+            min-width: 15%;
+            //width:50%;
+            max-height:20%;
+            display: block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        label
+        {
+            width: 100%;
+        }
+
+        ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li
+        {
+            padding: 0.5em;
+        }
+
+        a
+        {
+            font-size: 1.5em;
+            color: white;
+        }
+        /*Make dropdown links appear inline*/
+        ul
+        {
+            position: static;
+            display: none;
+        }
+        /*Create vertical spacing*/
+        li
+        {
+            margin-bottom: 1px;
+        }
+        /*Make all menu links full width*/
+        ul li,li a
+        {
+            width: 100%;
+        }
+
+        
+    }
+
+    /*Anzeigen des mobilen Menüs*/
+    .show-menu
+    {
+        display:block;
+    }
+
+
+    .sub-menu
+    {
+        margin-top: 2em;
+
+        h3,a
+        {
+            padding-left:0.2em;
+        }
+
+        h3
+        {
+            line-height:1.5em;
+            background-color:@color-primary-green;
+            color:white;
+        }
+
+        li
+        {
+            width: auto;
+            padding-right: 0.5em;
+            padding-left: 0em;
+            float: left;
+        }
+
+        a, span
+        {
+            font-size: 1.2em;
+            padding: 0.25em;
+            line-height: normal;
+            width: auto;
+        }
+
+        a:hover
+        {
+            color:white
         }
     }
+
+    .footer-menu //FIXME: Muss hier raus
+    {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        height: 20em;
+
+        a
+        {
+            float: left;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+///////////////////////////////////////////////////
+// Buttons
+///////////////////////////////////////////////////
+    button
+    {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+///////////////////////////////////////////////////
+// Forms
+///////////////////////////////////////////////////
+    input,
+    textarea,
+    select,
+    option,
+    label,
+    legend,
+    fieldset,
+    form
+    {
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        line-height: 150%;
+
+        vertical-align:baseline;
+        padding:0;
+        margin:0;
+        
+    }
+
+    form
+    {
+        padding-top:1em;
+        padding-bottom:1em;
+
+        legend
+        {
+            font-size: 1.5em;
+            padding-top: 0.8em;
+            //padding-bottom:0.5em;
+            border-bottom-width:1px;
+            border-color:@color-secondary-blue;
+            color:@color-secondary-blue;
+        }
+
+        form div
+        {
+            margin-bottom: 0.5em;
+            width:100%;
+        }
+
+        form button
+        {
+            float:right;
+
+        }
+
+        label
+        {
+            display:block;
+            width:100%;
+            margin-top:1em;
+        }
+
+        fieldset
+        {
+        
+        }
+
+        select,option
+        {
+            width: auto;
+            padding:0.1em;
+        }
+    
+        input,textarea
+        {
+            width:100%;
+            line-height:1em;
+            padding:0.5em;
+        }
+
+    }
+
+
+
+
+///////////////////////////////////////////////////
+// Bilder
+///////////////////////////////////////////////////
+    .bild
+    {
+        width: 240px;
+        height: auto;
+   
+        //padding: 1em;
+
+        img
+        {
+            width: 100%;
+            height: auto;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        p
+        {
+            padding-top:0.8em;
+            padding-bottom:0.8em;
+            margin-top: 0px;
+            width:100%;
+            text-align:center;
+            font-size: @font-size-standard;
+        }
+    }
+
+
+
+///////////////////////////////////////////////////
+// Blog
+///////////////////////////////////////////////////
+    .blog-article
+    {
+        /*Abstände*/
+        //p
+        //{
+            //font-size:5em;
+        //}
+    }
+
+    //FIXME: Sollte in den media query teil
+    .blog-text
+    {
+        //Formatierung 
+    }
+
+
+///////////////////////////////////////////////////
+// Referenzen
+///////////////////////////////////////////////////
+    .referenzen-article
+    {
+    
+    }
+
+    .referenz-small
+    {
+
+    }
+
+    //Firmenlogo (Referenzen)
+    .corp-logo
+    {
+        //Logo
+        color:green;
+    }
+
+
+///////////////////////////////////////////////////
+// Kontaktinformation
+///////////////////////////////////////////////////
+    .contact-info
+    {
+        padding:1em;
+        margin-top:1em;
+        margin-left:auto;
+        margin-right:auto;
+
+        h3
+        {
+            
+        }
+
+        h4
+        {
+            margin-bottom:0em;
+            padding-bottom:0em;
+            
+        }
+
+        p
+        {
+            padding-top:0em;
+            margin-top:0em;
+        }
+    }
+
 
 }
 

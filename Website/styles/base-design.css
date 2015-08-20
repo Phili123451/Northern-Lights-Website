@@ -101,10 +101,7 @@ h2 {
   font-family: 'cabinsemibold', 'Arial', sans-serif;
   color: black;
 }
-h3 {
-  font-family: 'cabinmedium', 'Arial', sans-serif;
-  color: black;
-}
+h3,
 h4 {
   font-family: 'cabinmedium', 'Arial', sans-serif;
   color: black;
@@ -133,22 +130,15 @@ p {
 }
 /*Header*/
 header {
-  /*FIXME: Positionierung muss in die media queries*/
-  /*    position:absolute;
-    top:0px;
-    left:0px;
-    right:0px;
-    height:100px;
-    */
   background-color: #1ba39e;
 }
 .header-text {
   font-family: cabinbold, Arial, sans-serif;
   color: white;
 }
-/*MENÜS*/
-.menu {
-  background-color: white;
+.menu ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 .menu li {
   list-style: none;
@@ -167,33 +157,56 @@ header {
 .menu a:active {
   background-color: #ffb42a;
 }
+.mobile-menu {
+  /*Verstecken der Checkbox*/
+  /*Anzeigen des Menüs, wenn die Checkbox angeklickt wird*/
+}
+.mobile-menu label {
+  padding: 1em;
+}
+.mobile-menu li {
+  background-color: #1ba39e;
+  border-top-width: 1px;
+  border-color: white;
+  color: black;
+}
+.mobile-menu li:hover,
+.mobile-menu a:hover {
+  background-color: #ffb42a;
+  color: black;
+}
+.mobile-menu input[type=checkbox] {
+  display: none;
+}
+.mobile-menu input[type=checkbox]:checked ~ #navigation {
+  display: block;
+}
+/*Menü Label*/
+.show-menu {
+  font-family: cabinbold, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #1ba39e;
+  text-align: center;
+  display: none;
+}
 .link-active {
   background-color: #ffb42a;
 }
-/*FIXME: Mit Variablen ergänzen*/
-/*FIXME: Ab hier weitermachen*/
-.sub-menu a {
+.sub-menu a,
+.sub-menu span {
   font-family: cabinbold, 'Arial', sans-serif;
-  font-size: 1.2em;
-  padding: 1em;
-  line-height: normal;
 }
 .footer-menu {
   background-color: #1ba39e;
 }
 .footer-menu a {
-  float: left;
-  padding-left: 25px;
-  padding-right: 25px;
   color: white;
   text-decoration: none;
 }
 .footer-menu a:hover {
   color: #ffb42a;
   text-decoration: underline;
-}
-.content {
-  margin-top: 250px;
 }
 /*FORMS*/
 .form-required-sign {
@@ -203,11 +216,9 @@ button {
   /*Button Design*/
   border: 1px solid #2c57b1;
   background-color: white;
-  padding: 10px;
   /*Button Text*/
   font-family: 'Cabin', sans-serif;
   font-weight: 700;
-  font-size: 1em;
   color: black;
   text-align: center;
 }
@@ -227,20 +238,13 @@ fieldset,
 form {
   /*Text*/
   font-family: cabinregular, 'Arial', sans-serif;
-  font-size: 1em;
-  /* Aus der Vorlesung
-    vertical-align:baseline;
-    padding:0;
-    margin:0;
-        */
 }
-label {
-  display: block;
-  float: left;
+legend {
+  border-width: 0px;
 }
 fieldset {
+  border-width: 0;
   border-color: #2c57b1;
-  padding-left: 0.25em;
 }
 input,
 textarea,
@@ -260,26 +264,9 @@ select:focus {
   outline-color: #2c57b1;
 }
 /*Bilder*/
-.bild {
-  width: 240px;
-  height: auto;
-}
-.bild img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .bild p {
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  margin-top: 0px;
-  width: 100%;
-  text-align: center;
   background-color: #1ba39e;
   color: white;
-  font-size: 16px;
 }
 .bild:hover {
   cursor: pointer;
@@ -287,14 +274,6 @@ select:focus {
 .bild:hover p {
   background-color: #ffb42a;
   color: black;
-}
-/*Blog*/
-.blog-article {
-  /*Abstände*/
-}
-/*Referenzen*/
-.corp-logo {
-  color: green;
 }
 /*Kontakt Sidebar*/
 .contact-info {
