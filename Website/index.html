@@ -2,119 +2,180 @@
 <html lang="de"> 
 <head>
 
-    <title>Nothern-Lights GmbH</title>
+    <title>Northern-Lights-GmbH</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="Website der Nothern-Lights GmbH."> 
-    <meta name="keywords" content="Ouput-Management, Software Entwicklung, Prozessanalyse, Workflow-Management, Northern Lights, Philipp Abromeit"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="Website der Nothern-Lights GmbH. Dienstleistungen ABC HIER MUSS NOCH ETWAS REIN"> 
+    <meta name="keywords" content="Ouput-Management, Software Entwicklung, Prozessanalyse, Workflow-Management, Northern Lights, Philipp Abromeit, Nothern Lights, Benedikt Schelper, Benjamin Reinelt"> 
 
-    <link rel="stylesheet" href="styles/base-design.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/bootstrap-3.3.5-dist/css/bootstrap.css" type="text/css" media="screen"/> <!--Bootstrap Grid 3-->
+    <link rel="stylesheet" href="styles/base-design.css" type="text/css" media="screen"/> <!--Base Design-->
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles/xtrasmall-devices.css" /><!--Design for extra small devices-->
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/small-devices.css" /><!--Design for small devices-->
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/medium-devices.css" /><!--Design for medium devices-->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/large-devices.css" /><!--Design for large devices-->
 
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         
         <!--Header mit Schriftzug Northern-Lights-->
-        <header>
-            <h1 class="header-text">Northern-Lights</h1>
-        </header>
+        <div class="row">
+            <header class="col-xs-12">
+                <h1 class="header-text">Northern-Lights</h1>
+            </header>
 
+        <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+        <!--<div class="clearfix"></div>-->
+        
         <!--Hauptnavigation-->
-        <nav class="menu main-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Über uns</a></li>
-                <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                <li><a href="referenzen.html">Referenzen</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
+            <div class="row">
+                
 
-        <!--Inhalt-->
-        <div class="content">
-            
-            <!--Linke Spalte-->
-            <div class="left">
-                <p class="fliesstext">
-                    Hier kommt nichts hin
-                </p>
+                <nav class="menu main-menu mobile-menu col-xs-12">
+                    <label for="show-menu" class="show-menu"><img src="images/menu_mobile_button.png" alt="Symbol mobiles Menü"/></label>
+                    <input type="checkbox" id="show-menu" role="button" />
+                    <!--<button id="show-menu" ><img src="images/menu_mobile_button.png" alt="Symbol mobiles Menü"/></button>-->
+                    <ul id="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                        <li><a href="referenzen.html">Referenzen</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <!--Hauptinhalt-->
-            <div class="maincontent">
-                <p class="fliesstext">
-                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.
-                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
-                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
-                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
-                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.
-                </p>
-
-
-            </div>
-
-            <!--Rechte Spalte-->
-            <div class="right">
-                <p class="fliesstext">
-                    3 Aktuellsten Blog Einträge
-                </p>
-            </div>
-
         </div>
 
-        <!--Footermenü-->
-        <footer class="menu footer-menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Über uns</a>
-                        <ul>
-                            <li><a href="karriere.html">Karriere</a></li>
-                            <li><a href="kontakt.html">Kontakt</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="dienstleistungen.html">Dienstleistungen</a>
-                        <ul>
-                            <li><a href="outputmanagement.html">Output Management</a></li>
-                            <li><a href="softwareentwicklung.html">Software Entwicklung</a></li>
-                            <li><a href="prozessanalyse.html">Prozessanalyse</a></li>
-                            <li><a href="workflowmanagement.html">Workflow Management</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="referenzen.html">Referenzen</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                </ul>
-            </nav>
+        <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+        <!--<div class="clearfix"></div>-->
 
-        </footer>
+        <!--Inhalt-->
+        <div class="row">
+            
+            <!--Linke Spalte-->
+            <div class="menu sub-menu col-xs-12">
+            </div>
+
+            <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+            <div class="clearfix"></div>
+
+            <!--Hauptinhalt-->
+            <div class="col-xs-12">
+                <h1>Herzlich Willkommen</h1>
+                <p class="fliesstext">
+                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.
+                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.                    Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+                    Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+                    Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. 
+                    Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog.
+                </p>
+            </div>
+
+            <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+            <div class="clearfix"></div>
+
+            <!--Rechte Spalte-->
+            <div class="col-xs-12">
+                <div class="blog-article article-small">
+                    <h3>Die neuesten Blogeinträge</h3>
+                    <h4>IT-Stammtisch</h4>
+                    <p class="infotext">erstellt am 6.8.2015 von Philipp Abromeit</p>
+                    <a href="blog.html">Möchten Sie mehr erfahren?</a>
+                </div>
+
+                <div class="stellenanzeigen article-small">
+                    <h3>Die neuesten Stellenanzeigen</h3>
+                    <h4>Second Level Support</h4>
+                    <p class="infotext">eingestellt am 3.8.2015</p>
+                    <a href="karriere.html">Möchten Sie mehr erfahren?</a>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Konktaktieren Sie uns</h3>
+                    <h4>Sprechzeiten</h4>
+                    <p>
+                        Montag bis Freitag <br />
+                        8 - 17 Uhr <br />
+                    </p>
+                    <h4>Kontaktmöglichkeiten</h4>
+                    <p>
+                        Telefon: +49 (0)461 / 99 99 99 <br />
+                        Telefax: +49 (0)461 / 99 99 11 <br />
+                        <a href="kontakt.html">Nutzen Sie unser Kontaktformular</a>
+                    </p>
+                    <h4>Anschrift</h4>
+                    <p>
+                        Northern-Lights GmbH <br />
+                        Lise-Meitner-Strasse 2 <br />
+                        24941 Flensburg
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+        <div class="clearfix"></div>
+
+
+        <!--Footermenü-->
+        <div class="row">
+            <div class="col-xs-12">
+                <footer>
+                    <nav class="menu footer-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Über uns</a>
+                                <ul>
+                                    <li><a href="karriere.html">Karriere</a></li>
+                                    <li><a href="kontakt.html">Kontakt</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="dienstleistungen.html">Dienstleistungen</a>
+                                <ul>
+                                    <li><a href="outputmanagement.html">Output Management</a></li>
+                                    <li><a href="softwareentwicklung.html">Software Entwicklung</a></li>
+                                    <li><a href="prozessanalyse.html">Prozessanalyse</a></li>
+                                    <li><a href="workflowmanagement.html">Workflow Management</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="impressum.html">Impressum</a></li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
+        </div>
     </div>
 
 </body>

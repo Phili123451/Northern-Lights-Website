@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="de"> 
+<head>
+
+    <title>Kontakt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Website der Nothern-Lights GmbH."> 
+    <meta name="keywords" content="Ouput-Management, Software Entwicklung, Prozessanalyse, Workflow-Management, Northern Lights, Philipp Abromeit"> 
+
+    <link rel="stylesheet" href="styles/base-design.css" type="text/css" media="screen">
+
+</head>
+<body>
+    <div class="wrapper">
+        
+        <!--Header mit Schriftzug Northern-Lights-->
+        <header>
+            <h1 class="header-text">Northern-Lights</h1>
+        </header>
+
+        <!--Hauptnavigation-->
+        <nav class="menu main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                <li><a href="referenzen.html">Referenzen</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <!--Inhalt-->
+        <div class="content">
+            
+            <!--Linke Spalte-->
+            <div class="left">
+                <p class="fliesstext">
+                    Hier befindet sich das gleiche Menü wie bei Über uns
+                </p>
+
+                <nav class="menu sub-menu">
+                    <ul>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="karriere.html">Karriere</a></li>
+                    </ul>
+                </nav>
+
+
+            </div>
+
+            <!--Hauptinhalt-->
+            <div class="maincontent">
+                <p class="fliesstext">
+                    Kontaktformular
+                </p>
+
+                <h1>Kontakt</h1>
+                <p>
+                    Bei Fragen schicken Sie uns gerne eine Anfrage. :) 
+                </p>
+
+                <form action="http://www.inf.fh-flensburg.de/echo/" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                    
+                    <fieldset>
+                        <legend>Ihre Daten</legend>
+                        <label>Anrede <span class="form-required-sign">*</span>
+                            <select name="kontakt_anrede" tabindex="0" required>
+                                <option value="">----</option>
+                                <option value="frau">Frau</option>
+                                <option value="herr">Herr</option>
+                            </select>
+                        </label>
+
+                        <label>Vorname <span class="form-required-sign">*</span>
+                            <input name="kontakt_vorname" type="text" tabindex="1" placeholder="Vorname" required/>
+                        </label>
+
+                        <label>Nachname <span class="form-required-sign">*</span>
+                            <input name="kontakt_nachname" type="text" tabindex="2" placeholder="Nachname" required />
+                        </label>
+
+                        <label>E-Mail <span class="form-required-sign">*</span>
+                            <input name="kontakt_email" type="email" tabindex="3" placeholder="E-Mail" required />
+                        </label>
+
+                        <label>Telefon
+                            <input name="kontakt_telefon" type="tel" tabindex="4" placeholder="Telefon" />
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Ihre Anfrage</legend>
+                        <label>Grund <span class="form-required-sign">*</span>
+                            <select name="kontakt_grund" tabindex="5" required>
+                                <option value="">Grund auswählen</option>
+                                <option value="angebot">Angebot einholen</option>
+                                <option value="produktkatalog">Produktkatalog anfordern</option>
+                                <option value="karriere">Support</option>
+                                <option value="sonstige">Sonstige</option>
+                            </select>
+                        </label>
+
+                        <label>Bitte Geben Sie Ihre Anfrage ein <span class="form-required-sign">*</span>
+                            <textarea name="kontakt_anfrage" tabindex="6" placeholder="Bitte geben Sie Ihre Anfrage ein." required></textarea>
+                        </label>
+                    </fieldset>
+
+                    <p class="infotext">Bitte füllen Sie alle mit <span class="form-required-sign">*</span> gekennzeichneten Felder aus.</p>
+
+                    <button type="reset">Zurücksetzen</button>
+                    <button type="submit" tabindex="7">Abschicken</button>
+
+                </form>
+
+
+            </div>
+
+            <!--Rechte Spalte-->
+            <div class="right">
+                <p class="fliesstext">
+                    Andere Kontaktmöglichkeiten anbieten (Telefon + Sprechzeiten)
+                </p>
+            </div>
+
+                <div class="contact-info">
+                    <h3>Zögern Sie nicht mit uns in Kontakt zu treten</h3>
+                    <h4>Sprechzeiten</h4>
+                    <p>
+                        Montag bis Freitag <br />
+                        8 - 17 Uhr <br />
+                    </p>
+                    <h4>Kontaktmöglichkeiten</h4>
+                    <p>
+                        Telefon: +49 (0)461 / 99 99 99 <br />
+                        Telefax: +49 (0)461 / 99 99 11 <br />
+                    </p>
+                    <h4>Anschrift</h4>
+                    <p>
+                        Nothern-Lights GmbH <br />
+                        Lise-Meitner-Strasse 2 <br />
+                        24941 Flensburg
+                    </p>
+                </div>
+
+        </div>
+
+        <!--Footermenü-->
+        <footer class="menu footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Über uns</a>
+                        <ul>
+                            <li><a href="karriere.html">Karriere</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="dienstleistungen.html">Dienstleistungen</a>
+                        <ul>
+                            <li><a href="outputmanagement.html">Output Management</a></li>
+                            <li><a href="softwareentwicklung.html">Software Entwicklung</a></li>
+                            <li><a href="prozessanalyse.html">Prozessanalyse</a></li>
+                            <li><a href="workflowmanagement.html">Workflow Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
+
+        </footer>
+    </div>
+
+</body>
+</html>

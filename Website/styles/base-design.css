@@ -122,6 +122,13 @@ a:visited {
 p {
   font-family: 'merriweatherregular', 'Times New Roman', serif;
 }
+li {
+  list-style: none;
+  font-family: cabinregular;
+}
+ul {
+  list-style-type: none;
+}
 /*
     Klassen
 */
@@ -137,7 +144,6 @@ header {
   color: white;
 }
 .menu ul {
-  list-style-type: none;
   padding-left: 0;
 }
 .menu li {
@@ -289,4 +295,10 @@ select:focus {
 }
 .zitat:after {
   content: close-quote;
+}
+.stellenanzeige h2 {
+  color: #2c57b1;
+}
+.article-small h3 {
+  color: #2c57b1;
 }
