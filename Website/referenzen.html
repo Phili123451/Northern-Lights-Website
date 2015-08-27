@@ -11,19 +11,19 @@
     <meta name="keywords" content="Ouput-Management, Software Entwicklung, Prozessanalyse, Workflow-Management, Northern Lights, Philipp Abromeit, Nothern Lights, Benedikt Schelper, Benjamin Reinelt"> 
 
     <link rel="stylesheet" href="styles/bootstrap-3.3.5-dist/css/bootstrap.css" type="text/css" media="screen"/> <!--Bootstrap Grid 3-->
-    <link rel="stylesheet" href="styles/base-design.css" type="text/css" media="screen"/> <!--Base Design-->
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles/xtrasmall-devices.css" /><!--Design for extra small devices-->
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/small-devices.css" /><!--Design for small devices-->
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/medium-devices.css" /><!--Design for medium devices-->
-    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/large-devices.css" /><!--Design for large devices-->
+    <link rel="stylesheet" href="styles/css/base-design.css" type="text/css" media="screen"/> <!--Base Design-->
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles/css/xtrasmall-devices.css" /><!--Design for extra small devices-->
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/css/small-devices.css" /><!--Design for small devices-->
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/css/medium-devices.css" /><!--Design for medium devices-->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/css/large-devices.css" /><!--Design for large devices-->
 
 </head>
 <body>
-    <div class="container">
+    <!--<div class="container">-->
         
         <!--Header mit Schriftzug Northern-Lights-->
         <div class="row">
-            <header class="col-xs-12">
+            <header class="col-xs-12-header">
                 <h1 class="header-text">Northern-Lights</h1>
             </header>
         <!--</div>-->
@@ -49,98 +49,89 @@
 
         <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
         <div class="clearfix"></div>
-
-        <!--Inhalt-->
-        <div class="row">
+    
+        <div class="container">
+            <!--Inhalt-->
+            <div class="row">
             
-            <!--Linke Spalte-->
-            <div class="menu sub-menu col-xs-12">
-                <nav>
-                    <h3>Filtern (noch inaktiv)</h3>
-                    <ul>
-                        <li><a href="about.html">Alle</a></li>
-                        <li><a href="kontakt.html">Ouput Management</a></li>
-                        <li><a href="kontakt.html">Software Entwicklung</a></li>
-                        <li><a href="kontakt.html">Workflow Management</a></li>
-                        <li><a href="kontakt.html">Prozessanalyse</a></li>
-                    </ul>
-                </nav>
+                <!--Linke Spalte-->
+                <div class="menu sub-menu col-xs-12">
+                    <nav>
+                        <h3>Filtern (noch inaktiv)</h3>
+                        <ul>
+                            <li><a href="about.html">Alle</a></li>
+                            <li><a href="kontakt.html">Ouput Management</a></li>
+                            <li><a href="kontakt.html">Software Entwicklung</a></li>
+                            <li><a href="kontakt.html">Workflow Management</a></li>
+                            <li><a href="kontakt.html">Prozessanalyse</a></li>
+                        </ul>
+                    </nav>
 
-            </div>
+                </div>
 
-            <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
-            <div class="clearfix"></div>
+                <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+                <div class="clearfix"></div>
 
-            <!--Hauptinhalt-->
-            <div class="col-xs-12">
-                <h1>Referenzen</h1>
+                <!--Hauptinhalt-->
+                <div class="col-xs-12">
+                    <h1>Referenzen</h1>
 
-                <article class="referenzen-article">
-                    <img class="corp-logo" src="images/services.jpg" width="150px"/>
-                    <h1>Mustermann AG</h1>
+                    <article class="referenzen-article">
+                        <img class="corp-logo" src="images/services.jpg" alt="Firmenlogo" />
+                        <h2>Mustermann AG</h2>
                     
-                    <h2>Von uns erbrachte Dienstleistungen</h2>
-                    <p>
-                        Output-Management, Software-Entwicklung und Workflow-Management
-                    </p>
-                    <h2>Kundenreferenz</h2>
-                    <p>
-                        Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt 
-                        auf sich warten. Damit das Layout nun nicht nackt im Raume 
-                        steht und sich klein und leer vorkommt, springe ich ein: der 
-                        Blindtext.
-                    </p>
-                </article>
+                        <h3>Von uns erbrachte Dienstleistungen</h3>
+                        <ul>
+                            <li>Output-Management</li>
+                            <li>Software-Entwicklung</li>
+                            <li>Workflow-Management</li>
+                        </ul>
+                        <h3>Kundenreferenz</h3>
+                        <p>
+                            Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt 
+                            auf sich warten. Damit das Layout nun nicht nackt im Raume 
+                            steht und sich klein und leer vorkommt, springe ich ein: der 
+                            Blindtext.
+                        </p>
+                    </article>
 
 
 
 
 
+                </div>
+
+                <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+                <div class="clearfix"></div>
+
+                <!--Rechte Spalte-->
+                <div class="col-xs-12">
+
+                </div>
             </div>
 
             <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
             <div class="clearfix"></div>
 
-            <!--Rechte Spalte-->
-            <div class="col-xs-12">
-
-            </div>
         </div>
-
-        <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
-        <div class="clearfix"></div>
-
 
         <!--Footermenü-->
         <div class="row">
-            <div class="col-xs-12">
-                <footer>
-                    <nav class="menu footer-menu">
+            <!--<div class="col-xs-12-footer">-->
+                <footer class="menu footer-menu col-xs-12-footer">
+                    <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">Über uns</a>
-                                <ul>
-                                    <li><a href="karriere.html">Karriere</a></li>
-                                    <li><a href="kontakt.html">Kontakt</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="dienstleistungen.html">Dienstleistungen</a>
-                                <ul>
-                                    <li><a href="outputmanagement.html">Output Management</a></li>
-                                    <li><a href="softwareentwicklung.html">Software Entwicklung</a></li>
-                                    <li><a href="prozessanalyse.html">Prozessanalyse</a></li>
-                                    <li><a href="workflowmanagement.html">Workflow Management</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="about.html">Über uns</a></li>
+                            <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
                             <li><a href="referenzen.html">Referenzen</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="impressum.html">Impressum</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
                         </ul>
                     </nav>
                 </footer>
             </div>
-        </div>
-    </div>
-
+        <!--</div>-->
 </body>
 </html>

@@ -2,6 +2,15 @@
 /*Import LESS Files*/
 @import "variables.less";
 
+// Utility classes
+//@import "less/bootstrap/variables.less";
+//@import "less/bootstrap/utilities.less";
+//@import "less/bootstrap/responsive-utilities.less";
+@import "less/bootstrap/mixins/grid.less";
+//@import "less/bootstrap/mixins/grid-framework.less";
+//@import "less/bootstrap/mixins/clearfix.less";
+
+
 @media screen and (max-width: 767px)
 {
 
@@ -16,8 +25,19 @@
     }
 
 
-/*mobile Menü */
+/*angepasste Bootstrap Columns*/
+    .col-xs-12-header
+    {
+        .make-xs-column(12,60px);
+        margin-top:-10px;
+    }
 
+    .col-xs-12-footer
+    {
+        .make-xs-column(12,30px);
+        margin-bottom:-15px;
+        padding-bottom:0.5em;
+    }
 
 
 
@@ -30,14 +50,14 @@
 
     h1
     {
-        font-size:2.2em;
+        font-size:2em;
         //padding-bottom:0.1em;
         //text-align:center;
     }
 
     h2
     {
-        font-size:2em; //FIXME: Muss hier raus
+        font-size:1.6em; //FIXME: Muss hier raus
     }
 
     h3
@@ -171,13 +191,14 @@
         ul
         {
             list-style-type: none;
-            margin: 0;
+            margin:0;
             padding: 0;
         }
 
         li
         {
             padding: 0.5em;
+            padding-left:1.5em;
         }
 
         a
@@ -269,6 +290,7 @@
             //margin-left:auto;
             //margin-right:auto;
             //text-align:center;
+
         }
 
         li
@@ -283,7 +305,7 @@
         a
         {
             display: inline-block;
-            padding: 0.3em;
+            padding: 0.5em;
         }
 
         li:last-child
@@ -293,8 +315,7 @@
 
         ul
         {
-            //margin-left:1em;
-            //align-content:center;
+            text-align:center;
         }
     }
 
@@ -464,6 +485,7 @@
     {
         //Logo
         color:green;
+        width:150px;
     }
 
 ///////////////////////////////////////////////////

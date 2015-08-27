@@ -11,11 +11,11 @@
     <meta name="keywords" content="Ouput-Management, Software Entwicklung, Prozessanalyse, Workflow-Management, Northern Lights, Philipp Abromeit, Nothern Lights, Benedikt Schelper, Benjamin Reinelt"> 
 
     <link rel="stylesheet" href="styles/bootstrap-3.3.5-dist/css/bootstrap.css" type="text/css" media="screen"/> <!--Bootstrap Grid 3-->
-    <link rel="stylesheet" href="styles/base-design.css" type="text/css" media="screen"/> <!--Base Design-->
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles/xtrasmall-devices.css" /><!--Design for extra small devices-->
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/small-devices.css" /><!--Design for small devices-->
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/medium-devices.css" /><!--Design for medium devices-->
-    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/large-devices.css" /><!--Design for large devices-->
+    <link rel="stylesheet" href="styles/css/base-design.css" type="text/css" media="screen"/> <!--Base Design-->
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styles/css/xtrasmall-devices.css" /><!--Design for extra small devices-->
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/css/small-devices.css" /><!--Design for small devices-->
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/css/medium-devices.css" /><!--Design for medium devices-->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/css/large-devices.css" /><!--Design for large devices-->
 
 </head>
 <body>
@@ -98,8 +98,8 @@
                     <fieldset>
                         <legend>Ihre Daten</legend>
                         <div>
-                            <label for="anrede">Anrede <span class="form-required-sign">*</span>
-                                <select name="kontakt_anrede" tabindex="1" required>
+                            <label for="kontakt_anrede">Anrede <span class="form-required-sign">*</span>
+                                <select name="kontakt_anrede" id="kontakt_anrede" tabindex="1" required>
                                     <option value="">----</option>
                                     <option value="frau">Frau</option>
                                     <option value="herr">Herr</option>
@@ -109,25 +109,25 @@
 
                         <div>
                             <label for="kontakt_vorname">Vorname <span class="form-required-sign">*</span>
-                                <input name="kontakt_vorname" type="text" tabindex="2" placeholder="Max" required/>
+                                <input name="kontakt_vorname" type="text" id="kontakt_vorname" tabindex="2" placeholder="Max" required/>
                             </label>
                         </div>
 
                         <div>
                             <label for="kontakt_nachname">Nachname <span class="form-required-sign">*</span>
-                                <input name="kontakt_nachname" type="text" tabindex="3" placeholder="Mustermann" required />
+                                <input name="kontakt_nachname" type="text" id="kontakt_nachname" tabindex="3" placeholder="Mustermann" required />
                             </label>
                         </div>
 
                         <div>
                             <label for="kontakt_email">E-Mail <span class="form-required-sign">*</span>
-                                <input name="kontakt_email" type="email" tabindex="4" placeholder="adresse@domain.com" required />
+                                <input name="kontakt_email" type="email" id="kontakt_email" tabindex="4" placeholder="adresse@domain.com" required />
                             </label>
                         </div>
 
                         <div>
                             <label for="kontakt_telefon">Telefon
-                                <input name="kontakt_telefon" type="tel" tabindex="5" placeholder="0333 / 11 22 33 4" />
+                                <input name="kontakt_telefon" type="tel" id="kontakt_telefon" tabindex="5" placeholder="0333 / 11 22 33 4" />
                             </label>
                         </div>
                     </fieldset>
@@ -137,7 +137,7 @@
                         
                         <div>
                             <label for="kontakt_anliegen">Ihr Anliegen <span class="form-required-sign">*</span>
-                                <select name="kontakt_anliegen" tabindex="6" required>
+                                <select name="kontakt_anliegen" id="kontakt_anliegen" tabindex="6" required>
                                     <option value="">Anliegen auswählen</option>
                                     <option value="angebot">Angebot anfordern</option>
                                     <option value="produktkatalog">Produktkatalog anfordern</option>
@@ -155,7 +155,7 @@
 
                         <div>
                             <label for="kontakt_anfrage">Bitte Geben Sie Ihre Anfrage ein <span class="form-required-sign">*</span>
-                                <textarea name="kontakt_anfrage" tabindex="7" rows="10" wrap="soft" placeholder="Bitte geben Sie Ihre Anfrage ein." required></textarea>
+                                <textarea name="kontakt_anfrage" id="kontakt_anfrage" tabindex="7" rows="10" wrap="soft" placeholder="Bitte geben Sie Ihre Anfrage ein." required></textarea>
                             </label>
                         </div>
                     </fieldset>
