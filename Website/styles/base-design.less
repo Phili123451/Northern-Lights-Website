@@ -318,6 +318,7 @@ header
 	    display: none;
     }
 
+/*Aktiver Link im Hauptmenü*/
 .link-active
 {
     background-color:@color-secondary-orange;
@@ -333,21 +334,26 @@ header
 }
 
 //Footer Menü am unteren Ende der Seite
-.footer-menu 
+.footer-menu
 {
     background-color: @color-primary-green;
 
     a
     {
         color: white;
-        text-decoration:none;
+        text-decoration: none;
     }
 
-    a:hover
-    {
-        color: @color-secondary-orange;
-        text-decoration:underline;
-    }
+        a:hover
+        {
+            color: @color-secondary-orange;
+            text-decoration: underline;
+        }
+
+        a:active
+        {
+            background-color:transparent;
+        }
 }
 
 .footer-list-main

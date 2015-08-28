@@ -51,8 +51,6 @@
     h1
     {
         font-size:2em;
-        //padding-bottom:0.1em;
-        //text-align:center;
     }
 
     h2
@@ -74,7 +72,7 @@
     {
     }
 
-    p,a
+    p,a,li
     {
         font-size: 1em; //FIXME: Muss hier raus
         letter-spacing: 0.1em;
@@ -87,15 +85,11 @@
         */
     }
 
-
     /*Fließtext*/
     .fliesstext //FIXME: Prüfen ob überhaupt sinnvoll
     {
-        p
-        {
-            padding-top: 3.25em;
-            margin-bottom: 1.5em;
-        }
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
     }
 
     .infotext
@@ -121,23 +115,6 @@
         text-align:right;
         vertical-align:central;
     }
-
-
-    .wrapper //FIXME: Kann hier eigentlich raus
-    {
-        //width: @max-site-width;
-        //position:absolute;
-        //top:0px;
-        margin-left:auto;
-        margin-right:auto;
-    /*    margin-top:0px;
-        padding-top:0;
-        */
-
-        padding-left:15px;
-        padding-right:15px;
-    }
-
 
 ///////////////////////////////////////////////////
 // Menüs
@@ -165,18 +142,10 @@
 
     .mobile-menu
     {
-        button
-        {
-            background-color: @color-primary-green;
-            border-width: 0px;
-            width:100%;
-        }
-
         img
         {
             max-width: 30%;
             min-width: 15%;
-            //width:50%;
             max-height:20%;
             display: block;
             margin-left:auto;
@@ -206,18 +175,18 @@
             font-size: 1.5em;
             color: white;
         }
-        /*Make dropdown links appear inline*/
+        /*Anzeigen der Dropdown Links inline*/
         ul
         {
             position: static;
             display: none;
         }
-        /*Create vertical spacing*/
+        /*Abstand zwischen den Links*/
         li
         {
             margin-bottom: 1px;
         }
-        /*Make all menu links full width*/
+        /*Anzeigen der Links über die volle Breite*/
         ul li,li a
         {
             width: 100%;
@@ -235,8 +204,8 @@
 
     .sub-menu
     {
-        margin-top: 2em;
-
+        /*Abstand*/
+        margin-top: 0em;
 
         h3,a
         {
@@ -326,6 +295,11 @@
             font-size:0.8em;
 
         }
+    }
+
+    .link-active
+    {
+        background-color:transparent;
     }
 
 ///////////////////////////////////////////////////
@@ -472,7 +446,15 @@
 ///////////////////////////////////////////////////
     .referenzen-article
     {
-    
+        ul
+        {
+            padding-left:0;
+        }
+    }
+
+    .referenzen-article-header
+    {
+
     }
 
     .referenz-article-small
@@ -507,6 +489,7 @@
     {
         padding:1em;
         margin-top:1em;
+        margin-bottom:1em;
         width:100%;
 
         h3

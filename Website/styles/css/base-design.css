@@ -196,6 +196,7 @@ header {
   text-align: center;
   display: none;
 }
+/*Aktiver Link im Hauptmenü*/
 .link-active {
   background-color: #ffb42a;
 }
@@ -213,6 +214,9 @@ header {
 .footer-menu a:hover {
   color: #ffb42a;
   text-decoration: underline;
+}
+.footer-menu a:active {
+  background-color: transparent;
 }
 /*FORMS*/
 .form-required-sign {
