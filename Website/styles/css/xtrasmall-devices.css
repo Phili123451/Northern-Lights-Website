@@ -209,8 +209,10 @@
     background-color: transparent;
   }
   button {
-    padding: 10px;
+    padding: 0.8em;
     font-size: 1em;
+    float: right;
+    margin-left: 0.5em;
   }
   input,
   textarea,
@@ -283,18 +285,58 @@
   .blog-article {
     /*Abstände*/
   }
+  .referenzen-article {
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+  .referenzen-article h2 {
+    margin-top: 0.5em;
+  }
   .referenzen-article ul {
     padding-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
   }
-  .corp-logo {
-    color: green;
-    width: 150px;
+  .referenzen-article-header img {
+    min-width: 150px;
+    max-width: 250px;
+    height: auto;
+  }
+  .article-small {
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
+    height: auto;
+  }
+  .article-small h3 {
+    margin-top: 0.5em;
+  }
+  .article-small p {
+    margin-top: 0.2em;
+    margin-bottom: 0;
+  }
+  .article-small a {
+    display: block;
+    margin-top: 1em;
+  }
+  .stellenanzeige {
+    /*Abstand verkleinern*/
+  }
+  .stellenanzeige h4 {
+    /*Abstand verkleinern*/
+    margin-top: 0.5em;
+  }
+  .stellenanzeige ul {
+    padding: 0;
+    margin-top: 0em;
+  }
+  .stellenanzeige p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
   }
   .contact-info {
     padding: 1em;
-    margin-top: 1em;
+    margin-top: 3em;
     margin-bottom: 1em;
-    width: 100%;
   }
   .contact-info h3 {
     margin-top: 0.5em;

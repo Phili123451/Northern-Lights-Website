@@ -307,9 +307,12 @@
 ///////////////////////////////////////////////////
     button
     {
-        padding: 10px;
+        padding: 0.8em;
         font-size: 1em;
+        float:right;
+        margin-left:0.5em;
     }
+
 
 ///////////////////////////////////////////////////
 // Forms
@@ -446,41 +449,93 @@
 ///////////////////////////////////////////////////
     .referenzen-article
     {
+        margin-top: 2.5em;
+        margin-bottom:2em;
+
+        h2
+        {
+            margin-top:0.5em;
+        }
+
         ul
         {
             padding-left:0;
+            margin-top:0.5em;
+            margin-bottom:1em;
         }
     }
 
     .referenzen-article-header
     {
 
-    }
 
-    .referenz-article-small
-    {
-
-    }
-
-    //Firmenlogo (Referenzen)
-    .corp-logo
-    {
-        //Logo
-        color:green;
-        width:150px;
-    }
-
-///////////////////////////////////////////////////
-// Referenzen
-///////////////////////////////////////////////////
-    .article-small
-    {
-        h3
+        img
         {
-
+            min-width:150px;
+            max-width:250px;
+            height:auto;
+            
         }
     }
 
+///////////////////////////////////////////////////
+// Kleine Artikel (Blog, Stellenanzeigen)
+///////////////////////////////////////////////////
+    .article-small
+    {
+        margin-top:0.3em;
+        margin-bottom:0.8em;
+        height:auto;
+        h2
+        {
+            
+        }
+
+        h3
+        {
+            margin-top:0.5em;
+        }
+
+        p
+        {
+            margin-top:0.2em;
+            margin-bottom:0;
+        }
+
+        a
+        {
+            display:block;
+            margin-top:1em;
+        }
+    }
+
+///////////////////////////////////////////////////
+// Stellenanzeige
+///////////////////////////////////////////////////
+    .stellenanzeige
+    {
+        /*Abstand verkleinern*/
+
+
+        h4
+        {
+            /*Abstand verkleinern*/
+            margin-top:0.5em;
+        }
+
+
+        ul
+        {
+            padding: 0;
+            margin-top: 0em;
+        }
+
+        p
+        {
+            margin-top: 0.5em;
+            margin-bottom:1em;
+        }
+    }
 
 ///////////////////////////////////////////////////
 // Kontaktinformation
@@ -488,9 +543,9 @@
     .contact-info
     {
         padding:1em;
-        margin-top:1em;
+        margin-top:3em;
         margin-bottom:1em;
-        width:100%;
+        //width:100%;
 
         h3
         {
