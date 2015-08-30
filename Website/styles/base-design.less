@@ -490,28 +490,23 @@ select:focus
 /*Zitat*/
 blockquote
 {
-}
-
-.zitat
-{
     font-family: 'merriweatheritalic', 'Times New Roman',serif;
-    color:@color-secondary-blue;
+    color: @color-secondary-blue;
+
+    p
+    {
+        font-family: cabinregular, Arial, sans-serif;
+    }
 }
 
-.zitat:before
+blockquote:before
 {
     content:open-quote;
 }
 
-.zitat:after
+blockquote:after
 {
     content:close-quote;
-}
-
-.autor
-{
-    //font-family: 'Merriweather', 'Times New Roman',serif;
-    //font-weight:@font-weight-normal;
 }
 
 .article-small

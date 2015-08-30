@@ -1,0 +1,16 @@
+/*Import LESS Files*/
+/*Farben*/
+/*Font Weights*/
+/*Schriftgrößen*/
+/*Standard Padding*/
+/*Abstände zwischen Textblöcken, Überschriften, etc.*/
+/*h1*/
+/*h2*/
+/*h3*/
+/*Breite und Höhe*/
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 16px;
+    background-color: blue;
+  }
+}

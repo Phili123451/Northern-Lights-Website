@@ -2,14 +2,8 @@
 /*Import LESS Files*/
 @import "variables.less";
 
-// Utility classes
-//@import "less/bootstrap/variables.less";
-//@import "less/bootstrap/utilities.less";
-//@import "less/bootstrap/responsive-utilities.less";
+// Bootstrap Grid Class
 @import "less/bootstrap/mixins/grid.less";
-//@import "less/bootstrap/mixins/grid-framework.less";
-//@import "less/bootstrap/mixins/clearfix.less";
-
 
 @media screen and (max-width: 767px)
 {
@@ -17,6 +11,7 @@
     html
     {
         min-width:320px;
+        width:device-width;
     }
 
     body
@@ -30,6 +25,7 @@
     {
         .make-xs-column(12,60px);
         margin-top:-10px;
+        margin-right:-30px;
     }
 
     .col-xs-12-footer
@@ -51,42 +47,37 @@
     h1
     {
         font-size:2em;
+        border-bottom:1px solid @color-primary-green;
     }
 
     h2
     {
-        font-size:1.6em; //FIXME: Muss hier raus
+        font-size:1.6em;
     }
 
     h3
     {
-        font-size:1.25em; //FIXME: Muss hier raus
+        font-size:1.25em;
     }
 
     h4
     {
-        font-size:1.1em;//FIXME: Muss hier raus
+        font-size:1.1em;
     }
 
     header
     {
     }
 
-    p,a,li
+    p,a,li,blockquote
     {
-        font-size: 1em; //FIXME: Muss hier raus
+        font-size: 1em; 
         letter-spacing: 0.1em;
         line-height: 150%;
-        
-        //FIXME: Blocksatz Darstellung (unschöne Lücken)
-        /*
-        hyphens:auto;
-        text-align:justify;
-        */
     }
 
     /*Fließtext*/
-    .fliesstext //FIXME: Prüfen ob überhaupt sinnvoll
+    .fliesstext
     {
         margin-top: 0.5em;
         margin-bottom: 1.5em;
@@ -94,20 +85,15 @@
 
     .infotext
     {
-        font-size: 0.75em; //FIXME: Muss hier raus
+        font-size: 0.75em;
     }
 
     .quellenangabe
     {
         font-size: 0.75em;
-
-        a
-        {
-
-        }
     }
 
-    .header-text //FIXME: Muss hier raus
+    .header-text
     {
         font-size:2em;
         margin-left:auto;
@@ -119,25 +105,10 @@
 ///////////////////////////////////////////////////
 // Menüs
 ///////////////////////////////////////////////////
-    .main-menu //FIXME: Muss hier raus
+    .main-menu //FIXME: Kann aus den mobilen Versionen entfernt werden
     {
-        /*
-        width: 940px;
-        height: 40px;
-        top: 100px;
-            */
         margin-left:auto;
         margin-right:auto;
-
-        /*a
-        {
-            padding-left: 25px;
-            padding-right: 25px;
-            float: left;
-            font-size: 2em;
-            line-height: 40px;
-            vertical-align: middle;
-        }*/
     }
 
     .mobile-menu
@@ -201,66 +172,63 @@
         display:block;
     }
 
-
+    /*Untermenü (Dienstleistungen, Über uns, etc.*/
     .sub-menu
     {
         /*Abstand*/
         margin-top: 0em;
 
-        h3,a
+        div
         {
-            padding-left:0.2em;
+            background-color: @color-primary-green-hsla;
+            padding-bottom: 0.4em;
+        }
+
+        h3, a
+        {
+            padding-left: 0.2em;
         }
 
         h3
         {
-            line-height:1.5em;
-            background-color:@color-primary-green;
-            color:white;
+            line-height: 1.5em;
+            background-color: @color-primary-green;
+            color: white;
+            padding: 0.5em;
         }
 
         li
         {
             width: auto;
-            padding-right: 0.5em;
-            padding-left: 0em;
-            text-align:center;
-            //float: left;
+            text-align: center;
         }
 
-        a, span
+        a
         {
             font-size: 1.2em;
             padding: 0.25em;
             line-height: normal;
             width: auto;
+            color: white;
         }
 
-        a:hover
-        {
-            color:white
-        }
+            a:hover, li:hover
+            {
+                color: black;
+                background-color: @color-secondary-orange;
+            }
+
+            a:active->li
+            {
+                background-color:@color-secondary-orange;
+            }
     }
 
+    /*Footer*/
     .footer-menu
     {
         position: relative;
         bottom: 0px;
-        //width: 100%;
-        /*a
-        {
-            float: left;
-            padding-left: 25px;
-            padding-right: 25px;
-        }*/
-        nav
-        {
-            //width:30%;
-            //margin-left:auto;
-            //margin-right:auto;
-            //text-align:center;
-
-        }
 
         li
         {
@@ -288,15 +256,7 @@
         }
     }
 
-    .footer-list-sub
-    {
-        a
-        {
-            font-size:0.8em;
-
-        }
-    }
-
+    //Keine farbiges Hervorheben von besuchten LInks im Menü
     .link-active
     {
         background-color:transparent;
@@ -312,7 +272,6 @@
         float:right;
         margin-left:0.5em;
     }
-
 
 ///////////////////////////////////////////////////
 // Forms
@@ -345,7 +304,6 @@
         {
             font-size: 1.5em;
             padding-top: 0.8em;
-            //padding-bottom:0.5em;
             border-bottom-width:1px;
             border-color:@color-secondary-blue;
             color:@color-secondary-blue;
@@ -360,7 +318,6 @@
         form button
         {
             float:right;
-
         }
 
         label
@@ -368,11 +325,6 @@
             display:block;
             width:100%;
             margin-top:1em;
-        }
-
-        fieldset
-        {
-        
         }
 
         select,option
@@ -387,14 +339,10 @@
             line-height:1em;
             padding:0.5em;
         }
-
     }
 
-
-
-
 ///////////////////////////////////////////////////
-// Bilder
+// Bild in Texten, mit Beschreibungstext
 ///////////////////////////////////////////////////
     .bild
     {
@@ -430,19 +378,20 @@
 ///////////////////////////////////////////////////
     .blog-article
     {
-        /*Abstände*/
-        //p
-        //{
-            //font-size:5em;
-        //}
-    }
+        margin-top: 2.5em;
+        margin-bottom:2em;
 
-    //FIXME: Sollte in den media query teil
-    .blog-text
-    {
-        //Formatierung 
-    }
+        h2
+        {
+            margin-top:0.5em;
+        }
 
+        p
+        {
+            margin-top: 0.5em;
+            margin-bottom:1em;
+        }
+    }
 
 ///////////////////////////////////////////////////
 // Referenzen
@@ -467,14 +416,31 @@
 
     .referenzen-article-header
     {
-
-
         img
         {
             min-width:150px;
             max-width:250px;
             height:auto;
             
+        }
+    }
+
+    .referenzen-article-small
+    {
+        margin-top:1.5em;
+        margin-bottom:0.8em;
+
+        blockquote
+        {
+            margin-left: 0;
+            margin-top: 0.5em;
+            margin-bottom:0.3em;
+        }
+
+        p
+        {
+            margin:0;
+            font-size:0.8em;
         }
     }
 
@@ -486,10 +452,6 @@
         margin-top:0.3em;
         margin-bottom:0.8em;
         height:auto;
-        h2
-        {
-            
-        }
 
         h3
         {
@@ -514,15 +476,17 @@
 ///////////////////////////////////////////////////
     .stellenanzeige
     {
-        /*Abstand verkleinern*/
+        margin-top: 2em;
 
-
-        h4
+        h2
         {
-            /*Abstand verkleinern*/
-            margin-top:0.5em;
+            margin-top:0em;
         }
 
+        h3
+        {
+            margin-top: 0.5em;
+        }
 
         ul
         {
@@ -533,7 +497,7 @@
         p
         {
             margin-top: 0.5em;
-            margin-bottom:1em;
+            margin-bottom: 1em;
         }
     }
 
@@ -545,7 +509,6 @@
         padding:1em;
         margin-top:3em;
         margin-bottom:1em;
-        //width:100%;
 
         h3
         {
@@ -565,7 +528,5 @@
             margin-top:0em;
         }
     }
-
-
 }
 

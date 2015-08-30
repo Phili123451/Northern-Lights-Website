@@ -290,14 +290,17 @@ select:focus {
   background-color: rgba(44, 86, 175, 0.1);
 }
 /*Zitat*/
-.zitat {
+blockquote {
   font-family: 'merriweatheritalic', 'Times New Roman', serif;
   color: #2c57b1;
 }
-.zitat:before {
+blockquote p {
+  font-family: cabinregular, Arial, sans-serif;
+}
+blockquote:before {
   content: open-quote;
 }
-.zitat:after {
+blockquote:after {
   content: close-quote;
 }
 .article-small h2 {

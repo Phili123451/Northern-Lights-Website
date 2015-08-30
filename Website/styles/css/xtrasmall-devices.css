@@ -11,6 +11,7 @@
 @media screen and (max-width: 767px) {
   html {
     min-width: 320px;
+    width: device-width;
   }
   body {
     font-size: 16px;
@@ -24,6 +25,7 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-top: -10px;
+    margin-right: -30px;
   }
   .col-xs-12-footer {
     position: relative;
@@ -45,6 +47,7 @@
   }
   h1 {
     font-size: 2em;
+    border-bottom: 1px solid #1ba39e;
   }
   h2 {
     font-size: 1.6em;
@@ -57,14 +60,11 @@
   }
   p,
   a,
-  li {
+  li,
+  blockquote {
     font-size: 1em;
     letter-spacing: 0.1em;
     line-height: 150%;
-    /*
-        hyphens:auto;
-        text-align:justify;
-        */
   }
   /*Fließtext*/
   .fliesstext {
@@ -85,22 +85,8 @@
     vertical-align: central;
   }
   .main-menu {
-    /*
-        width: 940px;
-        height: 40px;
-        top: 100px;
-            */
     margin-left: auto;
     margin-right: auto;
-    /*a
-        {
-            padding-left: 25px;
-            padding-right: 25px;
-            float: left;
-            font-size: 2em;
-            line-height: 40px;
-            vertical-align: middle;
-        }*/
   }
   .mobile-menu {
     /*Anzeigen der Dropdown Links inline*/
@@ -146,9 +132,14 @@
   .show-menu {
     display: block;
   }
+  /*Untermenü (Dienstleistungen, Über uns, etc.*/
   .sub-menu {
     /*Abstand*/
     margin-top: 0em;
+  }
+  .sub-menu div {
+    background-color: rgba(26, 162, 158, 0.5);
+    padding-bottom: 0.4em;
   }
   .sub-menu h3,
   .sub-menu a {
@@ -158,32 +149,31 @@
     line-height: 1.5em;
     background-color: #1ba39e;
     color: white;
+    padding: 0.5em;
   }
   .sub-menu li {
     width: auto;
-    padding-right: 0.5em;
-    padding-left: 0em;
     text-align: center;
   }
-  .sub-menu a,
-  .sub-menu span {
+  .sub-menu a {
     font-size: 1.2em;
     padding: 0.25em;
     line-height: normal;
     width: auto;
+    color: white;
   }
-  .sub-menu a:hover {
-    color: #ffffff;
+  .sub-menu a:hover,
+  .sub-menu li:hover {
+    color: black;
+    background-color: #ffb42a;
   }
+  .sub-menu a:active- > li {
+    background-color: #ffb42a;
+  }
+  /*Footer*/
   .footer-menu {
     position: relative;
     bottom: 0px;
-    /*a
-        {
-            float: left;
-            padding-left: 25px;
-            padding-right: 25px;
-        }*/
   }
   .footer-menu li {
     display: inline;
@@ -201,9 +191,6 @@
   }
   .footer-menu ul {
     text-align: center;
-  }
-  .footer-list-sub a {
-    font-size: 0.8em;
   }
   .link-active {
     background-color: transparent;
@@ -283,7 +270,15 @@
     font-size: 16px;
   }
   .blog-article {
-    /*Abstände*/
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+  .blog-article h2 {
+    margin-top: 0.5em;
+  }
+  .blog-article p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
   }
   .referenzen-article {
     margin-top: 2.5em;
@@ -302,6 +297,19 @@
     max-width: 250px;
     height: auto;
   }
+  .referenzen-article-small {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+  }
+  .referenzen-article-small blockquote {
+    margin-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+  }
+  .referenzen-article-small p {
+    margin: 0;
+    font-size: 0.8em;
+  }
   .article-small {
     margin-top: 0.3em;
     margin-bottom: 0.8em;
@@ -319,10 +327,12 @@
     margin-top: 1em;
   }
   .stellenanzeige {
-    /*Abstand verkleinern*/
+    margin-top: 2em;
   }
-  .stellenanzeige h4 {
-    /*Abstand verkleinern*/
+  .stellenanzeige h2 {
+    margin-top: 0em;
+  }
+  .stellenanzeige h3 {
     margin-top: 0.5em;
   }
   .stellenanzeige ul {

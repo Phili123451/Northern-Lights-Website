@@ -1,0 +1,399 @@
+/*Import LESS Files*/
+/*Farben*/
+/*Font Weights*/
+/*Schriftgrößen*/
+/*Standard Padding*/
+/*Abstände zwischen Textblöcken, Überschriften, etc.*/
+/*h1*/
+/*h2*/
+/*h3*/
+/*Breite und Höhe*/
+@media screen and (min-width: 768px) {
+  html {
+    width: device-width;
+  }
+  body {
+    font-size: 16px;
+    background-color: beige;
+  }
+  /*angepasste Bootstrap Columns*/
+  .col-sm-12-header {
+    position: relative;
+    min-height: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: -10px;
+  }
+  .col-sm-12-footer {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: -15px;
+    padding-bottom: 0.5em;
+  }
+  /*Überschriften*/
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #1ba39e;
+    margin-top: 1em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  p,
+  a,
+  li,
+  blockquote {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 150%;
+  }
+  /*Fließtext*/
+  .fliesstext {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  .infotext {
+    font-size: 0.9em;
+  }
+  .quellenangabe {
+    font-size: 0.75em;
+  }
+  .header-text {
+    font-size: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    vertical-align: central;
+  }
+  .main-menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-menu {
+    /*Anzeigen der Dropdown Links inline*/
+    /*Abstand zwischen den Links*/
+    /*Anzeigen der Links über die volle Breite*/
+  }
+  .mobile-menu img {
+    max-width: 10em;
+    min-width: 8em;
+    max-height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-menu label {
+    width: 100%;
+  }
+  .mobile-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-menu li {
+    padding: 0.5em;
+    padding-left: 3em;
+  }
+  .mobile-menu a {
+    font-size: 1.5em;
+    color: white;
+  }
+  .mobile-menu ul {
+    position: static;
+    display: none;
+  }
+  .mobile-menu li {
+    margin-bottom: 1px;
+  }
+  .mobile-menu ul li,
+  .mobile-menu li a {
+    width: 100%;
+  }
+  /*Anzeigen des mobilen Menüs*/
+  .show-menu {
+    display: block;
+  }
+  /*Untermenü (Dienstleistungen, Über uns, etc.*/
+  .sub-menu {
+    /*Abstand*/
+    margin-top: 0em;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sub-menu div {
+    background-color: rgba(26, 162, 158, 0.5);
+    padding-bottom: 0.4em;
+  }
+  .sub-menu h3,
+  .sub-menu a {
+    padding-left: 0.2em;
+  }
+  .sub-menu h3 {
+    line-height: 1.5em;
+    background-color: #1ba39e;
+    color: white;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+  .sub-menu li {
+    width: auto;
+    text-align: center;
+  }
+  .sub-menu a {
+    font-size: 1.3em;
+    padding: 0.25em;
+    line-height: normal;
+    width: auto;
+    color: white;
+  }
+  .sub-menu a:hover,
+  .sub-menu li:hover {
+    color: black;
+    background-color: #ffb42a;
+  }
+  .sub-menu a:active- > li {
+    background-color: #ffb42a;
+  }
+  /*Footer*/
+  .footer-menu {
+    position: relative;
+    bottom: 0px;
+  }
+  .footer-menu li {
+    display: inline;
+    border-top: 0px none;
+    border-right: 1px solid white;
+    border-bottom: 0px none;
+    border-left: 0px none;
+  }
+  .footer-menu a {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1.2em;
+  }
+  .footer-menu li:last-child {
+    border-width: 0px;
+  }
+  .footer-menu ul {
+    text-align: center;
+  }
+  .link-active {
+    background-color: transparent;
+  }
+  button {
+    padding: 0.8em;
+    font-size: 1em;
+    float: right;
+    margin-left: 0.5em;
+  }
+  input,
+  textarea,
+  select,
+  option,
+  label,
+  legend,
+  fieldset,
+  form {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 150%;
+    vertical-align: baseline;
+    padding: 0;
+    margin: 0;
+  }
+  form {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  form legend {
+    font-size: 1.5em;
+    padding-top: 0.8em;
+    border-bottom-width: 1px;
+    border-color: #2c57b1;
+    color: #2c57b1;
+  }
+  form form div {
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+  form form button {
+    float: right;
+  }
+  form label {
+    float: left;
+    width: 100%;
+    margin-top: 1em;
+    line-height: 2em;
+    vertical-align: central;
+  }
+  form select,
+  form option {
+    width: 15em;
+    padding: 0.1em;
+    text-overflow: ellipsis;
+    text-wrap: normal;
+    text-align: center;
+  }
+  form input,
+  form textarea {
+    line-height: 1em;
+    padding: 0.5em;
+  }
+  form input {
+    width: 50%;
+    float: right;
+    margin-right: 15em;
+  }
+  form select {
+    float: right;
+    margin-right: 22.5em;
+  }
+  form textarea {
+    width: 100%;
+  }
+  .bild {
+    width: 240px;
+    height: auto;
+  }
+  .bild img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bild p {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .blog-article {
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+  .blog-article h2 {
+    margin-top: 0.5em;
+  }
+  .blog-article p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .referenzen-article {
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+  .referenzen-article h2 {
+    margin-top: 0.5em;
+  }
+  .referenzen-article ul {
+    padding-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .referenzen-article-header img {
+    min-width: 150px;
+    max-width: 250px;
+    height: auto;
+  }
+  .referenzen-article-small {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+  }
+  .referenzen-article-small blockquote {
+    margin-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+  }
+  .referenzen-article-small p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  .article-small {
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
+    height: auto;
+  }
+  .article-small h2 {
+    font-size: 1.3em;
+  }
+  .article-small h3 {
+    margin-top: 0.5em;
+  }
+  .article-small p {
+    margin-top: 0.2em;
+    margin-bottom: 0;
+  }
+  .article-small a {
+    display: block;
+    margin-top: 1em;
+  }
+  .stellenanzeige {
+    margin-top: 2em;
+  }
+  .stellenanzeige h2 {
+    margin-top: 0em;
+  }
+  .stellenanzeige h3 {
+    margin-top: 0.5em;
+  }
+  .stellenanzeige ul {
+    padding: 0;
+    margin-top: 0em;
+  }
+  .stellenanzeige p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .contact-info {
+    padding: 1em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
+  .contact-info div {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-info h3 {
+    margin-top: 0.5em;
+  }
+  .contact-info h4 {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+  }
+  .contact-info p {
+    padding-top: 0em;
+    margin-top: 0em;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .col-sm-12-header {
+    float: left;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .col-sm-12-footer {
+    float: left;
+    width: 100%;
+  }
+}
