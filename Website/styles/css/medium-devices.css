@@ -8,9 +8,399 @@
 /*h2*/
 /*h3*/
 /*Breite und Höhe*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    width: device-width;
+  }
   body {
+    font-size: 14px;
+  }
+  /*angepasster Container für Navigation*/
+  .container-navigation {
+    width: 970px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*angepasste Bootstrap Columns*/
+  .col-md-12-header {
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -10px;
+  }
+  .col-md-12-footer {
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: -15px;
+    padding-bottom: 0.5em;
+  }
+  /*Überschriften*/
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #1ba39e;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  p,
+  a,
+  li,
+  blockquote {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 150%;
+  }
+  /*Fließtext*/
+  .fliesstext {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  .infotext {
+    font-size: 0.9em;
+  }
+  .quellenangabe {
+    font-size: 0.75em;
+  }
+  /*Northern Lights Schriftzug*/
+  .head {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .head h1 {
+    font-size: 2em;
+    margin-right: 1em;
+    text-align: right;
+    vertical-align: central;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+  }
+  #header {
+    margin-bottom: 2em;
+  }
+  .main-menu {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-menu li {
+    background-color: white;
+    width: auto;
+    float: left;
+  }
+  .main-menu a {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.2em;
+  }
+  .main-menu a:hover {
+    background-color: #1ba39e;
+    color: white;
+  }
+  .main-menu a:active {
+    background-color: #ffb42a;
+  }
+  #navigation {
+    margin: 0;
+  }
+  /*Verstecken des mobilen Menüs*/
+  .show-menu {
+    display: none;
+  }
+  #sub-menu-navigation {
+    position: fixed;
+    width: auto;
+  }
+  /*Untermenü (Dienstleistungen, Über uns, etc.*/
+  .sub-menu {
+    /*Abstand*/
+  }
+  .sub-menu div {
+    padding-bottom: 0.4em;
+  }
+  .sub-menu a {
+    padding-left: 0.2em;
+  }
+  .sub-menu h3 {
+    line-height: 1.3em;
+    color: black;
+    padding: 0.5em,0.5em,0.5em,0em;
+    font-size: 1.5em;
+    margin: 0;
+    border-bottom: 1px solid #1ba39e;
+  }
+  .sub-menu ul {
+    margin-top: 0.5em;
+  }
+  .sub-menu li {
+    width: auto;
+  }
+  .sub-menu a {
+    font-size: 1.3em;
+    padding: 0.25em;
+    line-height: normal;
+    width: auto;
+    color: black;
+  }
+  .sub-menu a:hover,
+  .sub-menu li:hover {
+    color: white;
+    background-color: #1ba39e;
+  }
+  .sub-menu a:active {
+    background-color: #ffb42a;
+  }
+  /*Footer*/
+  .footer-menu {
+    position: relative;
+    bottom: 0px;
+  }
+  .footer-menu li {
+    display: inline;
+    border-top: 0px none;
+    border-right: 1px solid white;
+    border-bottom: 0px none;
+    border-left: 0px none;
+  }
+  .footer-menu a {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1.1em;
+  }
+  .footer-menu li:last-child {
+    border-width: 0px;
+  }
+  .footer-menu ul {
+    text-align: center;
+  }
+  #footer {
+    margin-top: 2em;
+  }
+  .link-active {
+    background-color: #ffb42a;
+  }
+  button {
+    padding: 0.8em;
+    font-size: 1em;
+    float: right;
+    margin-left: 0.5em;
+  }
+  input,
+  textarea,
+  select,
+  option,
+  label,
+  legend,
+  fieldset,
+  form {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 150%;
+    vertical-align: baseline;
+    padding: 0;
+    margin: 0;
+  }
+  form {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  form legend {
+    font-size: 1.5em;
+    padding-top: 0.8em;
+    border-bottom-width: 1px;
+    border-color: #2c57b1;
+    color: #2c57b1;
+  }
+  form form div {
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+  form form button {
+    float: right;
+  }
+  form label {
+    float: left;
+    width: 100%;
+    margin-top: 1em;
+    line-height: 2em;
+    vertical-align: central;
+  }
+  form select,
+  form option {
+    padding: 0.1em;
+    text-overflow: ellipsis;
+    text-wrap: normal;
+    text-align: center;
+  }
+  form input,
+  form textarea,
+  form select {
+    line-height: 1em;
+    padding: 0.5em;
+  }
+  form input,
+  form select {
+    width: 50%;
+    float: right;
+    margin-right: 15em;
+  }
+  form textarea {
+    width: 100%;
+    resize: none;
+  }
+  .bild {
+    width: 240px;
+    height: auto;
+  }
+  .bild img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bild p {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
     font-size: 16px;
-    background-color: blue;
+  }
+  .blog-article {
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+  .blog-article h2 {
+    margin-top: 0.5em;
+  }
+  .blog-article p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .referenzen-article {
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+  .referenzen-article h2 {
+    margin-top: 0.5em;
+  }
+  .referenzen-article ul {
+    padding-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .referenzen-article-header img {
+    min-width: 150px;
+    max-width: 250px;
+    height: auto;
+  }
+  .referenzen-article-small {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+  }
+  .referenzen-article-small blockquote {
+    margin-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+  }
+  .referenzen-article-small p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  .article-small {
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
+    height: auto;
+  }
+  .article-small h2 {
+    font-size: 1.3em;
+  }
+  .article-small h3 {
+    margin-top: 0.5em;
+  }
+  .article-small p {
+    margin-top: 0.2em;
+    margin-bottom: 0;
+  }
+  .article-small a {
+    display: block;
+    margin-top: 1em;
+  }
+  .stellenanzeige {
+    margin-top: 2em;
+  }
+  .stellenanzeige h2 {
+    margin-top: 0em;
+  }
+  .stellenanzeige h3 {
+    margin-top: 0.5em;
+  }
+  .stellenanzeige ul {
+    padding: 0;
+    margin-top: 0em;
+  }
+  .stellenanzeige p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .contact-info {
+    padding: 0em;
+    margin-top: 0em;
+    height: auto;
+    background-color: transparent;
+  }
+  .contact-info div {
+    width: 100%;
+  }
+  .contact-info h3 {
+    margin-top: 0.5em;
+  }
+  .contact-info h4 {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+  }
+  .contact-info p {
+    padding-top: 0em;
+    margin-top: 0em;
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) and (min-width: 768px) {
+  .col-md-12-header {
+    float: left;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) and (min-width: 992px) {
+  .col-md-12-footer {
+    float: left;
+    width: 100%;
   }
 }

@@ -5,7 +5,7 @@
 // Bootstrap Grid Class
 @import "less/bootstrap/mixins/grid.less";
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px) and (max-width: 991px)
 {
     html
     {
@@ -14,10 +14,15 @@
 
     body
     {
-        font-size: @font-size-standard;
+        font-size: 14px;
         background-color:beige; //FIXME: Muss hier wieder raus
     }
 
+    /*angepasster Container für Navigation*/
+    .container-navigation
+    {
+        width:device-width;
+    }
 
 /*angepasste Bootstrap Columns*/
     .col-sm-12-header
@@ -88,26 +93,27 @@
         font-size: 0.75em;
     }
 
-    .header-text
+    /*Northern Lights Schriftzug*/
+    .head
     {
-        font-size:2.5em;
-        margin-left:auto;
-        margin-right:auto;
-        text-align:right;
-        vertical-align:central;
+        h1
+        {
+            font-size: 2em;
+            //margin-left: auto;
+            //margin-right: auto;
+            text-align: right;
+            vertical-align: central;
+            margin-top:0.5em;
+        }
     }
 
 ///////////////////////////////////////////////////
 // Menüs
 ///////////////////////////////////////////////////
-    .main-menu //FIXME: Kann aus den mobilen Versionen entfernt werden
-    {
-        margin-left:auto;
-        margin-right:auto;
-    }
-    
     .mobile-menu
     {
+        padding:0;
+
         img
         {
             max-width: 10em;
@@ -138,7 +144,7 @@
 
         a
         {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: white;
         }
         /*Anzeigen der Dropdown Links inline*/
@@ -189,7 +195,7 @@
 
         h3
         {
-            line-height: 1.5em;
+            line-height: 1.3em;
             background-color: @color-primary-green;
             color: white;
             padding: 0.5em;
@@ -217,7 +223,7 @@
                 background-color: @color-secondary-orange;
             }
 
-            a:active->li
+            a:active
             {
                 background-color:@color-secondary-orange;
             }
@@ -242,7 +248,7 @@
         {
             display: inline-block;
             padding: 0.5em;
-            font-size:1.2em;
+            font-size:1.1em;
         }
 
         li:last-child
@@ -332,20 +338,19 @@
 
         select, option
         {
-            width: 15em;
             padding: 0.1em;
             text-overflow:ellipsis;
             text-wrap:normal;
             text-align:center;
         }
 
-        input, textarea
+        input, textarea,select
         {
             line-height: 1em;
             padding: 0.5em;
         }
 
-        input
+        input,select
         {
             //display:block;
             width:50%;
@@ -353,15 +358,10 @@
             margin-right:15em;
         }
 
-        select
-        {
-            float:right;
-            margin-right:22.5em;
-        }
-
         textarea
         {
             width: 100%;
+            resize:none;
         }
     }
 

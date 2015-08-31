@@ -1,16 +1,582 @@
-﻿/*Import LESS Files*/
+﻿
+/*Import LESS Files*/
 @import "variables.less";
 
 // Bootstrap Grid Class
 @import "less/bootstrap/mixins/grid.less";
 
-@media screen and (min-width: 992px)
+@media screen and (min-width: 992px) and (max-width: 1199px)
 {
-
+    html
+    {
+        width:device-width;
+    }
 
     body
     {
-        font-size: @font-size-standard;
-        background-color: blue; //FIXME: Muss hier wieder raus
+        font-size: 14px;
+        //background-color:gray; //FIXME: Muss hier wieder raus
+    }
+
+    /*angepasster Container für Navigation*/
+    .container-navigation
+    {
+        width:970px;
+        padding-left:15px;
+        padding-right:15px;
+
+        float:none;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /*angepasste Bootstrap Columns*/
+    .col-md-12-header
+    {
+        .make-sm-column(12,0px);
+        margin-top:-10px;
+    }
+
+    .col-md-12-footer
+    {
+        .make-md-column(12,0px);
+        margin-bottom:-15px;
+        padding-bottom:0.5em;
+    }
+
+/*Überschriften*/
+    h1, h2, h3, h4
+    {
+        letter-spacing: 0.1em;
+        margin-bottom:0.1em;
+    }
+
+    h1
+    {
+        font-size:2em;
+        border-bottom:1px solid @color-primary-green;
+        margin-top:0;
+    }
+
+    h2
+    {
+        font-size:1.6em;
+    }
+
+    h3
+    {
+        font-size:1.25em;
+    }
+
+    h4
+    {
+        font-size:1.1em;
+    }
+
+    p,a,li,blockquote
+    {
+        font-size: 1em; 
+        letter-spacing: 0.1em;
+        line-height: 150%;
+    }
+
+    /*Fließtext*/
+    .fliesstext
+    {
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .infotext
+    {
+        font-size: 0.9em;
+    }
+
+    .quellenangabe
+    {
+        font-size: 0.75em;
+    }
+
+    /*Northern Lights Schriftzug*/
+    .head
+    {
+        float:none;
+        margin-left:auto;
+        margin-right:auto;
+
+        h1
+        {
+            font-size: 2em;
+            margin-right: 1em;
+            text-align: right;
+            vertical-align: central;
+            margin-top:0.5em;
+            margin-bottom:0;
+            padding-bottom:0.5em; //FIXME: Anpassen
+        }
+    }
+
+    #header
+    {
+        margin-bottom:2em;
+    }
+
+///////////////////////////////////////////////////
+// Menüs
+///////////////////////////////////////////////////
+    .main-menu
+    {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        li
+        {
+            background-color: white;
+            width:auto;
+            float: left;
+        }
+
+        a
+        {
+            text-align: center;
+            padding-top:0.5em;
+            padding-bottom:0.5em;
+            padding-left:2em;
+            padding-right:2em;
+            font-size:1.2em;
+        }
+
+            a:hover
+            {
+                background-color: @color-primary-green;
+                color:white;
+            }
+
+            a:active
+            {
+                background-color: @color-secondary-orange;
+            }
+    }
+
+    #navigation
+    {
+        margin:0;
+    }
+
+    /*Verstecken des mobilen Menüs*/
+    .show-menu
+    {
+        display:none;
+    }
+
+    #sub-menu-navigation
+    {
+        position:fixed;
+        width:auto;
+    }
+
+    /*Untermenü (Dienstleistungen, Über uns, etc.*/
+    .sub-menu
+    {
+        /*Abstand*/
+        //margin-top: 20em;
+
+        div
+        {
+            //background-color: @color-primary-green-hsla;
+            padding-bottom: 0.4em;
+        }
+
+        a
+        {
+            padding-left: 0.2em;
+        }
+
+        h3
+        {
+            line-height: 1.3em;
+            //background-color: @color-primary-green;
+            color: black;
+            padding: 0.5em,0.5em,0.5em,0em;
+            font-size:1.5em;
+            margin:0;
+            border-bottom:1px solid @color-primary-green;
+        }
+
+        ul
+        {
+            margin-top:0.5em;
+        }
+
+        li
+        {
+            width: auto;
+            //text-align: center;
+        }
+
+        a
+        {
+            font-size: 1.3em;
+            padding: 0.25em;
+            line-height: normal;
+            width: auto;
+            color: black;
+        }
+
+            a:hover, li:hover
+            {
+                color: white;
+                background-color: @color-primary-green;
+            }
+
+            a:active
+            {
+                background-color:@color-secondary-orange;
+            }
+    }
+
+    /*Footer*/
+    .footer-menu
+    {
+        position: relative;
+        bottom: 0px;
+
+        li
+        {
+            display: inline;
+            border-top: 0px none;
+            border-right: 1px solid white;
+            border-bottom: 0px none;
+            border-left: 0px none;
+        }
+
+        a
+        {
+            display: inline-block;
+            padding: 0.5em;
+            font-size:1.1em;
+        }
+
+        li:last-child
+        {
+            border-width:0px;
+        }
+
+        ul
+        {
+            text-align:center;
+        }
+    }
+
+    #footer
+    {
+        margin-top:2em;
+    }
+
+    //Keine farbiges Hervorheben von besuchten LInks im Menü
+    .link-active
+    {
+        background-color:@color-secondary-orange;
+    }
+
+///////////////////////////////////////////////////
+// Buttons
+///////////////////////////////////////////////////
+    button
+    {
+        padding: 0.8em;
+        font-size: 1em;
+        float:right;
+        margin-left:0.5em;
+    }
+
+///////////////////////////////////////////////////
+// Forms
+///////////////////////////////////////////////////
+    input,
+    textarea,
+    select,
+    option,
+    label,
+    legend,
+    fieldset,
+    form
+    {
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        line-height: 150%;
+
+        vertical-align:baseline;
+        padding:0;
+        margin:0;
+        
+    }
+
+    form
+    {
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        legend
+        {
+            font-size: 1.5em;
+            padding-top: 0.8em;
+            border-bottom-width: 1px;
+            border-color: @color-secondary-blue;
+            color: @color-secondary-blue;
+        }
+
+        form div
+        {
+            margin-bottom: 0.5em;
+            width: 100%;
+        }
+
+        form button
+        {
+            float: right;
+        }
+
+        label
+        {
+            //display: block;
+            float:left;
+            width: 100%;
+            margin-top: 1em;
+            line-height:2em;
+            vertical-align:central;
+        }
+
+        select, option
+        {
+            padding: 0.1em;
+            text-overflow:ellipsis;
+            text-wrap:normal;
+            text-align:center;
+        }
+
+        input, textarea,select
+        {
+            line-height: 1em;
+            padding: 0.5em;
+        }
+
+        input,select
+        {
+            //display:block;
+            width:50%;
+            float:right;
+            margin-right:15em;
+        }
+
+        textarea
+        {
+            width: 100%;
+            resize:none;
+        }
+    }
+
+///////////////////////////////////////////////////
+// Bild in Texten, mit Beschreibungstext
+///////////////////////////////////////////////////
+    .bild
+    {
+        width: 240px;
+        height: auto;
+   
+        //padding: 1em;
+
+        img
+        {
+            width: 100%;
+            height: auto;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        p
+        {
+            padding-top:0.8em;
+            padding-bottom:0.8em;
+            margin-top: 0px;
+            width:100%;
+            text-align:center;
+            font-size: @font-size-standard;
+        }
+    }
+
+
+
+///////////////////////////////////////////////////
+// Blog
+///////////////////////////////////////////////////
+    .blog-article
+    {
+        margin-top: 2.5em;
+        margin-bottom:2em;
+
+        h2
+        {
+            margin-top:0.5em;
+        }
+
+        p
+        {
+            margin-top: 0.5em;
+            margin-bottom:1em;
+        }
+    }
+
+///////////////////////////////////////////////////
+// Referenzen
+///////////////////////////////////////////////////
+    .referenzen-article
+    {
+        margin-top: 2.5em;
+        margin-bottom:2em;
+
+        h2
+        {
+            margin-top:0.5em;
+        }
+
+        ul
+        {
+            padding-left:0;
+            margin-top:0.5em;
+            margin-bottom:1em;
+        }
+    }
+
+    .referenzen-article-header
+    {
+        img
+        {
+            min-width:150px;
+            max-width:250px;
+            height:auto;
+            
+        }
+    }
+
+    .referenzen-article-small
+    {
+        margin-top:1.5em;
+        margin-bottom:0.8em;
+
+        blockquote
+        {
+            margin-left: 0;
+            margin-top: 0.5em;
+            margin-bottom:0.3em;
+        }
+
+        p
+        {
+            margin:0;
+            font-size:0.8em;
+        }
+    }
+
+///////////////////////////////////////////////////
+// Kleine Artikel (Blog, Stellenanzeigen)
+///////////////////////////////////////////////////
+    .article-small
+    {
+        margin-top: 0.3em;
+        margin-bottom: 0.8em;
+        height: auto;
+
+        h2
+        {
+            font-size:1.3em;
+        }
+
+        h3
+        {
+            margin-top: 0.5em;
+        }
+
+        p
+        {
+            margin-top: 0.2em;
+            margin-bottom: 0;
+        }
+
+        a
+        {
+            display: block;
+            margin-top: 1em;
+        }
+    }
+
+///////////////////////////////////////////////////
+// Stellenanzeige
+///////////////////////////////////////////////////
+    .stellenanzeige
+    {
+        margin-top: 2em;
+
+        h2
+        {
+            margin-top:0em;
+        }
+
+        h3
+        {
+            margin-top: 0.5em;
+        }
+
+        ul
+        {
+            padding: 0;
+            margin-top: 0em;
+        }
+
+        p
+        {
+            margin-top: 0.5em;
+            margin-bottom: 1em;
+        }
+    }
+
+///////////////////////////////////////////////////
+// Kontaktinformation
+///////////////////////////////////////////////////
+    .contact-info
+    {
+        padding: 0em;
+        //position:fixed;
+        margin-top:0em;
+        height:auto;
+        background-color:transparent;
+
+        div
+        {
+            width:100%;
+        }
+
+        h3
+        {
+            margin-top: 0.5em;
+        }
+
+        h4
+        {
+            margin-bottom: 0em;
+            padding-bottom: 0em;
+        }
+
+        p
+        {
+            padding-top: 0em;
+            margin-top: 0em;
+            font-size:0.9em;
+        }
     }
 }
+

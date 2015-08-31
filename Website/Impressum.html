@@ -19,49 +19,44 @@
 
 </head>
 <body>
-       
-    <!--Header mit Schriftzug Northern-Lights-->
-    <div class="row">
-        <header class="col-xs-12-header col-sm-12-header">
-            <h1 class="header-text">Northern-Lights</h1>
-        </header>
-
-    <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
-    <div class="clearfix"></div>
-        
-    <!--Hauptnavigation-->
+    <div class="container-navigation" id="header">
+        <!--Header mit Schriftzug Northern-Lights-->
         <div class="row">
-                
-
-            <nav class="menu main-menu mobile-menu col-xs-12 col-sm-12">
-                <label for="show-menu" class="show-menu"><img src="images/menu_mobile_button.png" alt="Symbol mobiles Menü"/></label>
-                <input type="checkbox" id="show-menu" role="button" />
-                <ul id="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Über uns</a></li>
-                    <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                    <li><a href="referenzen.html">Referenzen</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
+            <div class="head no-select col-xs-12-header col-sm-12-header col-md-12-header">
+                <header>
+                    <h1>Northern-Lights</h1>
+                </header>
+            </div>
+        <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+        <div class="clearfix"></div>
+        
+        <!--Hauptnavigation-->
+            <div class="menu main-menu mobile-menu col-xs-12 col-sm-12 col-md-10">
+                <nav >
+                    <label for="show-menu" class="show-menu"><img src="images/menu_mobile_button.png" alt="Symbol mobiles Menü"/></label>
+                    <input type="checkbox" id="show-menu" role="button" />
+                    <ul id="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                        <li><a href="referenzen.html">Referenzen</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 
-    <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
-    <div class="clearfix"></div>
     <div class="container">
         <!--Inhalt-->
         <div class="row">
             
             <!--Linke Spalte-->
-            <div class="menu sub-menu col-xs-12 col-sm-12">
+            <div class="menu sub-menu col-xs-12 col-sm-12 col-md-3">
             </div>
 
-            <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
-            <div class="clearfix"></div>
-
             <!--Hauptinhalt-->
-            <div class="col-xs-12 col-sm-12">
+            <div class="col-xs-12 col-sm-12 col-md-6">
                 <h1>Impressum</h1>
             
                 <h3>Angaben gemäß § 5 TMG</h3>
@@ -121,21 +116,19 @@
 
             </div>
 
-            <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
-            <div class="clearfix"></div>
-
             <!--Rechte Spalte-->
-            <div class="col-xs-12 col-sm-12">
+            <div class="col-xs-12 col-sm-12 col-md-3">
             </div>
         </div>
-
-        <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
-        <div class="clearfix"></div>
     </div>
 
-    <!--Footermenü-->
-    <div class="row">
-            <footer class="menu footer-menu col-xs-12-footer col-sm-12-footer">
+    <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+    <div class="clearfix"></div>
+
+    <div class="container-navigation" id="footer">
+        <!--Footermenü-->
+        <div class="row">
+            <footer class="menu footer-menu col-xs-12-footer col-sm-12-footer col-md-12-footer">
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -148,6 +141,7 @@
                     </ul>
                 </nav>
             </footer>
+        </div>
     </div>
 </body>
 </html>

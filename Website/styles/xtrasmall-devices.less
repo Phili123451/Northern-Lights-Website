@@ -19,13 +19,18 @@
         font-size: @font-size-standard;
     }
 
+    /*angepasster Container für Navigation*/
+    .container-navigation
+    {
+        width:device-width;
+    }
 
 /*angepasste Bootstrap Columns*/
     .col-xs-12-header
     {
-        .make-xs-column(12,60px);
+        .make-xs-column(12,0px);
         margin-top:-10px;
-        margin-right:-30px;
+        padding-right:2em;
     }
 
     .col-xs-12-footer
@@ -34,7 +39,6 @@
         margin-bottom:-15px;
         padding-bottom:0.5em;
     }
-
 
 
 /*Überschriften*/
@@ -65,10 +69,6 @@
         font-size:1.1em;
     }
 
-    header
-    {
-    }
-
     p,a,li,blockquote
     {
         font-size: 1em; 
@@ -93,29 +93,27 @@
         font-size: 0.75em;
     }
 
-    .header-text
+    /*Northern Lights Schriftzug*/
+    .head
     {
-        font-size:2em;
-        margin-left:auto;
-        margin-right:auto;
-        text-align:right;
-        vertical-align:central;
+        h1
+        {
+            font-size: 1.5em;
+            text-align: right;
+            vertical-align: central;
+        }
     }
 
 ///////////////////////////////////////////////////
 // Menüs
 ///////////////////////////////////////////////////
-    .main-menu //FIXME: Kann aus den mobilen Versionen entfernt werden
-    {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
     .mobile-menu
     {
+        padding:0;
+
         img
         {
-            max-width: 30%;
+            max-width: 20%;
             min-width: 15%;
             max-height:20%;
             display: block;
@@ -143,7 +141,7 @@
 
         a
         {
-            font-size: 1.5em;
+            font-size: 1em;
             color: white;
         }
         /*Anzeigen der Dropdown Links inline*/
@@ -218,7 +216,7 @@
                 background-color: @color-secondary-orange;
             }
 
-            a:active->li
+            a:active
             {
                 background-color:@color-secondary-orange;
             }
@@ -297,47 +295,52 @@
 
     form
     {
-        padding-top:1em;
-        padding-bottom:1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
 
         legend
         {
             font-size: 1.5em;
             padding-top: 0.8em;
-            border-bottom-width:1px;
-            border-color:@color-secondary-blue;
-            color:@color-secondary-blue;
+            border-bottom-width: 1px;
+            border-color: @color-secondary-blue;
+            color: @color-secondary-blue;
         }
 
         form div
         {
             margin-bottom: 0.5em;
-            width:100%;
+            width: 100%;
         }
 
         form button
         {
-            float:right;
+            float: right;
         }
 
         label
         {
-            display:block;
-            width:100%;
-            margin-top:1em;
+            display: block;
+            width: 100%;
+            margin-top: 1em;
         }
 
-        select,option
+        select, option
         {
             width: auto;
-            padding:0.1em;
+            padding: 0.1em;
         }
-    
-        input,textarea
+
+        input, textarea
         {
-            width:100%;
-            line-height:1em;
-            padding:0.5em;
+            width: 100%;
+            line-height: 1em;
+            padding: 0.5em;
+        }
+
+        textarea
+        {
+            resize:none;
         }
     }
 
@@ -509,6 +512,13 @@
         padding:1em;
         margin-top:3em;
         margin-bottom:1em;
+
+        div
+        {
+            float:none;
+            margin-left:auto;
+            margin-right:auto;
+        }
 
         h3
         {
