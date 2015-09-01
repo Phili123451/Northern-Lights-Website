@@ -111,7 +111,7 @@ h2 {
 }
 h3,
 h4 {
-  font-family: 'cabinmedium', 'Arial', sans-serif;
+  font-family: cabinsemibold, 'Arial', sans-serif;
   color: black;
 }
 /*Links*/
@@ -174,6 +174,7 @@ ul {
 .menu a:active {
   background-color: #ffb42a;
 }
+/*Menü für mobile Endgeräte*/
 .mobile-menu {
   /*Verstecken der Checkbox*/
   /*Anzeigen des Menüs, wenn die Checkbox angeklickt wird*/
@@ -213,7 +214,7 @@ ul {
 }
 .sub-menu a,
 .sub-menu span {
-  font-family: cabinmedium, 'Arial', sans-serif;
+  font-family: cabinregular, 'Arial', sans-serif;
 }
 .footer-menu {
   background-color: #1ba39e;

@@ -29,7 +29,6 @@
     padding-left: 0px;
     padding-right: 0px;
     margin-top: -10px;
-    padding-right: 2em;
   }
   .col-xs-12-footer {
     position: relative;
@@ -86,6 +85,9 @@
     font-size: 1.5em;
     text-align: right;
     vertical-align: central;
+    margin: 0;
+    padding-right: 2em;
+    padding-top: 0.5em;
   }
   .mobile-menu {
     padding: 0;
@@ -177,10 +179,7 @@
   }
   .footer-menu li {
     display: inline;
-    border-top: 0px none;
     border-right: 1px solid white;
-    border-bottom: 0px none;
-    border-left: 0px none;
   }
   .footer-menu a {
     display: inline-block;
@@ -191,6 +190,8 @@
   }
   .footer-menu ul {
     text-align: center;
+    margin: 0;
+    padding-top: 0.5em;
   }
   .link-active {
     background-color: transparent;
@@ -312,6 +313,11 @@
   .referenzen-article-small p {
     margin: 0;
     font-size: 0.8em;
+  }
+  .referenzen-article-header-small img {
+    min-width: 100px;
+    max-width: 200px;
+    height: auto;
   }
   .article-small {
     margin-top: 0.3em;

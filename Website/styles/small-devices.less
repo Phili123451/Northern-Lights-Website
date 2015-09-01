@@ -27,7 +27,7 @@
 /*angepasste Bootstrap Columns*/
     .col-sm-12-header
     {
-        .make-sm-column(12,60px);
+        .make-sm-column(12,0px);
         margin-top:-10px;
     }
 
@@ -72,7 +72,7 @@
     p,a,li,blockquote
     {
         font-size: 1em; 
-        letter-spacing: 0.1em;
+        letter-spacing: 0.06em;
         line-height: 150%;
     }
 
@@ -99,11 +99,11 @@
         h1
         {
             font-size: 2em;
-            //margin-left: auto;
-            //margin-right: auto;
             text-align: right;
             vertical-align: central;
-            margin-top:0.5em;
+            padding-top:0.5em;
+            padding-right:2em;
+            margin:0;
         }
     }
 
@@ -238,10 +238,7 @@
         li
         {
             display: inline;
-            border-top: 0px none;
             border-right: 1px solid white;
-            border-bottom: 0px none;
-            border-left: 0px none;
         }
 
         a
@@ -259,6 +256,8 @@
         ul
         {
             text-align:center;
+            margin:0;
+            padding-top:0.5em;
         }
     }
 
@@ -465,6 +464,17 @@
         {
             margin:0;
             font-size:0.8em;
+        }
+    }
+
+    .referenzen-article-header-small
+    {
+        img
+        {
+            min-width:100px;
+            max-width:200px;
+            height:auto;
+            
         }
     }
 

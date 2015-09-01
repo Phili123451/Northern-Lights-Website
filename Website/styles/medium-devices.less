@@ -76,7 +76,7 @@
     p,a,li,blockquote
     {
         font-size: 1em; 
-        letter-spacing: 0.1em;
+        letter-spacing: 0.01em;
         line-height: 150%;
     }
 
@@ -107,10 +107,10 @@
         h1
         {
             font-size: 2em;
-            margin-right: 1em;
+            margin-right: 2em;
             text-align: right;
             vertical-align: central;
-            margin-top:0.5em;
+            padding-top:0.5em;
             margin-bottom:0;
             padding-bottom:0.5em; //FIXME: Anpassen
         }
@@ -175,19 +175,19 @@
     #sub-menu-navigation
     {
         position:fixed;
-        width:auto;
+        width:27%;
     }
 
     /*Untermenü (Dienstleistungen, Über uns, etc.*/
     .sub-menu
     {
         /*Abstand*/
-        //margin-top: 20em;
+        margin-top: 5em;
 
         div
         {
-            //background-color: @color-primary-green-hsla;
             padding-bottom: 0.4em;
+            max-width:70%;
         }
 
         a
@@ -198,30 +198,28 @@
         h3
         {
             line-height: 1.3em;
-            //background-color: @color-primary-green;
             color: black;
             padding: 0.5em,0.5em,0.5em,0em;
-            font-size:1.5em;
-            margin:0;
-            border-bottom:1px solid @color-primary-green;
+            font-size: 1.3em;
+            margin: 0;
+            border-bottom: 1px solid @color-primary-green;
         }
 
         ul
         {
-            margin-top:0.5em;
+            margin-top: 0.5em;
         }
 
         li
         {
             width: auto;
-            //text-align: center;
         }
 
         a
         {
-            font-size: 1.3em;
+            font-size: 1em;
             padding: 0.25em;
-            line-height: normal;
+            line-height: none;
             width: auto;
             color: black;
         }
@@ -234,7 +232,7 @@
 
             a:active
             {
-                background-color:@color-secondary-orange;
+                background-color: @color-secondary-orange;
             }
     }
 
@@ -247,10 +245,7 @@
         li
         {
             display: inline;
-            border-top: 0px none;
             border-right: 1px solid white;
-            border-bottom: 0px none;
-            border-left: 0px none;
         }
 
         a
@@ -268,6 +263,8 @@
         ul
         {
             text-align:center;
+            margin:0;
+            padding-top:0.5em;
         }
     }
 
@@ -287,8 +284,8 @@
 ///////////////////////////////////////////////////
     button
     {
-        padding: 0.8em;
-        font-size: 1em;
+        padding: 0.5em;
+        font-size: 0.9em;
         float:right;
         margin-left:0.5em;
     }
@@ -307,7 +304,7 @@
     {
         font-size: 1em;
         letter-spacing: 0.1em;
-        line-height: 150%;
+        line-height: 120%;
 
         vertical-align:baseline;
         padding:0;
@@ -352,24 +349,21 @@
 
         select, option
         {
-            padding: 0.1em;
+            //padding: 0.1em;
             text-overflow:ellipsis;
             text-wrap:normal;
             text-align:center;
         }
 
-        input, textarea,select
+        input,textarea,select
         {
-            line-height: 1em;
+            line-height: 1.5em;
             padding: 0.5em;
         }
 
         input,select
         {
-            //display:block;
-            width:50%;
-            float:right;
-            margin-right:15em;
+            width:100%;
         }
 
         textarea
@@ -471,14 +465,27 @@
         blockquote
         {
             margin-left: 0;
+            margin-right:0;
             margin-top: 0.5em;
             margin-bottom:0.3em;
+            font-size:0.9em;
         }
 
         p
         {
             margin:0;
-            font-size:0.8em;
+            font-size:0.7em;
+        }
+    }
+
+    .referenzen-article-header-small
+    {
+        img
+        {
+            min-width:100px;
+            max-width:150px;
+            height:auto;
+            
         }
     }
 
@@ -498,6 +505,7 @@
 
         h3
         {
+            font-size:1.1em;
             margin-top: 0.5em;
         }
 
@@ -550,10 +558,14 @@
     .contact-info
     {
         padding: 0em;
-        //position:fixed;
-        margin-top:0em;
+        margin-top:1em;
         height:auto;
         background-color:transparent;
+
+        a
+        {
+            font-size:1em;
+        }
 
         div
         {

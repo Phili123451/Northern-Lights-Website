@@ -24,8 +24,8 @@
   .col-sm-12-header {
     position: relative;
     min-height: 1px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-top: -10px;
   }
   .col-sm-12-footer {
@@ -63,7 +63,7 @@
   li,
   blockquote {
     font-size: 1em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.06em;
     line-height: 150%;
   }
   /*Fließtext*/
@@ -82,7 +82,9 @@
     font-size: 2em;
     text-align: right;
     vertical-align: central;
-    margin-top: 0.5em;
+    padding-top: 0.5em;
+    padding-right: 2em;
+    margin: 0;
   }
   .mobile-menu {
     padding: 0;
@@ -178,10 +180,7 @@
   }
   .footer-menu li {
     display: inline;
-    border-top: 0px none;
     border-right: 1px solid white;
-    border-bottom: 0px none;
-    border-left: 0px none;
   }
   .footer-menu a {
     display: inline-block;
@@ -193,6 +192,8 @@
   }
   .footer-menu ul {
     text-align: center;
+    margin: 0;
+    padding-top: 0.5em;
   }
   .link-active {
     background-color: transparent;
@@ -325,6 +326,11 @@
   .referenzen-article-small p {
     margin: 0;
     font-size: 0.8em;
+  }
+  .referenzen-article-header-small img {
+    min-width: 100px;
+    max-width: 200px;
+    height: auto;
   }
   .article-small {
     margin-top: 0.3em;
