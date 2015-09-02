@@ -15,7 +15,12 @@
     body
     {
         font-size: 13px;
-        //background-color:gray; //FIXME: Muss hier wieder raus
+    }
+
+    /*Anpassung der Bootstrap .container Klasse*/
+    .container
+    {
+        margin-top:3em;
     }
 
     /*angepasster Container für Navigation*/
@@ -45,21 +50,19 @@
     .col-lg-7-footer
     {
         .make-lg-column(7,0px);
-        //margin-bottom:-15px;
         padding-bottom:0.5em;
     }
 
 /*Überschriften*/
     h1, h2, h3, h4
     {
-        letter-spacing: 0.1em;
+        letter-spacing: 0.01em;
         margin-bottom:0.1em;
     }
 
     h1
     {
         font-size:2em;
-        //border-bottom:1px solid @color-primary-green;
         margin-top:0;
     }
 
@@ -70,12 +73,12 @@
 
     h3
     {
-        font-size:1.25em;
+        font-size:1.4em;
     }
 
     h4
     {
-        font-size:1.1em;
+        font-size:1.2em;
     }
 
     p,a,li,blockquote
@@ -90,6 +93,12 @@
     {
         margin-top: 0.5em;
         margin-bottom: 1.5em;
+    }
+
+    /*Aufzählungen im Fließtext*/
+    .fliesstext-list
+    {
+
     }
 
     .infotext
@@ -193,6 +202,7 @@
 
         h3
         {
+            letter-spacing:0.01em;
             line-height: 1.3em;
             color: black;
             padding: 0.5em,0.5em,0.5em,0em;
@@ -213,7 +223,7 @@
 
         a
         {
-            font-size: 0.9em;
+            font-size: 0.96em;
             padding: 0.25em;
             line-height: none;
             width: auto;
@@ -235,11 +245,9 @@
     /*Footer*/
     .footer-menu
     {
-        position: relative;
-        //position:static;
-        bottom: 0px;
         background-color:white;
         border-top:1px solid @color-primary-green;
+        
         li
         {
             display: inline;
@@ -275,6 +283,9 @@
     #footer
     {
         margin-top:2em;
+        position:relative;
+        bottom:0;
+        margin-bottom:0;
     }
 
     //Keine farbiges Hervorheben von besuchten LInks im Menü
@@ -310,7 +321,7 @@
         letter-spacing: 0.1em;
         line-height: 120%;
 
-        vertical-align:baseline;
+        vertical-align:central;
         padding:0;
         margin:0;
         
@@ -320,6 +331,9 @@
     {
         padding-top: 1em;
         padding-bottom: 1em;
+        width:70%;
+        margin-left:auto;
+        margin-right:auto;
 
         legend
         {
@@ -343,37 +357,39 @@
 
         label
         {
-            //display: block;
-            float:left;
+            display: inline-block;
             width: 100%;
-            margin-top: 1em;
-            line-height:2em;
-            vertical-align:central;
+            margin-top: 0.3em;
+            padding:0.5em;
+            font-size:1.2em;
         }
 
         select, option
         {
-            //padding: 0.1em;
+            padding: 0.1em;
             text-overflow:ellipsis;
             text-wrap:normal;
             text-align:center;
         }
 
-        input,textarea,select
+        input,textarea
         {
-            line-height: 1.5em;
             padding: 0.5em;
         }
 
         input,select
         {
-            width:100%;
+            width:70%;
+            margin-right:0;
+            display:inline-block;
+            float:right;
         }
 
         textarea
         {
             width: 100%;
             resize:none;
+            margin-top:0.3em;
         }
     }
 
@@ -415,7 +431,7 @@
     .blog-article
     {
         margin-top: 2.5em;
-        margin-bottom:2em;
+        margin-bottom:6em;
 
         h2
         {
@@ -429,25 +445,40 @@
         }
     }
 
+    .blog-article:last-child
+    {
+        margin-bottom:0;
+    }
+
 ///////////////////////////////////////////////////
 // Referenzen
 ///////////////////////////////////////////////////
     .referenzen-article
     {
         margin-top: 2.5em;
-        margin-bottom:2em;
+        margin-bottom: 6em;
 
         h2
         {
-            margin-top:0.5em;
+            margin-top: 0.5em;
         }
 
         ul
         {
-            padding-left:0;
-            margin-top:0.5em;
-            margin-bottom:1em;
+            padding-left: 0;
+            margin-top: 0.5em;
+            margin-bottom: 1em;
         }
+
+        p
+        {
+            margin:0;
+        }
+    }
+
+    .referenzen-article:last-child
+    {
+        margin-bottom:0;
     }
 
     .referenzen-article-header
@@ -455,7 +486,7 @@
         img
         {
             min-width:150px;
-            max-width:250px;
+            max-width:200px;
             height:auto;
             
         }
@@ -498,13 +529,14 @@
 ///////////////////////////////////////////////////
     .article-small
     {
-        margin-top: 0.3em;
+        margin-top: 0em;
         margin-bottom: 0.8em;
         height: auto;
 
         h2
         {
             font-size:1.3em;
+            margin-top:0em;
         }
 
         h3
@@ -523,7 +555,13 @@
         {
             display: block;
             margin-top: 1em;
+            margin-bottom:3em;
         }
+    }
+
+    .article-small-container
+    {
+        margin-bottom:3em;
     }
 
 ///////////////////////////////////////////////////
@@ -531,11 +569,12 @@
 ///////////////////////////////////////////////////
     .stellenanzeige
     {
-        margin-top: 2em;
+        margin-top: 2.5em;
+        margin-bottom:6em;
 
         h2
         {
-            margin-top:0em;
+            margin-top: 0em;
         }
 
         h3
@@ -549,6 +588,11 @@
             margin-top: 0em;
         }
 
+        li
+        {
+            font-size:1.1em;
+        }
+
         p
         {
             margin-top: 0.5em;
@@ -556,13 +600,18 @@
         }
     }
 
+    .stellenanzeige:last-child
+    {
+        margin-bottom:0;
+    }
+
 ///////////////////////////////////////////////////
 // Kontaktinformation
 ///////////////////////////////////////////////////
     .contact-info
     {
-        padding: 0em;
-        margin-top:1em;
+        margin-top:0em;
+        margin-bottom:3em;
         height:auto;
         background-color:transparent;
 
@@ -576,13 +625,9 @@
             width:100%;
         }
 
-        h3
-        {
-            margin-top: 0.5em;
-        }
-
         h4
         {
+            margin-top:0;
             margin-bottom: 0em;
             padding-bottom: 0em;
         }
@@ -591,7 +636,7 @@
         {
             padding-top: 0em;
             margin-top: 0em;
-            font-size:1em;
+            font-size:1.1em;
         }
     }
 }

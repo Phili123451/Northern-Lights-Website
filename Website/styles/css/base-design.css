@@ -8,12 +8,6 @@
 /*h2*/
 /*h3*/
 /*Breite und Höhe*/
-/*Import der genutzen Schriftarten (Google Fonts)*/
-/*FIXME: MUss hier raus
-@import url(http://fonts.googleapis.com/css?family=Merriweather);
-@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
-@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
-*/
 /*Zitate*/
 @font-face {
   font-family: 'merriweatheritalic';
@@ -38,14 +32,20 @@
   font-weight: 700;
   font-style: normal;
 }
-/*Serifenlose Schrift für Infotext, Links und Überschriften*/
-@font-face {
-  font-family: 'cabinmedium';
-  src: url('../../fonts/cabin/cabin-medium-webfont.eot');
-  src: url('../../fonts/cabin/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/cabin/cabin-medium-webfont.woff2') format('woff2'), url('../../fonts/cabin/cabin-medium-webfont.woff') format('woff'), url('../../fonts/cabin/cabin-medium-webfont.ttf') format('truetype'), url('../../fonts/cabin/cabin-medium-webfont.svg#cabinmedium') format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
+/*FIMXE: kann raus Serifenlose Schrift für Infotext, Links und Überschriften*/
+/*@font-face 
+{
+    font-family: 'cabinmedium';
+    src: url('../../fonts/cabin/cabin-medium-webfont.eot');
+    src: url('../../fonts/cabin/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cabin/cabin-medium-webfont.woff2') format('woff2'),
+         url('../../fonts/cabin/cabin-medium-webfont.woff') format('woff'),
+         url('../../fonts/cabin/cabin-medium-webfont.ttf') format('truetype'),
+         url('../../fonts/cabin/cabin-medium-webfont.svg#cabinmedium') format('svg');
+    font-weight: @font-weight-normal;
+    font-style: normal;
+
+}*/
 /*Serifenlose Schrift für Infotext, Links und Überschriften*/
 @font-face {
   font-family: 'cabinregular';
@@ -78,28 +78,14 @@
   -ms-user-select: none;
   user-select: none;
 }
-/*
-*::selection
-{
-    background-color:@color-secondary-orange;
+html,
+body {
+  height: 100%;
 }
-
-*::-moz-selection
-{
-    background-color:@color-secondary-orange; 
-}*/
 body {
   background-color: white;
   color: black;
 }
-/*BEGINN TESTBEREICH FÜR MODULE*/
-div {
-  /*
-    border-left:solid;
-    border-right:solid;
-    border-width:1px;*/
-}
-/*ENDE TESTBEREICH FÜR MODULE*/
 /*Überschriften*/
 h1 {
   font-family: cabinbold, 'Arial', sans-serif;
@@ -111,12 +97,12 @@ h2 {
 }
 h3,
 h4 {
-  font-family: cabinsemibold, 'Arial', sans-serif;
+  font-family: cabinregular, 'Arial', sans-serif;
   color: black;
 }
 /*Links*/
 a {
-  font-family: cabinbold, 'Arial', sans-serif;
+  font-family: cabinregular, 'Arial', sans-serif;
   text-decoration: underline;
   color: black;
 }
@@ -301,6 +287,9 @@ select:focus {
 .contact-info {
   background-color: rgba(44, 86, 175, 0.1);
 }
+.contact-info p {
+  font-family: cabinregular, Arial, sans-serif;
+}
 /*Zitat*/
 blockquote {
   font-family: 'merriweatheritalic', 'Times New Roman', serif;
@@ -317,4 +306,8 @@ blockquote:after {
 }
 .article-small h2 {
   color: #2c57b1;
+}
+.fliesstext-list li {
+  font-family: merriweatherregular, 'Times New Roman', serif;
+  list-style: disc;
 }

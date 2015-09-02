@@ -15,7 +15,12 @@
     body
     {
         font-size: 14px;
-        //background-color:gray; //FIXME: Muss hier wieder raus
+    }
+
+    /*Anpassung der Bootstrap .container Klasse*/
+    .container
+    {
+        margin-top:3em;
     }
 
     /*angepasster Container für Navigation*/
@@ -40,14 +45,14 @@
     .col-md-12-footer
     {
         .make-md-column(12,0px);
-        margin-bottom:-15px;
+        //margin-bottom:-15px;
         padding-bottom:0.5em;
     }
 
 /*Überschriften*/
     h1, h2, h3, h4
     {
-        letter-spacing: 0.1em;
+        letter-spacing: 0.05em;
         margin-bottom:0.1em;
     }
 
@@ -103,16 +108,19 @@
         float:none;
         margin-left:auto;
         margin-right:auto;
+        background-color:white;
 
         h1
         {
+            color:@color-primary-green;
+            border-bottom:1px solid @color-primary-green;
             font-size: 2em;
-            margin-right: 2em;
+            //margin-right: 2em;
             text-align: right;
             vertical-align: central;
             padding-top:0.5em;
             margin-bottom:0;
-            padding-bottom:0.5em; //FIXME: Anpassen
+            padding-bottom:0; //FIXME: Anpassen
         }
     }
 
@@ -239,9 +247,9 @@
     /*Footer*/
     .footer-menu
     {
-        position: relative;
-        bottom: 0px;
-
+        background-color:white;
+        border-top:1px solid @color-primary-green;
+        
         li
         {
             display: inline;
@@ -253,6 +261,12 @@
             display: inline-block;
             padding: 0.5em;
             font-size:1.1em;
+            color:black;
+        }
+
+        a:hover
+        {
+            background-color:transparent;
         }
 
         li:last-child
@@ -264,13 +278,16 @@
         {
             text-align:center;
             margin:0;
-            padding-top:0.5em;
+            //padding-top:0.5em;
         }
     }
 
     #footer
     {
         margin-top:2em;
+        position: relative;
+        bottom: 0px;
+        margin-bottom:0;
     }
 
     //Keine farbiges Hervorheben von besuchten LInks im Menü
@@ -304,7 +321,7 @@
     {
         font-size: 1em;
         letter-spacing: 0.1em;
-        line-height: 120%;
+        line-height: 100%;
 
         vertical-align:baseline;
         padding:0;
@@ -321,8 +338,6 @@
         {
             font-size: 1.5em;
             padding-top: 0.8em;
-            border-bottom-width: 1px;
-            border-color: @color-secondary-blue;
             color: @color-secondary-blue;
         }
 
@@ -339,31 +354,36 @@
 
         label
         {
-            //display: block;
+            font-size:1.1em;
             float:left;
             width: 100%;
             margin-top: 1em;
-            line-height:2em;
             vertical-align:central;
         }
 
         select, option
         {
-            //padding: 0.1em;
+            padding: 0.1em;
             text-overflow:ellipsis;
             text-wrap:normal;
             text-align:center;
         }
 
-        input,textarea,select
+        input,textarea
         {
-            line-height: 1.5em;
             padding: 0.5em;
+            margin-top:0.2em;
         }
 
-        input,select
+        input
         {
             width:100%;
+        }
+
+        select
+        {
+            width:auto;
+            height:auto;
         }
 
         textarea
@@ -425,6 +445,11 @@
         }
     }
 
+    .blog-article:last-child
+    {
+        margin-bottom:0;
+    }
+
 ///////////////////////////////////////////////////
 // Referenzen
 ///////////////////////////////////////////////////
@@ -446,12 +471,17 @@
         }
     }
 
+    .referenzen-article:last-child
+    {
+        margin-bottom:0;
+    }
+
     .referenzen-article-header
     {
         img
         {
-            min-width:150px;
-            max-width:250px;
+            min-width:120px;
+            max-width:170px;
             height:auto;
             
         }
@@ -483,7 +513,7 @@
         img
         {
             min-width:100px;
-            max-width:150px;
+            max-width:140px;
             height:auto;
             
         }
@@ -522,6 +552,11 @@
         }
     }
 
+        .article-small-container
+    {
+
+    }
+
 ///////////////////////////////////////////////////
 // Stellenanzeige
 ///////////////////////////////////////////////////
@@ -557,7 +592,6 @@
 ///////////////////////////////////////////////////
     .contact-info
     {
-        padding: 0em;
         margin-top:1em;
         height:auto;
         background-color:transparent;
@@ -587,7 +621,7 @@
         {
             padding-top: 0em;
             margin-top: 0em;
-            font-size:0.9em;
+            font-size:1em;
         }
     }
 }

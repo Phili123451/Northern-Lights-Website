@@ -23,7 +23,7 @@
         <!--Header mit Schriftzug Northern-Lights-->
         <div class="row">
             <div class="head no-select col-xs-12-header col-sm-12-header col-md-12-header col-lg-7-header col-lg-push-2">
-                <header>
+                <header class="">
                     <h1>Northern-Lights</h1>
                 </header>
             </div>
@@ -40,10 +40,11 @@
                         <li><a href="about.html">Über uns</a></li>
                         <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
                         <li><a href="referenzen.html">Referenzen</a></li>
-                        <li><a href="blog.html" class="link-active">Blog</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </nav>
             </div>
+            
         </div>
     </div>
 
@@ -52,69 +53,42 @@
         <div class="row">
             
             <!--Linke Spalte-->
-            <div class="menu sub-menu col-xs-12 col-sm-12 col-md-3 col-lg-2">
+            <div class="menu sub-menu col-xs-12 col-sm-8 col-md-3 col-lg-2">
+                <nav id="sub-menu-navigation">
+                    <div>
+                        <h3>Weiter zu ...</h3>
+                        <ul>
+                            <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                            <li><a href="product_om.html">Customer Communication Management</a></li>
+                            <li><a href="product_se.html" class="link-active">Software Entwicklung</a></li>
+                            <li><a href="product_wm.html">Workflow Management</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
 
             <!--Hauptinhalt-->
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
-                <h1>Der Northern-Lights Blog</h1>
-                <p class="fliesstext">
-                    In diesem Blog finden Sie stets Neuigkeiten von unserer Firma, als auch Neuigkeiten 
-                    aus den Bereichen mit denen wir uns befassen und die für die Branche wichtig sind.
-                </p>
-                <article class="blog-article">
-                    <h2>ZUGFeRD</h2>
-                    <p class="infotext">erstellt am 22.8.2015 von Philipp Abromeit</p>
-                    <p>
-                        Das Forum elektronische Rechnung Deutschland (FeRD) hat ein gemeinsames übergreifendes Format für elektronische Rechnungen erarbeitet, 
-                        das für den Rechnungsaustausch zwischen Unternehmen, Behörden und Verbrauchern genutzt werden kann und den
-                        Austausch strukturierter Daten zwischen Rechnungssteller und Rechnungsempfänger ermöglicht („ZUGFeRD“ Format).
-                    </p>
-                    <p>
-                        Das ZUGFeRD-Rechnungsformat erlaubt es, Rechnungsdaten in strukturierter Weise in einer PDF Datei zu übermitteln 
-                        und diese ohne weitere Schritte auszulesen und zu verarbeiten. Das FeRD-Rechnungsformat wurde von Unternehmen aus der 
-                        Automobilindustrie, dem Einzelhandel, dem Bankensektor, der Software-Industrie, aber auch vom öffentlichen Sektor erarbeitet.
-                    </p>
-                    <p>
-                        Es entspricht den Anforderungen der internationalen Standardisierung und kann auch im grenzüberschreitenden 
-                        europäischen und internationalen Rechnungsverkehr aufgenommen und angewendet werden.
-                    </p>
-                    <h3>Weiterführende Informationen</h3>
-                    <a href="http://www.ferd-net.de/front_content.php">www.ferd-net.de</a>
-                </article>
+                <h1 class="hidden-md hidden-lg">Customer Communication Management</h1>
 
-                <article class="blog-article">
-                    <h2>IT-Stammtisch</h2>
-                    <p class="infotext">erstellt am 6.8.2015 von Philipp Abromeit</p>
-                    <p>
-                        Wir möchten Sie herzlich zu unserem IT-Stammtisch, im Technologiezentrum Flensburg einladen.
-                        Zu den Themen gehören unter anderem
-                    </p>
-                    <ul class="fliesstext-list">
-                        <li>Stärken der regionalen Wirtschaft,</li>
-                        <li>Flensburg als attraktiver IT-Standort und</li>
-                        <li>verbessern der Kooperation zwischen Unternehmen, Hochschulen und Studenten.</li>
-                    </ul>
-                    <p>
-                        Natürlich gibt es auch die Möglichkeit neue Themen in die Runde einzubringen.
-                        Wir möchten den Stammtisch als feste Größe etablieren und regelmäßig stattfinden lassen.
-                    </p>
-                    <h3>Veranstaltungsdetails</h3>
-                    <p class="fliesstext">
-                        <strong>Ort:</strong> Technologiezentrum Flensburg <br />
-                        <strong>Zeitpunkt:</strong> 2. September von 18:00 bis 20:30 Uhr
-                    </p>
-                </article>
+                <p class="fliesstext">
+                    Unter Softwareentwicklung sind im besonderen die Dienstleistungen beinhaltet, 
+                    die die Unterstütztung bei der oder die gesamte Entwicklung eines Software-Produktes umfassen, 
+                    das im Unternehmensbereich eingesetzt werden soll. Von einer Intranet-Lösung bis hin zu einer 
+                    speziellen Schnittstelle in einem heterogenen Netzwerk von Produkten. Der Anschluss von SAP Produkten 
+                    an externe Werkzeuge ist hier ebenso gemeint, wie die Anbindung spezieller Datenbanken.
+                </p>
+
             </div>
 
             <!--Rechte Spalte-->
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             </div>
         </div>
-    </div>
 
-    <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
-    <div class="clearfix"></div>
+        <!--Clear für Bootstrap Grid, damit Zeilen mit unterschiedlichen Höhen sich nicht überlappen-->
+        <div class="clearfix"></div>
+    </div>
 
     <div class="container-navigation" id="footer">
         <!--Footermenü-->
@@ -134,6 +108,7 @@
             </footer>
         </div>
     </div>
+
 
 </body>
 </html>

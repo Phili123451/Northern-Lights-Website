@@ -173,10 +173,6 @@
     background-color: #ffb42a;
   }
   /*Footer*/
-  .footer-menu {
-    position: relative;
-    bottom: 0px;
-  }
   .footer-menu li {
     display: inline;
     border-right: 1px solid white;
@@ -192,6 +188,11 @@
     text-align: center;
     margin: 0;
     padding-top: 0.5em;
+  }
+  #footer {
+    position: relative;
+    bottom: 0px;
+    margin-top: 2em;
   }
   .link-active {
     background-color: transparent;
@@ -284,6 +285,9 @@
     margin-top: 0.5em;
     margin-bottom: 1em;
   }
+  .blog-article:last-child {
+    margin-bottom: 0;
+  }
   .referenzen-article {
     margin-top: 2.5em;
     margin-bottom: 2em;
@@ -295,6 +299,9 @@
     padding-left: 0;
     margin-top: 0.5em;
     margin-bottom: 1em;
+  }
+  .referenzen-article:last-child {
+    margin-bottom: 0;
   }
   .referenzen-article-header img {
     min-width: 150px;

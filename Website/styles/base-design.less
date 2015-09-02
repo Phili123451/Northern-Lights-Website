@@ -4,13 +4,6 @@
 @import "variables.less";
 @import "mixins.less";
 
-/*Import der genutzen Schriftarten (Google Fonts)*/
-/*FIXME: MUss hier raus
-@import url(http://fonts.googleapis.com/css?family=Merriweather);
-@import url(http://fonts.googleapis.com/css?family=Cabin:700italic,700,600,500,400);
-@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
-*/
-
 ///////////////////////////////////////////////////
 // Schriftarten
 ///////////////////////////////////////////////////
@@ -60,8 +53,8 @@
 
 }
 
-/*Serifenlose Schrift für Infotext, Links und Überschriften*/
-@font-face 
+/*FIMXE: kann raus Serifenlose Schrift für Infotext, Links und Überschriften*/
+/*@font-face 
 {
     font-family: 'cabinmedium';
     src: url('../../fonts/cabin/cabin-medium-webfont.eot');
@@ -73,7 +66,7 @@
     font-weight: @font-weight-normal;
     font-style: normal;
 
-}
+}*/
 
 /*Serifenlose Schrift für Infotext, Links und Überschriften*/
 @font-face 
@@ -112,11 +105,10 @@
 
 *, *:before, *:after
 {
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- -ms-box-sizing: border-box;
- box-sizing: border-box;
- 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .no-select
@@ -128,39 +120,17 @@
     -ms-user-select: none;
     user-select: none;
 }
-/*
-*::selection
+
+html, body
 {
-    background-color:@color-secondary-orange;
+    height:100%;
 }
-
-*::-moz-selection
-{
-    background-color:@color-secondary-orange; 
-}*/
-
-
-
 
 body 
 {
     background-color:white;
     color:black;
 }
-
-/*BEGINN TESTBEREICH FÜR MODULE*/
-
-
-
-
-div
-{
-    /*
-    border-left:solid;
-    border-right:solid;
-    border-width:1px;*/
-}
-/*ENDE TESTBEREICH FÜR MODULE*/
 
 /*Überschriften*/
 h1
@@ -177,14 +147,14 @@ h2
 
 h3,h4
 {
-    font-family: cabinsemibold, 'Arial' , sans-serif;
+    font-family: cabinregular, 'Arial' , sans-serif;
     color:black;
 }
 
 /*Links*/
 a
 {
-    font-family: cabinbold, 'Arial', sans-serif;
+    font-family: cabinregular, 'Arial', sans-serif;
     text-decoration: underline;
     color: black;
 
@@ -339,7 +309,6 @@ ul
 {
     a, span
     {
-        //font-family: cabinbold, 'Arial', sans-serif;
         font-family: cabinregular, 'Arial', sans-serif;
     }
 }
@@ -367,19 +336,8 @@ ul
         }
 }
 
-.footer-list-main
-{
-
-}
-
-
 
 /*FORMS*/
-.formular
-{
-
-}
-
 .form-required-sign
 {
     color:red;
@@ -495,7 +453,12 @@ select:focus
 /*Kontakt Sidebar*/
 .contact-info
 {
-    background-color:@color-secondary-blue-hsla;
+    background-color: @color-secondary-blue-hsla;
+
+    p
+    {
+        font-family:cabinregular, Arial,sans-serif;
+    }
 }
 
 /*Zitat*/
@@ -528,4 +491,11 @@ blockquote:after
     }
 }
 
-//FIXME: Zitat + Copyright + R
+.fliesstext-list
+{
+    li
+    {
+        font-family:merriweatherregular,'Times New Roman',serif;
+        list-style:disc;
+    }
+}

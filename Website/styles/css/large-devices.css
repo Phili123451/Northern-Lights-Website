@@ -15,6 +15,10 @@
   body {
     font-size: 13px;
   }
+  /*Anpassung der Bootstrap .container Klasse*/
+  .container {
+    margin-top: 3em;
+  }
   /*angepasster Container für Navigation*/
   .container-navigation {
     width: 1170px;
@@ -50,7 +54,7 @@
   h2,
   h3,
   h4 {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
     margin-bottom: 0.1em;
   }
   h1 {
@@ -61,10 +65,10 @@
     font-size: 1.6em;
   }
   h3 {
-    font-size: 1.25em;
+    font-size: 1.4em;
   }
   h4 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   p,
   a,
@@ -79,6 +83,7 @@
     margin-top: 0.5em;
     margin-bottom: 1.5em;
   }
+  /*Aufzählungen im Fließtext*/
   .infotext {
     font-size: 0.9em;
   }
@@ -144,6 +149,7 @@
     padding-left: 0.2em;
   }
   .sub-menu h3 {
+    letter-spacing: 0.01em;
     line-height: 1.3em;
     color: black;
     padding: 0.5em,0.5em,0.5em,0em;
@@ -158,7 +164,7 @@
     width: auto;
   }
   .sub-menu a {
-    font-size: 0.9em;
+    font-size: 0.96em;
     padding: 0.25em;
     line-height: none;
     width: auto;
@@ -174,8 +180,6 @@
   }
   /*Footer*/
   .footer-menu {
-    position: relative;
-    bottom: 0px;
     background-color: white;
     border-top: 1px solid #1ba39e;
   }
@@ -201,6 +205,9 @@
   }
   #footer {
     margin-top: 2em;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
   }
   .link-active {
     background-color: #ffb42a;
@@ -222,13 +229,16 @@
     font-size: 1em;
     letter-spacing: 0.1em;
     line-height: 120%;
-    vertical-align: baseline;
+    vertical-align: central;
     padding: 0;
     margin: 0;
   }
   form {
     padding-top: 1em;
     padding-bottom: 1em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
   form legend {
     font-size: 1.5em;
@@ -245,31 +255,34 @@
     float: right;
   }
   form label {
-    float: left;
+    display: inline-block;
     width: 100%;
-    margin-top: 1em;
-    line-height: 2em;
-    vertical-align: central;
+    margin-top: 0.3em;
+    padding: 0.5em;
+    font-size: 1.2em;
   }
   form select,
   form option {
+    padding: 0.1em;
     text-overflow: ellipsis;
     text-wrap: normal;
     text-align: center;
   }
   form input,
-  form textarea,
-  form select {
-    line-height: 1.5em;
+  form textarea {
     padding: 0.5em;
   }
   form input,
   form select {
-    width: 100%;
+    width: 70%;
+    margin-right: 0;
+    display: inline-block;
+    float: right;
   }
   form textarea {
     width: 100%;
     resize: none;
+    margin-top: 0.3em;
   }
   .bild {
     width: 240px;
@@ -292,7 +305,7 @@
   }
   .blog-article {
     margin-top: 2.5em;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
   }
   .blog-article h2 {
     margin-top: 0.5em;
@@ -301,9 +314,12 @@
     margin-top: 0.5em;
     margin-bottom: 1em;
   }
+  .blog-article:last-child {
+    margin-bottom: 0;
+  }
   .referenzen-article {
     margin-top: 2.5em;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
   }
   .referenzen-article h2 {
     margin-top: 0.5em;
@@ -313,9 +329,15 @@
     margin-top: 0.5em;
     margin-bottom: 1em;
   }
+  .referenzen-article p {
+    margin: 0;
+  }
+  .referenzen-article:last-child {
+    margin-bottom: 0;
+  }
   .referenzen-article-header img {
     min-width: 150px;
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
   }
   .referenzen-article-small {
@@ -339,12 +361,13 @@
     height: auto;
   }
   .article-small {
-    margin-top: 0.3em;
+    margin-top: 0em;
     margin-bottom: 0.8em;
     height: auto;
   }
   .article-small h2 {
     font-size: 1.3em;
+    margin-top: 0em;
   }
   .article-small h3 {
     font-size: 1.1em;
@@ -357,9 +380,14 @@
   .article-small a {
     display: block;
     margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .article-small-container {
+    margin-bottom: 3em;
   }
   .stellenanzeige {
-    margin-top: 2em;
+    margin-top: 2.5em;
+    margin-bottom: 6em;
   }
   .stellenanzeige h2 {
     margin-top: 0em;
@@ -371,13 +399,19 @@
     padding: 0;
     margin-top: 0em;
   }
+  .stellenanzeige li {
+    font-size: 1.1em;
+  }
   .stellenanzeige p {
     margin-top: 0.5em;
     margin-bottom: 1em;
   }
+  .stellenanzeige:last-child {
+    margin-bottom: 0;
+  }
   .contact-info {
-    padding: 0em;
-    margin-top: 1em;
+    margin-top: 0em;
+    margin-bottom: 3em;
     height: auto;
     background-color: transparent;
   }
@@ -387,17 +421,15 @@
   .contact-info div {
     width: 100%;
   }
-  .contact-info h3 {
-    margin-top: 0.5em;
-  }
   .contact-info h4 {
+    margin-top: 0;
     margin-bottom: 0em;
     padding-bottom: 0em;
   }
   .contact-info p {
     padding-top: 0em;
     margin-top: 0em;
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
