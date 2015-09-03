@@ -72,96 +72,97 @@
 
             <!--Hauptinhalt-->
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
-                <h1>Treten Sie mit uns in Kontakt</h1>
-                <p class="fliesstext">
-                    Haben Sie weitere Fragen zu unseren Dienstleistungen? Gerne beraten wir Sie individuell.
-                    Nutzen Sie ganz bequem unser Kontaktformular, um mit uns in Kontakt zu treten.
-                </p>
-                <h2>Wir rufen Sie zurück</h2>
-                <p class="fliesstext">
-                    Über das Kontaktformular haben Sie die Möglichkeit einen Rückruf anzufordern. 
-                    Füllen Sie einfach das Formular aus und wählen Sie bei "Ihr Anliegen" die Option "Rückruf".
-                    Ein Mitarbeiter wird Sie, so schnell wie möglich anrufen und Sie gerne beraten.
-                </p>
-                <p class="fliesstext">
-                    Soll dies zu einem bestimmten Zeitpunkt erfolgen, so geben Sie bei Ihrer Anfrage, den oder die möglichen 
-                    Rückruftermine an.
-                </p>
-                <p class="fliesstext">
-                    Wir freuen uns auf Ihre Anfrage.
-                </p>
+                <article role="main">
+                    <h1>Treten Sie mit uns in Kontakt</h1>
+                    <p class="fliesstext">
+                        Haben Sie weitere Fragen zu unseren Dienstleistungen? Gerne beraten wir Sie individuell.
+                        Nutzen Sie ganz bequem unser Kontaktformular, um mit uns in Kontakt zu treten.
+                    </p>
+                    <h2>Wir rufen Sie zurück</h2>
+                    <p class="fliesstext">
+                        Über das Kontaktformular haben Sie die Möglichkeit einen Rückruf anzufordern. 
+                        Füllen Sie einfach das Formular aus und wählen Sie bei "Ihr Anliegen" die Option "Rückruf".
+                        Ein Mitarbeiter wird Sie, so schnell wie möglich anrufen und Sie gerne beraten.
+                    </p>
+                    <p class="fliesstext">
+                        Soll dies zu einem bestimmten Zeitpunkt erfolgen, so geben Sie bei Ihrer Anfrage, den oder die möglichen 
+                        Rückruftermine an.
+                    </p>
+                    <p class="fliesstext">
+                        Wir freuen uns auf Ihre Anfrage.
+                    </p>
 
 
 
-                <form action="http://www.inf.fh-flensburg.de/echo/" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                    <form action="http://www.inf.fh-flensburg.de/echo/" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     
-                    <fieldset>
-                        <legend>Ihre Daten</legend>
-                        <div>
-                            <label for="kontakt_anrede">Anrede <span class="form-required-sign">*</span>
-                                <select name="kontakt_anrede" id="kontakt_anrede" tabindex="1" required>
-                                    <option value="">----</option>
-                                    <option value="frau">Frau</option>
-                                    <option value="herr">Herr</option>
-                                </select>
-                            </label>
-                        </div>
+                        <fieldset>
+                            <legend>Ihre Daten</legend>
+                            <div>
+                                <label for="kontakt_anrede">Anrede <span class="form-required-sign">*</span>
+                                    <select name="kontakt_anrede" id="kontakt_anrede" tabindex="1" required>
+                                        <option value="">----</option>
+                                        <option value="frau">Frau</option>
+                                        <option value="herr">Herr</option>
+                                    </select>
+                                </label>
+                            </div>
 
-                        <div>
-                            <label for="kontakt_vorname">Vorname <span class="form-required-sign">*</span>
-                                <input name="kontakt_vorname" type="text" id="kontakt_vorname" tabindex="2" placeholder="Max" required/>
-                            </label>
-                        </div>
+                            <div>
+                                <label for="kontakt_vorname">Vorname <span class="form-required-sign">*</span>
+                                    <input name="kontakt_vorname" type="text" id="kontakt_vorname" tabindex="2" placeholder="Max" required/>
+                                </label>
+                            </div>
 
-                        <div>
-                            <label for="kontakt_nachname">Nachname <span class="form-required-sign">*</span>
-                                <input name="kontakt_nachname" type="text" id="kontakt_nachname" tabindex="3" placeholder="Mustermann" required />
-                            </label>
-                        </div>
+                            <div>
+                                <label for="kontakt_nachname">Nachname <span class="form-required-sign">*</span>
+                                    <input name="kontakt_nachname" type="text" id="kontakt_nachname" tabindex="3" placeholder="Mustermann" required />
+                                </label>
+                            </div>
 
-                        <div>
-                            <label for="kontakt_email">E-Mail <span class="form-required-sign">*</span>
-                                <input name="kontakt_email" type="email" id="kontakt_email" tabindex="4" placeholder="adresse@domain.com" required />
-                            </label>
-                        </div>
+                            <div>
+                                <label for="kontakt_email">E-Mail <span class="form-required-sign">*</span>
+                                    <input name="kontakt_email" type="email" id="kontakt_email" tabindex="4" placeholder="adresse@domain.com" required />
+                                </label>
+                            </div>
 
-                        <div>
-                            <label for="kontakt_telefon">Telefon <span class="form-required-sign">*</span>
-                                <input name="kontakt_telefon" type="tel" id="kontakt_telefon" tabindex="5" placeholder="0333 / 11 22 33 4" required/>
-                            </label>
-                        </div>
-                    </fieldset>
+                            <div>
+                                <label for="kontakt_telefon">Telefon <span class="form-required-sign">*</span>
+                                    <input name="kontakt_telefon" type="tel" id="kontakt_telefon" tabindex="5" placeholder="0333 / 11 22 33 4" required/>
+                                </label>
+                            </div>
+                        </fieldset>
 
-                    <fieldset>
-                        <legend>Ihre Anfrage</legend>
+                        <fieldset>
+                            <legend>Ihre Anfrage</legend>
                         
-                        <div>
-                            <label for="kontakt_anliegen">Ihr Anliegen <span class="form-required-sign">*</span>
-                                <select name="kontakt_anliegen" id="kontakt_anliegen" tabindex="6" required>
-                                    <option value="">Anliegen auswählen</option>
-                                    <option value="angebot">Angebot anfordern</option>
-                                    <option value="fragen_zu_dienstleistungen">Fragen zu Dienstleistungen</option>
-                                    <option value="individuelle_beratung">Individuelle Beratung</option>
-                                    <option value="rueckruf">Rückruf</option>
-                                    <option value="sonstige">Sonstiges</option>
-                                </select>
-                            </label>
-                        </div>
+                            <div>
+                                <label for="kontakt_anliegen">Ihr Anliegen <span class="form-required-sign">*</span>
+                                    <select name="kontakt_anliegen" id="kontakt_anliegen" tabindex="6" required>
+                                        <option value="">Anliegen auswählen</option>
+                                        <option value="angebot">Angebot anfordern</option>
+                                        <option value="fragen_zu_dienstleistungen">Fragen zu Dienstleistungen</option>
+                                        <option value="individuelle_beratung">Individuelle Beratung</option>
+                                        <option value="rueckruf">Rückruf</option>
+                                        <option value="sonstige">Sonstiges</option>
+                                    </select>
+                                </label>
+                            </div>
 
-                        <div>
-                            <label for="kontakt_anfrage">Bitte Geben Sie Ihre Anfrage ein <span class="form-required-sign">*</span>
-                                <textarea name="kontakt_anfrage" id="kontakt_anfrage" tabindex="7" rows="10" wrap="soft" placeholder="Bitte geben Sie Ihre Anfrage ein." required></textarea>
-                            </label>
-                        </div>
-                    </fieldset>
+                            <div>
+                                <label for="kontakt_anfrage">Bitte Geben Sie Ihre Anfrage ein <span class="form-required-sign">*</span>
+                                    <textarea name="kontakt_anfrage" id="kontakt_anfrage" tabindex="7" rows="10" wrap="soft" placeholder="Bitte geben Sie Ihre Anfrage ein." required></textarea>
+                                </label>
+                            </div>
+                        </fieldset>
 
-                    <p class="infotext">Bitte füllen Sie alle gekennzeichneten (<span class="form-required-sign">*</span>) Felder aus.</p>
+                        <p class="infotext">Bitte füllen Sie alle gekennzeichneten (<span class="form-required-sign">*</span>) Felder aus.</p>
 
-                    <button type="submit" tabindex="8">Abschicken</button>
-                    <button type="reset" tabindex="9">Zurücksetzen</button>
-                </form>
+                        <button type="submit" tabindex="8">Abschicken</button>
+                        <button type="reset" tabindex="9">Zurücksetzen</button>
+                    </form>
 
-
+                </article>
             </div>
 
         <!--Rechte Spalte-->
