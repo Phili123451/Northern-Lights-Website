@@ -123,6 +123,9 @@ li {
 ul {
   list-style-type: none;
 }
+article[role=main] li {
+  font-family: merriweatherregular, 'Times New Roman', serif;
+}
 /*
     Klassen
 */
@@ -306,8 +309,4 @@ blockquote:after {
 }
 .article-small h2 {
   color: #2c57b1;
-}
-.fliesstext-list li {
-  font-family: merriweatherregular, 'Times New Roman', serif;
-  list-style: disc;
 }

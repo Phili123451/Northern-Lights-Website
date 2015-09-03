@@ -186,7 +186,13 @@ ul
     list-style-type:none;
 }
 
-
+article[role=main]
+{
+    li
+    {
+        font-family:merriweatherregular,'Times New Roman',serif;
+    }
+}
 
 
 /*
@@ -411,10 +417,6 @@ select:focus
     outline-color: @color-secondary-blue;
 }
 
-
-
-
-
 /*Bilder*/
 .bild
 {
@@ -436,19 +438,6 @@ select:focus
         color: black;
     }
 }
-
-.bild-galerie //FIXME: Wird das noch gebraucht????
-{
-
-    p
-    {
-    }
-
-    h3
-    {
-    }
-}
-
 
 /*Kontakt Sidebar*/
 .contact-info
@@ -491,11 +480,3 @@ blockquote:after
     }
 }
 
-.fliesstext-list
-{
-    li
-    {
-        font-family:merriweatherregular,'Times New Roman',serif;
-        list-style:disc;
-    }
-}

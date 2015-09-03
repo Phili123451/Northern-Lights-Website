@@ -58,7 +58,7 @@
 
     h1
     {
-        font-size:2em;
+        font-size:1.8em;
         border-bottom:1px solid @color-primary-green;
         margin-top:0;
     }
@@ -423,6 +423,81 @@
         }
     }
 
+///////////////////////////////////////////////////
+// Artikel (Hauptinhalt)
+///////////////////////////////////////////////////
+    article[role=main]
+    {
+        h1
+        {
+            margin-top: 1.3em;
+            margin-bottom: 0.7em;
+        }
+
+        h2
+        {
+            margin-top: 1.5em;
+            margin-bottom: 0.6em;
+        }
+
+        h3
+        {
+            margin-top: 0.8em;
+            margin-bottom: 0.5em;
+        }
+
+        h4
+        {
+            margin-top: 0.6em;
+            margin-bottom: 0.4em;
+        }
+
+        p
+        {
+            margin-top: 0.7em;
+            margin-bottom: 0;
+        }
+
+        a[role=article]
+        {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 0.7em;
+            margin-bottom:1.5em;
+        }
+
+        a[role=navigation]
+        {
+            font-size: 1.1em;
+        }
+
+        ul
+        {
+            margin-top: 0.8em;
+        }
+
+        li
+        {
+            list-style: disc;
+            margin-bottom: 0.3em;
+        }
+
+        ul[role=link]
+        {
+            li
+            {
+                list-style:none;
+            }
+        }
+    }
+
+        article[role=main]:first-child
+        {
+            h1
+            {
+                margin-top: 0;
+            }
+        }
 
 
 ///////////////////////////////////////////////////
@@ -431,16 +506,17 @@
     .blog-article
     {
         margin-top: 2.5em;
-        margin-bottom:2em;
+        margin-bottom:4em;
 
         h2
         {
             margin-top:0.5em;
+            margin-bottom:0.2em;
         }
 
         p
         {
-            margin-top: 0.5em;
+            margin-top:0;
             margin-bottom:1em;
         }
     }
@@ -453,21 +529,27 @@
 ///////////////////////////////////////////////////
 // Referenzen
 ///////////////////////////////////////////////////
-    .referenzen-article
+.referenzen-article
     {
         margin-top: 2.5em;
-        margin-bottom:2em;
+        margin-bottom: 6em;
 
         h2
         {
-            margin-top:0.5em;
+            margin-top: 0.5em;
+            margin-bottom:0.2em;
         }
 
         ul
         {
-            padding-left:0;
-            margin-top:0.5em;
-            margin-bottom:1em;
+            padding-left: 0;
+            margin-top: 0.3em;
+            margin-bottom: 1em;
+        }
+
+        p
+        {
+            margin:0;
         }
     }
 
@@ -480,7 +562,7 @@
     {
         img
         {
-            min-width:120px;
+            min-width:100px;
             max-width:170px;
             height:auto;
             
@@ -490,7 +572,7 @@
     .referenzen-article-small
     {
         margin-top:1.5em;
-        margin-bottom:0.8em;
+        margin-bottom:3em;
 
         blockquote
         {
@@ -498,13 +580,13 @@
             margin-right:0;
             margin-top: 0.5em;
             margin-bottom:0.3em;
-            font-size:0.9em;
+            font-size:1em;
         }
 
         p
         {
             margin:0;
-            font-size:0.7em;
+            font-size:0.9em;
         }
     }
 
@@ -513,7 +595,7 @@
         img
         {
             min-width:100px;
-            max-width:140px;
+            max-width:130px;
             height:auto;
             
         }
@@ -552,9 +634,9 @@
         }
     }
 
-        .article-small-container
+    .article-side
     {
-
+        margin-bottom:3em;
     }
 
 ///////////////////////////////////////////////////
@@ -592,18 +674,12 @@
 ///////////////////////////////////////////////////
     .contact-info
     {
-        margin-top:1em;
         height:auto;
         background-color:transparent;
 
         a
         {
             font-size:1em;
-        }
-
-        div
-        {
-            width:100%;
         }
 
         h3

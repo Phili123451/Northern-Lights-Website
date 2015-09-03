@@ -14,7 +14,6 @@
   }
   body {
     font-size: 14px;
-    background-color: beige;
   }
   /*angepasster Container für Navigation*/
   .container-navigation {
@@ -138,6 +137,7 @@
     float: none;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
   }
   .sub-menu div {
     background-color: rgba(26, 162, 158, 0.5);
@@ -152,15 +152,15 @@
     background-color: #1ba39e;
     color: white;
     padding: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .sub-menu li {
     width: auto;
     text-align: center;
   }
   .sub-menu a {
-    font-size: 1.3em;
-    padding: 0.25em;
+    font-size: 1.15em;
+    padding: 0.2em;
     line-height: normal;
     width: auto;
     color: white;
@@ -287,6 +287,48 @@
     text-align: center;
     font-size: 16px;
   }
+  article[role=main] h1 {
+    margin-top: 1.3em;
+    margin-bottom: 0.7em;
+  }
+  article[role=main] h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+  }
+  article[role=main] h3 {
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+  }
+  article[role=main] h4 {
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
+  }
+  article[role=main] p {
+    margin-top: 0.7em;
+    margin-bottom: 0;
+  }
+  article[role=main] a[role=article] {
+    display: block;
+    font-size: 1.1em;
+    margin-top: 0.7em;
+    margin-bottom: 1.5em;
+  }
+  article[role=main] a[role=navigation] {
+    font-size: 1.1em;
+  }
+  article[role=main] ul {
+    margin-top: 0.8em;
+  }
+  article[role=main] li {
+    list-style: disc;
+    margin-bottom: 0.3em;
+  }
+  article[role=main] ul[role=link] li {
+    list-style: none;
+  }
+  article[role=main]:first-child h1 {
+    margin-top: 0;
+  }
   .blog-article {
     margin-top: 2.5em;
     margin-bottom: 2em;
@@ -323,7 +365,7 @@
   }
   .referenzen-article-small {
     margin-top: 1.5em;
-    margin-bottom: 0.8em;
+    margin-bottom: 1.5em;
   }
   .referenzen-article-small blockquote {
     margin-left: 0;
@@ -376,14 +418,15 @@
     margin-bottom: 1em;
   }
   .contact-info {
-    padding: 1em;
     margin-top: 3em;
     margin-bottom: 1em;
   }
   .contact-info div {
+    width: 30%;
     float: none;
     margin-left: auto;
     margin-right: auto;
+    padding: 1em;
   }
   .contact-info h3 {
     margin-top: 0.5em;
