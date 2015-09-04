@@ -142,7 +142,7 @@ h1
 h2
 {
     font-family: 'cabinsemibold', 'Arial' , sans-serif;
-    color: black;
+    color:@color-primary-green;
 }
 
 h3,h4
@@ -452,9 +452,16 @@ select:focus
 {
     background-color: @color-secondary-blue-hsla;
 
+    h4
+    {
+        color:@color-secondary-blue;
+    }
+
     p
     {
         font-family:cabinregular, Arial,sans-serif;
+        //font-family:merriweatherregular,'Times New Roman',serif;
+        //color:@color-secondary-blue-hsla;
     }
 }
 
@@ -462,7 +469,7 @@ select:focus
 blockquote
 {
     font-family: 'merriweatheritalic', 'Times New Roman',serif;
-    color: @color-secondary-blue;
+    //color: @color-primary-green;
 
     p
     {
@@ -484,7 +491,30 @@ blockquote:after
 {
     h2
     {
-        color:@color-secondary-blue;
+        color:@color-primary-green;
+    }
+}
+
+
+///////////////////////////////////////////////////
+// Artikel (Hauptinhalt)
+///////////////////////////////////////////////////
+article[role=main]
+{
+    h1
+    {
+        color: @color-primary-green;
+        border-bottom: 1px solid @color-primary-green;
+    }
+
+    h1.contact-headline, h2.contact-headline
+    {
+        color: @color-secondary-blue;
+    }
+
+    h1.contact-headline
+    {
+        border-bottom: 1px solid @color-secondary-blue;
     }
 }
 

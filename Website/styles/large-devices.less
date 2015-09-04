@@ -180,7 +180,7 @@
     .sub-menu
     {
         /*Abstand*/
-        margin-top: 5em;
+        margin-top: 10em;
 
         div
         {
@@ -244,7 +244,7 @@
         li
         {
             display: inline;
-            border-right: 1px solid white;
+            border-right: 0;
         }
 
         a
@@ -425,6 +425,12 @@
         {
             margin-top: 1.3em;
             margin-bottom: 0.7em;
+            border:none;
+        }
+
+        h1.contact-headline
+        {
+            border:none;
         }
 
         h2
@@ -691,9 +697,10 @@
 ///////////////////////////////////////////////////
     .contact-info
     {
+        padding-top:1em;
+        width:80%;
         margin:0em;
         height:auto;
-        background-color:transparent;
 
         a
         {
@@ -712,6 +719,40 @@
             padding-top: 0em;
             margin-top: 0em;
             font-size:1.1em;
+        }
+    }
+
+    .contact-headline
+    {
+        color:@color-secondary-blue;
+    }
+
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+// Dokumentation
+///////////////////////////////////////////////////
+    .footer-dokumentation
+    {
+        background-color:white;
+        border-top:1px solid @color-primary-green;
+        
+        li
+        {
+            display: inline;
+            padding-right:1.5em;
+            border:0;
+        }
+
+        li:last-child
+        {
+            padding-right:0px;
+        }
+
+        ul
+        {
+            text-align:center;
+            margin:0;
         }
     }
 }

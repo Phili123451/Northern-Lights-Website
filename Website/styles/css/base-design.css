@@ -93,7 +93,7 @@ h1 {
 }
 h2 {
   font-family: 'cabinsemibold', 'Arial', sans-serif;
-  color: black;
+  color: #1ba39e;
 }
 h3,
 h4 {
@@ -294,13 +294,15 @@ select:focus {
 .contact-info {
   background-color: rgba(44, 86, 175, 0.1);
 }
+.contact-info h4 {
+  color: #2c57b1;
+}
 .contact-info p {
   font-family: cabinregular, Arial, sans-serif;
 }
 /*Zitat*/
 blockquote {
   font-family: 'merriweatheritalic', 'Times New Roman', serif;
-  color: #2c57b1;
 }
 blockquote p {
   font-family: cabinregular, Arial, sans-serif;
@@ -312,5 +314,16 @@ blockquote:after {
   content: close-quote;
 }
 .article-small h2 {
+  color: #1ba39e;
+}
+article[role=main] h1 {
+  color: #1ba39e;
+  border-bottom: 1px solid #1ba39e;
+}
+article[role=main] h1.contact-headline,
+article[role=main] h2.contact-headline {
   color: #2c57b1;
+}
+article[role=main] h1.contact-headline {
+  border-bottom: 1px solid #2c57b1;
 }

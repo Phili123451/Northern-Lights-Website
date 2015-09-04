@@ -60,7 +60,6 @@
   }
   h1 {
     font-size: 1.8em;
-    border-bottom: 1px solid #1ba39e;
     margin-top: 0;
   }
   h2 {
@@ -152,7 +151,7 @@
   /*Untermenü (Dienstleistungen, Über uns, etc.*/
   .sub-menu {
     /*Abstand*/
-    margin-top: 5em;
+    margin-top: 10em;
   }
   .sub-menu div {
     padding-bottom: 0.4em;
@@ -197,7 +196,7 @@
   }
   .footer-menu li {
     display: inline;
-    border-right: 1px solid white;
+    border-right: 0;
   }
   .footer-menu a {
     display: inline-block;
@@ -313,6 +312,10 @@
   article[role=main] h1 {
     margin-top: 1.3em;
     margin-bottom: 0.7em;
+    border: 0;
+  }
+  article[role=main] h1.contact-headline {
+    border: none;
   }
   article[role=main] h2 {
     margin-top: 1.5em;
@@ -458,9 +461,9 @@
     margin-bottom: 1em;
   }
   .contact-info {
+    padding-top: 1em;
     margin: 0em;
     height: auto;
-    background-color: transparent;
   }
   .contact-info a {
     font-size: 1em;

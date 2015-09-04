@@ -139,7 +139,7 @@
   /*Untermenü (Dienstleistungen, Über uns, etc.*/
   .sub-menu {
     /*Abstand*/
-    margin-top: 5em;
+    margin-top: 10em;
   }
   .sub-menu div {
     padding-bottom: 0.4em;
@@ -185,7 +185,7 @@
   }
   .footer-menu li {
     display: inline;
-    border-right: 1px solid white;
+    border-right: 0;
   }
   .footer-menu a {
     display: inline-block;
@@ -306,6 +306,10 @@
   article[role=main] h1 {
     margin-top: 1.3em;
     margin-bottom: 0.7em;
+    border: none;
+  }
+  article[role=main] h1.contact-headline {
+    border: none;
   }
   article[role=main] h2 {
     margin-top: 1.5em;
@@ -462,9 +466,10 @@
     margin-bottom: 0;
   }
   .contact-info {
+    padding-top: 1em;
+    width: 80%;
     margin: 0em;
     height: auto;
-    background-color: transparent;
   }
   .contact-info a {
     font-size: 1em;
@@ -478,6 +483,25 @@
     padding-top: 0em;
     margin-top: 0em;
     font-size: 1.1em;
+  }
+  .contact-headline {
+    color: #2c57b1;
+  }
+  .footer-dokumentation {
+    background-color: white;
+    border-top: 1px solid #1ba39e;
+  }
+  .footer-dokumentation li {
+    display: inline;
+    padding-right: 1.5em;
+    border: 0;
+  }
+  .footer-dokumentation li:last-child {
+    padding-right: 0px;
+  }
+  .footer-dokumentation ul {
+    text-align: center;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
