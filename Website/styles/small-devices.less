@@ -115,7 +115,7 @@
 
         img
         {
-            max-width: 10em;
+            max-width: 8em;
             min-width: 8em;
             max-height:20%;
             display: block;
@@ -413,13 +413,13 @@
         h2
         {
             margin-top: 1.5em;
-            margin-bottom: 0.6em;
+            margin-bottom: 0.4em;
         }
 
         h3
         {
-            margin-top: 0.8em;
-            margin-bottom: 0.5em;
+            margin-top: 0.6em;
+            margin-bottom: 0.2em;
         }
 
         h4
@@ -430,7 +430,7 @@
 
         p
         {
-            margin-top: 0.7em;
+            margin-top: 0.5em;
             margin-bottom: 0;
         }
 
@@ -438,7 +438,7 @@
         {
             display: block;
             font-size: 1.1em;
-            margin-top: 0.7em;
+            margin-top: 0.5em;
             margin-bottom:1.5em;
         }
 
@@ -460,6 +460,16 @@
 
         ul[role=link]
         {
+            li
+            {
+                list-style:none;
+            }
+        }
+
+        ul[role=list]
+        {
+            padding-left:0;
+
             li
             {
                 list-style:none;
@@ -508,7 +518,7 @@
     .referenzen-article
     {
         margin-top: 2.5em;
-        margin-bottom:2em;
+        margin-bottom:3em;
 
         h2
         {
@@ -547,6 +557,7 @@
         blockquote
         {
             margin-left: 0;
+            margin-right:0;
             margin-top: 0.5em;
             margin-bottom:0.3em;
         }
@@ -612,6 +623,7 @@
     .stellenanzeige
     {
         margin-top: 2em;
+        margin-bottom:4em;
 
         h2
         {
@@ -631,9 +643,14 @@
 
         p
         {
-            margin-top: 0.5em;
-            margin-bottom: 1em;
+            margin-top: 0.3em;
+            margin-bottom: 0.5em;
         }
+    }
+
+    .stellenanzeige:last-child
+    {
+        margin-bottom:0;
     }
 
 ///////////////////////////////////////////////////
@@ -643,15 +660,6 @@
     {
         margin-top: 3em;
         margin-bottom: 1em;
-
-        div
-        {
-            width:30%;
-            float:none;
-            margin-left:auto;
-            margin-right:auto;
-            padding: 1em;
-        }
 
         h3
         {

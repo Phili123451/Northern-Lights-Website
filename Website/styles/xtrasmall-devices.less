@@ -32,6 +32,16 @@
         margin-top:-10px;
     }
 
+    .col-xs-4-contact
+    {
+        .make-xs-column(4,0px);
+    }
+
+    .col-xs-8-contact
+    {
+        .make-xs-column(8,0px);
+    }
+
     .col-xs-12-footer
     {
         .make-xs-column(12,30px);
@@ -55,12 +65,12 @@
 
     h2
     {
-        font-size:1.4em;
+        font-size:1.3em;
     }
 
     h3
     {
-        font-size:1.25em;
+        font-size:1.2em;
     }
 
     h4
@@ -177,6 +187,7 @@
     {
         /*Abstand*/
         margin-top: 0em;
+        margin-bottom:2em;
 
         div
         {
@@ -380,6 +391,93 @@
     }
 
 
+    ///////////////////////////////////////////////////
+// Artikel (Hauptinhalt)
+///////////////////////////////////////////////////
+    article[role=main]
+    {
+        h1
+        {
+            margin-top: 1.3em;
+            margin-bottom: 0.7em;
+        }
+
+        h2
+        {
+            margin-top: 1.5em;
+            margin-bottom: 0.4em;
+        }
+
+        h3
+        {
+            margin-top: 0.8em;
+            margin-bottom: 0.2em;
+        }
+
+        h4
+        {
+            margin-top: 0.6em;
+            margin-bottom: 0.4em;
+        }
+
+        p
+        {
+            margin-top: 0.7em;
+            margin-bottom: 0em;
+        }
+
+        a[role=article]
+        {
+            display: block;
+            font-size: 1em;
+            margin-top: 0.7em;
+            margin-bottom:1.5em;
+        }
+
+        a[role=navigation]
+        {
+            font-size: 1em;
+        }
+
+        ul
+        {
+            margin-top: 0.8em;
+        }
+
+        li
+        {
+            list-style: disc;
+            margin-bottom: 0.3em;
+        }
+
+        ul[role=link]
+        {
+            li
+            {
+                list-style:none;
+            }
+        }
+
+        ul[role=list]
+        {
+            padding-left:0;
+
+            li
+            {
+                list-style:none;
+            }
+        }
+    }
+
+        article[role=main]:first-child
+        {
+            h1
+            {
+                margin-top: 0;
+            }
+        }
+
+
 
 ///////////////////////////////////////////////////
 // Blog
@@ -445,7 +543,7 @@
 
     .referenzen-article-small
     {
-        margin-top:1.5em;
+        margin-top:2em;
         margin-bottom:0.8em;
 
         blockquote
@@ -467,7 +565,7 @@
         img
         {
             min-width:100px;
-            max-width:200px;
+            max-width:150px;
             height:auto;
             
         }
@@ -540,19 +638,13 @@
 ///////////////////////////////////////////////////
     .contact-info
     {
-        padding:1em;
+        padding:0.3em;
         margin-top:3em;
-        margin-bottom:1em;
-
-        div
-        {
-            float:none;
-            margin-left:auto;
-            margin-right:auto;
-        }
+        margin-bottom:0;
 
         h3
         {
+            font-size:1.1em;
             margin-top:0.5em;
         }
 

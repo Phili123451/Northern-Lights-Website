@@ -47,11 +47,19 @@
         .make-lg-column(7,0px);
     }
 
+    .col-lg-12-contact
+    {
+        .make-lg-column(12,0px);
+        margin-bottom:0.5em;
+    }
+
     .col-lg-7-footer
     {
         .make-lg-column(7,0px);
         padding-bottom:0.5em;
     }
+
+
 
 /*Überschriften*/
     h1, h2, h3, h4
@@ -474,6 +482,16 @@
                 list-style:none;
             }
         }
+
+        ul[role=list]
+        {
+            padding-left:0;
+
+            li
+            {
+                list-style:none;
+            }
+        }
     }
 
         article[role=main]:first-child
@@ -673,8 +691,7 @@
 ///////////////////////////////////////////////////
     .contact-info
     {
-        margin-top:0em;
-        margin-bottom:3em;
+        margin:0em;
         height:auto;
         background-color:transparent;
 

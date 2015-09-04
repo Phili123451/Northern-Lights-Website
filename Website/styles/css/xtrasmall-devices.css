@@ -30,6 +30,22 @@
     padding-right: 0px;
     margin-top: -10px;
   }
+  .col-xs-4-contact {
+    position: relative;
+    float: left;
+    width: 33.33333333%;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-xs-8-contact {
+    position: relative;
+    float: left;
+    width: 66.66666667%;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .col-xs-12-footer {
     position: relative;
     float: left;
@@ -53,10 +69,10 @@
     border-bottom: 1px solid #1ba39e;
   }
   h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   h3 {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
   h4 {
     font-size: 1.1em;
@@ -138,6 +154,7 @@
   .sub-menu {
     /*Abstand*/
     margin-top: 0em;
+    margin-bottom: 2em;
   }
   .sub-menu div {
     background-color: rgba(26, 162, 158, 0.5);
@@ -274,6 +291,54 @@
     text-align: center;
     font-size: 16px;
   }
+  article[role=main] h1 {
+    margin-top: 1.3em;
+    margin-bottom: 0.7em;
+  }
+  article[role=main] h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.4em;
+  }
+  article[role=main] h3 {
+    margin-top: 0.8em;
+    margin-bottom: 0.2em;
+  }
+  article[role=main] h4 {
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
+  }
+  article[role=main] p {
+    margin-top: 0.7em;
+    margin-bottom: 0em;
+  }
+  article[role=main] a[role=article] {
+    display: block;
+    font-size: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 1.5em;
+  }
+  article[role=main] a[role=navigation] {
+    font-size: 1em;
+  }
+  article[role=main] ul {
+    margin-top: 0.8em;
+  }
+  article[role=main] li {
+    list-style: disc;
+    margin-bottom: 0.3em;
+  }
+  article[role=main] ul[role=link] li {
+    list-style: none;
+  }
+  article[role=main] ul[role=list] {
+    padding-left: 0;
+  }
+  article[role=main] ul[role=list] li {
+    list-style: none;
+  }
+  article[role=main]:first-child h1 {
+    margin-top: 0;
+  }
   .blog-article {
     margin-top: 2.5em;
     margin-bottom: 2em;
@@ -309,7 +374,7 @@
     height: auto;
   }
   .referenzen-article-small {
-    margin-top: 1.5em;
+    margin-top: 2em;
     margin-bottom: 0.8em;
   }
   .referenzen-article-small blockquote {
@@ -323,7 +388,7 @@
   }
   .referenzen-article-header-small img {
     min-width: 100px;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
   }
   .article-small {
@@ -360,16 +425,12 @@
     margin-bottom: 1em;
   }
   .contact-info {
-    padding: 1em;
+    padding: 0.3em;
     margin-top: 3em;
-    margin-bottom: 1em;
-  }
-  .contact-info div {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 0;
   }
   .contact-info h3 {
+    font-size: 1.1em;
     margin-top: 0.5em;
   }
   .contact-info h4 {

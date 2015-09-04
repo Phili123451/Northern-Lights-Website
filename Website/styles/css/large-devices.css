@@ -42,6 +42,13 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  .col-lg-12-contact {
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0.5em;
+  }
   .col-lg-7-footer {
     position: relative;
     min-height: 1px;
@@ -335,6 +342,12 @@
   article[role=main] ul[role=link] li {
     list-style: none;
   }
+  article[role=main] ul[role=list] {
+    padding-left: 0;
+  }
+  article[role=main] ul[role=list] li {
+    list-style: none;
+  }
   article[role=main]:first-child h1 {
     margin-top: 0;
   }
@@ -449,8 +462,7 @@
     margin-bottom: 0;
   }
   .contact-info {
-    margin-top: 0em;
-    margin-bottom: 3em;
+    margin: 0em;
     height: auto;
     background-color: transparent;
   }
@@ -478,6 +490,12 @@
   .col-lg-7-navigation {
     float: left;
     width: 58.33333333%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .col-lg-12-contact {
+    float: left;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) {

@@ -45,8 +45,13 @@
     .col-md-12-footer
     {
         .make-md-column(12,0px);
-        //margin-bottom:-15px;
         padding-bottom:0.5em;
+    }
+
+    .col-md-12-contact
+    {
+        .make-md-column(12,0px);
+        margin-bottom:0.3em;
     }
 
 /*Überschriften*/
@@ -489,6 +494,16 @@
                 list-style:none;
             }
         }
+
+        ul[role=list]
+        {
+            padding-left:0;
+
+            li
+            {
+                list-style:none;
+            }
+        }
     }
 
         article[role=main]:first-child
@@ -576,7 +591,7 @@
 
         blockquote
         {
-            margin-left: 0;
+            margin-left:0;
             margin-right:0;
             margin-top: 0.5em;
             margin-bottom:0.3em;
@@ -674,6 +689,7 @@
 ///////////////////////////////////////////////////
     .contact-info
     {
+        margin:0em;
         height:auto;
         background-color:transparent;
 
@@ -682,13 +698,9 @@
             font-size:1em;
         }
 
-        h3
-        {
-            margin-top: 0.5em;
-        }
-
         h4
         {
+            margin-top:0;
             margin-bottom: 0em;
             padding-bottom: 0em;
         }
@@ -697,7 +709,7 @@
         {
             padding-top: 0em;
             margin-top: 0em;
-            font-size:1em;
+            font-size:1.1em;
         }
     }
 }

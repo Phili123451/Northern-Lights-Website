@@ -92,7 +92,7 @@
     /*Anzeigen der Links über die volle Breite*/
   }
   .mobile-menu img {
-    max-width: 10em;
+    max-width: 8em;
     min-width: 8em;
     max-height: 20%;
     display: block;
@@ -293,24 +293,24 @@
   }
   article[role=main] h2 {
     margin-top: 1.5em;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.4em;
   }
   article[role=main] h3 {
-    margin-top: 0.8em;
-    margin-bottom: 0.5em;
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
   }
   article[role=main] h4 {
     margin-top: 0.6em;
     margin-bottom: 0.4em;
   }
   article[role=main] p {
-    margin-top: 0.7em;
+    margin-top: 0.5em;
     margin-bottom: 0;
   }
   article[role=main] a[role=article] {
     display: block;
     font-size: 1.1em;
-    margin-top: 0.7em;
+    margin-top: 0.5em;
     margin-bottom: 1.5em;
   }
   article[role=main] a[role=navigation] {
@@ -324,6 +324,12 @@
     margin-bottom: 0.3em;
   }
   article[role=main] ul[role=link] li {
+    list-style: none;
+  }
+  article[role=main] ul[role=list] {
+    padding-left: 0;
+  }
+  article[role=main] ul[role=list] li {
     list-style: none;
   }
   article[role=main]:first-child h1 {
@@ -345,7 +351,7 @@
   }
   .referenzen-article {
     margin-top: 2.5em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
   .referenzen-article h2 {
     margin-top: 0.5em;
@@ -369,6 +375,7 @@
   }
   .referenzen-article-small blockquote {
     margin-left: 0;
+    margin-right: 0;
     margin-top: 0.5em;
     margin-bottom: 0.3em;
   }
@@ -402,6 +409,7 @@
   }
   .stellenanzeige {
     margin-top: 2em;
+    margin-bottom: 4em;
   }
   .stellenanzeige h2 {
     margin-top: 0em;
@@ -414,19 +422,15 @@
     margin-top: 0em;
   }
   .stellenanzeige p {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }
+  .stellenanzeige:last-child {
+    margin-bottom: 0;
   }
   .contact-info {
     margin-top: 3em;
     margin-bottom: 1em;
-  }
-  .contact-info div {
-    width: 30%;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
   }
   .contact-info h3 {
     margin-top: 0.5em;
