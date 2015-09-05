@@ -1,0 +1,70 @@
+/*Import von Variablen*/
+/*Farben*/
+/*Font Weights*/
+/*Schriftgrößen*/
+/*Standard Padding*/
+/*Abstände zwischen Textblöcken, Überschriften, etc.*/
+/*h1*/
+/*h2*/
+/*h3*/
+/*Breite und Höhe*/
+/*Bootstrap Grid Mixin*/
+/*Row ohne Padding für die Dokumentation*/
+.row-doku {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-menu-doku li {
+    background-color: white;
+    width: auto;
+    float: left;
+    padding-right: 2.3em;
+    padding-left: 2.3em;
+  }
+  .main-menu-doku ul {
+    margin: 0;
+  }
+  .footer-dokumentation {
+    background-color: white;
+    border-top: 1px solid #1ba39e;
+  }
+  .footer-dokumentation li {
+    display: inline-block;
+    padding: 0.8em;
+    padding-right: 1.5em;
+    border: 0;
+  }
+  .footer-dokumentation li:last-child {
+    padding-right: 0px;
+  }
+  .footer-dokumentation ul {
+    text-align: center;
+    margin: 0;
+  }
+  article[role=main] ul[role=list] ul {
+    margin-top: 0;
+  }
+  article[role=main] ul[role=list] li {
+    font-size: 1em;
+  }
+  .gallery-doku {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+}

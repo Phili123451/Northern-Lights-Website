@@ -16,6 +16,7 @@
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="../styles/css/small-devices.css" /><!--Design for small devices-->
     <link rel="stylesheet" media="screen and (min-width: 992px)" href="../styles/css/medium-devices.css" /><!--Design for medium devices-->
     <link rel="stylesheet" media="screen and (min-width: 1200px)" href="../styles/css/large-devices.css" /><!--Design for large devices-->
+    <link rel="stylesheet" media="screen" href="../styles/css/dokumentation.css" /><!--Anpassungen für die Dokumentation-->
 
 </head>
 <body>
@@ -31,8 +32,14 @@
         <div class="clearfix"></div>
         
         <!--Hauptnavigation-->
-            <div class="menu main-menu mobile-menu col-xs-12 col-sm-12 col-md-10 col-lg-7-navigation col-lg-push-2">
-
+            <div class="menu main-menu-doku col-xs-12 col-sm-12 col-md-10 col-lg-7-navigation col-lg-push-2">
+                  <nav>
+                    <ul>
+                        <li><strong>Name:</strong> Thomas Tonder</li>
+                        <li><strong>Loginname:</strong> thla9171</li>
+                        <li><strong>Matrikelnummer:</strong> 540056</li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
@@ -47,7 +54,8 @@
                     <div>
                         <h3>Für die Hausarbeit ...</h3>
                         <ul>
-                            <li><a href="dokumentation/dokumentation.html">Dokumentation</a></li>
+                            <li><a href="../index.html">Zurück zu Northern-Lights</a></li>
+                            <li><a href="dokumentation/dokumentation.html" class="link-active">Dokumentation</a></li>
                             <li><a href="dokumentation/timeline.html">Timeline</a></li>
                         </ul>
                     </div>
@@ -58,7 +66,367 @@
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
                 <article role="main">
                     <h1>Dokumentation</h1>
-                    <h2>Einleitung</h2>
+                    <p>
+                        Auf dieser Seite befindet sich die Dokumentation, der Hausarbeit für Gestaltung Online Medien.
+                        Die geforderten Angaben, wie Name, Loginname und Matrikelnummer sind zusätzlich im Footer erneut aufgeführt.
+                        Dieser wurde speziell für die Dokumentation angepasst. Die Anpassungen für Dokumentation und Timeline
+                        wurden in einen eigenen Stylesheet (dokumentation.css) ausgelagert, um die Website in weiterer Folge für
+                        den Produktivbetrieb, schneller vorbereiten zu können. Darüber hinaus sind die Anpassungen auch reponsive,
+                        sodass die Dokumentation und Timeline auf jedem Endgerät eingesehen werden kann.
+                    </p>
+                    <p>
+                        Die Website wurde für das Unternehmen Northern-Lights GmbH, mit Sitz in Flensburg erstellt und wird im Folgenden
+                        Unternehmen genannt. Durch die nicht lange zurückliegende Gründung im März 2015 gab es noch keine realen Inhalte.
+                        Diese wurden im Laufe der Entwicklung von Herrn Abromeit erstellt und zur Verfügung gestellt. Manche Inhalte wurden
+                        von mir etwas erweitert, oder sind nur Dummyinhalte, die wie abgesprochen nach realem Vorbild gestaltet wurden.
+                        Nichtsdestotrotz sind die aktuell noch "erfundenen" Inhalte, jedoch an zukünftige Projekte angelehnt und können in
+                        weiterer Folge produktiv genutzt werden.
+                    </p>
+                    
+                    <h2>Projekt</h2>
+                    <p>
+                        In diesem Kapitel wird der Aufbau der Projektstruktur kurz erklärt.
+                    </p>
+                    
+                    <h3>Testumgebung</h3>
+                    <p>
+                        Getestet wurde wie gefordert auf Firefox (40.0.3), Chrome (45.0.2454.85 m) und Safari (5.1.7). Darüber hinaus wurden die Breakpoints
+                        auf unterschiedlichen Endgeräten getestet, wie zum Beispiel:
+                    </p>
+                    <ul>
+                        <li><strong>Nokia Lumia 830</strong> (Smartphone) mit einer Auflösung von 720x1280 Pixeln</li>
+                        <li><strong>Apple Iphone 4S</strong> (Smartphone) mit einer Auflösung von 640x960 Pixeln</li>
+                        <li><strong>Samsung Galaxy S3 Mini</strong> (Smartphone) mit einer Auflösung von 800x480 Pixeln</li>
+                        <li><strong>HP Probook 6570b</strong> (Notebook) mit einer Auflösung von 1366x768 Pixeln</li>
+                        <li><strong>Asus UL-80-VT</strong> (Notebook) mit einer Auflösung von 1366x768 Pixeln</li>
+                        <li><strong>Acer Aspire E5-571-55SW</strong> (Notebook) mit einer Auflösung von 1920x1080 Pixeln</li>
+                    </ul>
+                    <p>
+                        Zusätzlich wurden bei der Entwicklung, kontinuierlich die integrierten Entwicklerwerkzeuge von Firefox und Chrome genutzt.
+                        Gerade die Möglichkeit in Chrome, gewisse Geräte-Presets zu simulieren, war für die Entwicklung respektive Anpassung sehr von Nutzen.
+                    </p>
+
+                    <h3>Entwicklungsumgebung</h3>
+                    <p>
+                        Als Entwicklungsumgebung wurde Visual Studio 2012 Ultimate eingesetzt. Durch die Erweiterung des Microsoft Web-Essentials Plugin, kann
+                        ohne großen Aufwand, die Möglichkeit integriert werden, den LESS-Compiler zu benutzen. Darüber hinaus bietet Visual Studio eine zuverlässige
+                        Intellisense Funktion, die die Entwicklung effizienter gestaltet.
+                    </p>
+
+                    <h3>Erstellung der Dokumentation</h3>
+                    <p>
+                        Die Dokumentation wurde anfangs mit dem MarkdownPad2 erstellt. Allerdings ist die Handhabung von Visual Studio als viel angenehmer.
+                        Da auch die DummyTexte direkt in Visual Studio erstellt und formatiert wurden, behielt ich diese Vorgehensweise für die Dokumentation und
+                        die Timeline bei. Für das Erstellen einer Dokumentation für andere Inhalte ist Markdown allerdings sehr zu empfehlen.
+                    </p>
+
+                    <h2>Idee und grafisches Konzept</h2>
+                    <p>
+                        Die Vorgaben für die Idee und das grafische Konzept, bestanden aus dem Namen "Northern-Lights" und der Vorgabe das Design schlicht und einfach
+                        zu halten. Es sollten keinen unnötigen Elemente und Effekte integriert werden. Im Fokus des Konzeptes stand die Schlichtheit und dem Betrachter die 
+                        Inhalte übersichtlich und ansprechend zu präsentieren.
+                    </p>
+                    
+                    <h2>Styletiles</h2>
+                    <h3>Entwürfe</h3>
+                    <h4>Style Tile 1</h4>
+                    <div class="gallery-doku col-lg-12">
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_1-01.png"><img src="../images/dokumentation/style_tiles/style_tile_1-01.png" alt="Style Tile 1 Seite 1" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 1 Seite 1</p>
+                        </div>
+
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_1-02.png"><img src="../images/dokumentation/style_tiles/style_tile_1-02.png" alt="Style Tile 1 Seite 2" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 1 Seite 2</p>
+                        </div>
+
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_1-03.png"><img src="../images/dokumentation/style_tiles/style_tile_1-03.png" alt="Style Tile 1 Seite 3" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 1 Seite 3</p>
+                        </div>
+                    </div>
+                    <p>
+                        Die Farben für diesen Entwurf wurden vom Unternehmen vorgegeben. Dieser sollte sich ursprünglich bunt und vor allem auffallend gestalten.
+                        Jedoch sind die Farben in dieser Konstellation viel zu grell und intensiv, sodass das Erlebnis für den Betrachter erheblich geschmälert wird.
+                        Nach Fertigstellung und Besprechung, wurde dieser jedoch sehr schnell verworfen. Der Entwurf gestaltet sich als Experiment, das jedoch
+                        nicht vom Erfolg gekrönt wurde.
+                    </p>
+                    <p>
+                        Grundsätzlich ließe sich der Grundentwurf nutzen, allerdings müssten die Farben hierfür stark entschärft werden.
+                    </p>
+                    
+                    
+                    <h4>Style Tile 2</h4>
+                    <div class="gallery-doku col-lg-12">
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_2-01.png"><img class="bild" src="../images/dokumentation/style_tiles/style_tile_2-01.png" alt="Style Tile 2 Seite 1" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 1 Seite 1</p>
+                        </div>
+
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_2-02.png"><img class="bild" src="../images/dokumentation/style_tiles/style_tile_2-02.png" alt="Style Tile 2 Seite 2" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 1 Seite 2</p>
+                        </div>
+
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_2-03.png"><img src="../images/dokumentation/style_tiles/style_tile_2-03.png" alt="Style Tile 2 Seite 3" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 1 Seite 3</p>
+                        </div>
+                    </div>
+                    <p>
+                        Bei Style Tile 2 führte der Weg weg, von bunt hin zu mordern, schlicht und seriös. Die Elemente der Website sind von dünnen Rahmen eingefasst, die für
+                        eine bessere Abgrenzung untereinander sorgen. Der dezente Schatten bei den Elementen verleiht der gesamten Website eine zusätzliche Tiefe. Der Grundgedanke hinter 
+                        diesem Entwurf ist der Versuch ein schlichtes, modernes und seriöses Aussehen mit auffallenden Elementen zu gestalten. Allerdings sollten diese nicht soweit im
+                        Fokus stehen, weshalb hier auch kein entsprechendes Adjektiv erwähnt wurde.
+                    </p>
+
+
+                    <h4>Style Tile 3</h4>
+                    <div class="gallery-doku col-lg-12">
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_3-01.png"><img class="bild" src="../images/dokumentation/style_tiles/style_tile_3-01.png" alt="Style Tile 3 Seite 1" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 3 Seite 1</p>
+                        </div>
+
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_3-02.png"><img class="bild" src="../images/dokumentation/style_tiles/style_tile_3-02.png" alt="Style Tile 3 Seite 2" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 3 Seite 2</p>
+                        </div>
+
+                        <div class="bild col-lg-3">
+                            <a href="../images/dokumentation/style_tiles/style_tile_3-03.png"><img src="../images/dokumentation/style_tiles/style_tile_3-03.png" alt="Style Tile 3 Seite 3" /></a>
+                            <p role="contentinfo">Style Tile Entwurf 3 Seite 3</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        Beim dritten Entwurf wurde ein flaches Design gewählt. Die Farben sind dezenter und wurden aus einer Farbpalette ausgewählt, die speziell für das flache Design
+                        gedacht ist. Außerdem wird hier versucht die Inhalte übersichtlich und mordern zu gestalten. Ohne Effekte, oder ähnliches, das den Betrachter von den Inhalten
+                        ablenkt. Es stehen die Inhalte im Mittelpunkt und nicht der Gewinn der Aufmerksamkeit, durch Effekthascherei. Das gesetzte Ziel wird mit diesem Entwurf erfüllt.
+                    </p>
+
+                    <h3>Ausgewählter Style Tile</h3>
+                    <p>
+                        Ausgewählt wurde Style Tile 3. Dieser entspricht den Vorstellungen des Unternehmens. Das flache und schlichte Design stieß auf sehr viel Anklang.
+                        Dieses kann sich mit der Farbgestaltung, als auch mit dem grundsätzlichen Entwurf identifizieren. In der weiteren Planungs- und Entwicklungsphase
+                        wurden jedoch noch ein paar Anpassungen am Entwurf durchgeführt, sodass die gestellten Ansprüche zur Gänze erfüllt wurden, welche im folgenden Kapitel behandelt werden.
+                    </p>
+
+                    <h3>Veränderungen gegenüber des Entwurfs</h3>
+                    <p>
+                        Gegenüber des Grundentwurfs wurden noch einige Änderungen an der Gestaltung vorgenommen. 
+                    </p>
+                    <h4>Farbgestaltung</h4>
+                    <p>
+                        Die ursprünglich ausgewählten Farben für ein flaches Design, boten leider keinen Kontrast der stark genug ist. Außerdem waren diese auch bei genauerer Betrachtung
+                        untereinander nicht vereinbar. Sodass der Grünton herangezogen wurde und mithilfe von Adobe Color CC Farbtöne ermittelt wurden, die die Mängel beheben.
+                    </p>
+
+                    <h4>Seitenmenü</h4>
+                    <p>
+                        Das Seitenmenü auf der Seite wurde mit dem Text "Weiter zu ..." versehen, sodass auf den ersten Blick ersichtlich ist, dass es sich hierbei um ein
+                        Submenü auf der jeweiligen Seite handelt. Die Abstände zwischen den einzelnen Links wurde verkleinert und in den mobilen Versionen wurden diese farbig
+                        hinterlegt damit die Zusammengehörigkeit auf den ersten Blick ersichtlich ist.
+                    </p>
+
+                    <h4>Überschriften</h4>
+                    <p>
+                        Im Vergleich zum Entwurf wurde bei der Überschrift h1 zusätzlich ein Rahmen am unteren Ende eingefügt, um stärker zu verdeutlichen auf welcher Seite
+                        man sich gerade befindet. Jedoch gilt diese Änderung nur für die mobilen Versionen. Die offene Gestaltung der Desktop Versionen und die Nutzung von Linien
+                        zur Trennung von Header und Footer vom Hauptinhalt, machte die Nutzung überflüssig und hatte sogar einen störenden Einfluss auf das Gesamtbild.
+                    </p>
+
+                    <h4>Links</h4>
+                    <p>
+                        Auch die Links erfuhren eine kleine Umgestaltung. Von ursprünglich kursiv und schwarz zu nicht kursiv und unterstrichen, da der Großteil der Nutzer dieses
+                        Aussehen direkt mit einem Hyperlink verbindet. Beim Hover-Effekt gab es die Änderung von blauer Schriftfarbe, hin zu Orange und unterstrichen. Der Hintergrund
+                        ist die optisiche Verbindung zur restlichen Website. Denn in den Menüs und bei den Bildern wird Orange als Farbe für den Hover-Effekt genutzt. So wäre dies auch
+                        ein Stilbruch, Hyperlinks plötzlich mit Blau hervorzuheben.
+                    </p>
+
+                    <h4>Referenzen</h4>
+                    <p>
+                        Die ursprünglich Anordung von Firmenname und Logo wurde nur durch das Logo ersetzt.
+                    </p>
+
+                    <h4>Footer</h4>
+                    <p>
+                        Der Footer wurde zum Einen schlanker gestaltet. Das soll heißen, dass die Anzahl der Links reduziert wurde, um diesen nicht so wuchtig zu gestalten. Zustätzlich
+                        wurde eine senkrechte weiße Linie als Trenner, der einzelnen Links genutzt, da es gerade bei den mobilen Versionen eine bessere Trennung gibt.
+                        Bei den Desktop Versionen entfiel die Trennlinie wieder, da es der vorhandene Platz dies nicht erfordlich macht. Darüber hinaus wären Trennlinien hier
+                        eher ein Störeinfluss.
+                    </p>
+
+                    <h4>Logoentwurf</h4>
+                    <p>
+                        Nach Absprache wurde die Entwicklung eines Logos vorerst auf Eis gelegt, damit alle verfügbaren Ressourcen auf die Entwicklung der Website fokussiert werden konnten.
+                        Ein Logo wird zu einem späteren Zeitpunkt eingefügt. Dies erfolgt voraussichtlich im Herbst 2015.
+                    </p>
+
+                    <h4>Mobile und Desktop Version</h4>
+                    <p>
+                        Ursprünglich waren mobile und Desktop Verionen wie in Style Tile 3 abgebildet von Aussehen her nahezu identisch. Nach diversen Absprachen wurde die Einigung erzielt
+                        das abgebildete Design nur für die mobilen Versionen zu nutzen und die Desktop Versionen offener zu gestalten und den vorhandenen Platz besser zu nutzen. Natürlich
+                        wurde darauf geachtet, dass die Verbindung zwischen mobil und Desktop aufrechten erhalten wird. Dies wird mit der Umkehr der Farbgestaltung in Header, Submenü und Footer 
+                        erzielt. Die Grüne Farbe des Hintergrunds wird als Schriftfarbe angewandt und die ursprünglich weiße Schriftfarbe wird zum Hintergrund. Zusätzlich bleibt eine dünne
+                        Linie erhalten, die zusätzlich diese Verbindung unterstützt. So wirkt die Seite in hohen Auflösungen viel offener und freier. Mit dem ursprünglichen Design wurde in 
+                        hohen Auflösung ein beklemmender und einengender Eindruck vermittelt.
+                    </p>
+
+                    <h2>Gestaltung</h2>
+                    <h3>Logoentwurf</h3>
+                    <div class="row-doku">
+                        <div class="gallery-doku bild col-lg-12">
+                            <a href="../images/dokumentation/logo-northern-lights.png"><img src="../images/dokumentation/logo-northern-lights.png" alt="Logoentwurf Northern-Lights"/></a>
+                            <p role="contentinfo">Logoentwurf für die Northern-Lights GmbH</p>
+                        </div>
+                        <p>
+                            Durch die nicht lange zurückliegende Gründung des Unternehmens, gab es noch keinen Logoentwurf oder eine Idee. So war der ursprüngliche Gedanke,
+                            dass das Logo natürlich einen Bezug zum entwickelten Konzept haben sollte. Jedoch erinnert der Entwurf nicht unbedingt an Polarlichter. Durch
+                            das Grün wird sogar eher ein gewisser Bezug zu den Stadtwerken Flensburg hergestellt. Die Logos unterscheiden sich zwar, aber der erste Eindruck wird 
+                            trotzdem falsch vermittelt.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <h3>Farbgestaltung</h3>
+                    <p>
+                        Die Herleitung der finalen Farbgestaltung steht in starkem Bezug zum Namen des Unternehmens. So wurden die Farben von Polarlichtern gewählt.
+                        Ausgewählt nach Häufigkeit des Auftretens jeder Farbe in den Polarlichtern, konnten so sogar die Primär- und Sekundärfarben festgelegt werden.
+                        Die "natürliche" Ordnung dieser Farben wunderbar mit den Vorstellungen des Unternehmens.
+                    </p>
+                    <div class="row-doku">
+                        <div class="gallery-doku bild col-lg-12">
+                            <a href="../images/dokumentation/farben_example.PNG"><img src="../images/dokumentation/farben_example.PNG" alt="Eingesetzte Farben"/></a>
+                            <p role="contentinfo">Grün(#1BA39E), Blau(#2C57B1) und Orange(#FFB42A)</p>
+                        </div>
+                        <p>
+                            Der Grünton wurde somit zur primären Farbe, die am häufigsten vertreten ist. Genutzt für die Navigation, sowie um Überschriften bzw. deren zugehörige Inhalte
+                            hervorzuheben. 
+                        </p>
+                        <p>
+                            Orange ist etwas auffälliger und sticht hervor, somit war diese Farbe prädestiniert für den Einsatz bei Highlights, wie zum Beispiel den Hover-Effekt
+                            von Links, oder zum Markieren der aktuellen Position in der Navigation.
+                        </p>
+                        <p>
+                            Blau wurde zur Farbe für die Kontaktinformationen. Somit wird eine farbige Verbindung aller Inhalte geschaffen, die Informationen bezüglich der Kontaktaufnahme beinhalten.
+                            Auch das Kontaktformular wurde in blau gehalten. Auf dieser Seite gibt es als einige Ausnahme auch blaue Überschriften. So wird die Verbindung zwischen Kontaktaufnahme
+                            und der Farbe Blau noch besser unterstrichen.
+                        </p>
+                    </div>
+
+                    <h3>Layout</h3>
+                    <p>
+                        Es wurde ein dreispaltiges Layout, von Seiten des Unternehmens gewünscht. Dieses kommt auch auf den Desktop Versionen zum Einsatz. Bei den mobilen Versionen
+                        bleiben die drei Spalten bestehen, jedoch werden diese, aus Platzgründen, aufeinander folgend angezeigt. In der linken Spalte wird das Submenü, sofern auf der jeweiligen
+                        Seite vorhanden angezeigt. In der Mitte befindet sich der Hauptinhalt und rechts Informationen. Zum Beispiel die Kontaktdaten, die neuesten Blogeinträge, oder auch Referenzen
+                        und Stellenanzeigen.
+                    </p>
+
+                    <h3>Typografie</h3>
+                    <p>
+                        Der Ansprüche an die Typografie waren zum Einen eine gute Lesbarkeit und zusätzlich muss ein seriöser Eindruck vermittelt werden. Zu guter Letzt soll diese natürlich auch
+                        zum Konzept passen. Das heißt, da das Design einfach und schlicht sein soll, darf hier auch keine verspielte oder zu verschnörkelte Schriftart zum Einsatz kommen.
+                    </p>
+                    <p>
+                        Im Endeffekt haben sich zwei Schriftfamilien herauskristalisiert, die die oben aufgeführten Kriterien erfüllen. Bei diesen handelt es sich um Webfonts von Google. 
+                        Um Unnötige Ladezeiten und die Abhängigkeit von externen Inhalten zu minimieren sind die Schriftarten lokal abgelegt und werden mittels font-face Befehl im Stylesheet geladen.
+                        Zuvor wurden diese mithilfe von font-squirrel von True-Type-Fonts in alle aktuell gängigen Formate, wie eot, svg, ttf, woff und woff2 umgewandelt.
+                    </p>
+
+                    <div class="row-doku">
+                        <div class="gallery-doku col-lg-12">
+                            <div class="bild col-lg-4">
+                                <a href="../images/dokumentation/fonts/font_cabin_example.PNG"><img src="../images/dokumentation/fonts/font_cabin_example.PNG" alt="Beispiel Cabin Schriftart"/></a>
+                                <p role="contentinfo">Serifenlose Schriftart Cabin</p>
+                            </div>
+                            <div class="bild col-lg-4">
+                                <a href="../images/dokumentation/fonts/font_merri_example.PNG"><img src="../images/dokumentation/fonts/font_merri_example.PNG" alt="Beispiel Merriweather Schriftart"/></a>
+                                <p role="contentinfo">Serifen Schriftart Merriweather Regular</p>
+                            </div>
+                            <div class="bild col-lg-4">
+                                <a href="../images/dokumentation/fonts/font_merri_italic_example.PNG"><img src="../images/dokumentation/fonts/font_merri_italic_example.PNG" alt="Beispiel Merriweather Italic Schriftart"/></a>
+                                <p role="contentinfo">Serifen Schriftart Merriweather Italic</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        Als Schriftart für den Fließtext wurde die Serifen-Schriftart Merriweather ausgewählt. Diese bietet in kleinen sowie in großen Ausführungen eine sehr gute Lesbarkeit und
+                        strahlt auch die gewünschte Seriosität aus. Für Überschriften, Links und Informationen wird die serifenlose Schriftart Cabin genutzt. Zum Beispiel bei den Kontaktinformationen
+                        kommt diese auch zum Einsatz, da hier sehr wenig Text, oder nur einzelne Worte vorhanden sind ist diese in diesem Fall für den Betrachter leichter zu lesen und die Informationen
+                        sind klarer zu erkennen und einprägsamer.
+                    </p>
+
+                    <h2>Responsive Webdesign</h2>
+                    <p>
+                        Für das Responisve Webdesing wurde ein Vielzahl der angebotenen Raster geprüft. Die Kriterien waren zum Einen, es soll kostenlos verfügbar sein und sich schnell und 
+                        unkompliziert implementieren lassen. Nach einer ersten Vorauswahl von vielen Frameworks, wie INUITCSS, SKELETON, ZURB FOUNDATION FRAMEWORK und 1140 GRID fiel die Wahl
+                        auf das Bootstrap Grid 3. Nach Ihrem Einverständnis, dass ich die, auf das Raster bezogenen Komponenten nutzen durfte, stand der Nutzung von Bootstrap nichts mehr im Wege. 
+                    </p>
+                    <h3>Raster</h3>
+                    <div class="row-doku">
+                        <div class="gallery-doku bild col-lg-12">
+                            <a href="../images/dokumentation/raster.png"><img src="../images/dokumentation/raster.png" alt="Raster"/></a>
+                            <p role="contentinfo">Raster</p>
+                        </div>
+                        <p>
+                            Das Raster wurde mit den vorhandenen Klassen von Bootstrap erstellt. Bereits definiert sind folgende vier Breakpoints.
+                        </p>
+                        <ul role="list">
+                            <li><strong>Extra small devices</strong> für Geräte mit einer Breite kleiner 768 Pixel</li>
+                            <li><strong>Small devices</strong> für Geräte mit einer Breite größer als 768 Pixel</li>
+                            <li><strong>Medium devices</strong> für Geräte mit einer Breite größer als 992 Pixel</li>
+                            <li><strong>Large devices</strong> für Geräte mit einer Breite größer als 1200 Pixel</li>
+                        </ul>
+                        <p>
+                            Ursprünglich waren weitere Breakpoints eingeplant. Jedoch passen sich die Inhalte so gut an, dass auf weitere Breakpoints verzichtet werden kann.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row-doku">
+                        <div class="gallery-doku bild col-lg-12">
+                            <a href="../images/dokumentation/raster_uebersicht.png"><img src="../images/dokumentation/raster_uebersicht.png" alt="Übersicht des Rasters"/></a>
+                            <p role="contentinfo">Raster Spezifikationen</p>
+                        </div>
+                        
+                        <p>
+                            Zur besseren Übersicht finden sich im Bild die Spezifikationen des Bootstrap Rasters. Enthalten sind die Eckdaten der Breakpoints, Spaltenbreite dieser, die Abstände
+                            zwischen den Elementen und einiges mehr. Zusammen bildet die Übersicht einen brauchbaren Einstieg.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <h4>Umsetzung</h4>
+                    <p>
+                        Umgesetzt wurde das Raster wie folgt. Der Header, der Inhalt (linke-,mittlere- und rechte Spalte) und der Footer sind jeweils eine eigene Zeile, die mit der Klasse
+                        <code>.row</code> initialisiert werden. Um jede Zeile befinden sich jeweils Container. Der Hauptinhalt verfügt über den Standardcontainer, welcher mit der Klasse 
+                        <code>.container</code> initialisiert wird. 
+                    </p>
+                    <p>
+                        Da jedoch der Header, sowie der Footer über die gesamte Breite verlaufen sollten, wurden hier mithilfe der Hilfsklassen von Bootstrap eigene Container erstellt, die über
+                        kein Padding verfügen.
+                    </p>
+                    <p>
+                        Die entsprechenden Spalten wurden, am Beispiel des Breakoints <strong>Large devices</strong> wie folgt aufgeteilt. Header und Footer erhielten wieder eine eigens, mithilfe
+                        von Bootstrap Hilfsklassen erzeugte Varianten, die über kein Padding verfügen. Für die verbleibenen Inhalte erhielt die linke Spalte zwei Spalten, der Hauptinhalt sieben Spalten
+                        und die rechte Seite drei Spalten, da hier mehr Informationen beinhaltet sind als in der linken Spalte.
+                    </p>
+                    
+                    
+                    
+                    <h2>RECHTE</h2>
+                    <p>
+                        Alle eingesetzten Materialen sind Eigentum der Northern-Lights GmbH. Dies wird in der schriftlichen Erklärung ausgeführt.
+                    </p>
+                    <p>
+                        Das in den Style Tiles genutzte Bild steht unter der Creative Commons Lizenz und darf verändert, sowie kommerziell genutzt werden.
+                    </p>
+                    <ul role="list">
+                        <li>Bild (17737-business-man-hand-pv.jpg)</li>
+                        <li><a href="http://creativecommons.org/licenses/by/2.0/">Lizenz</a></li>
+                        <li><a href="http://www.google.de/imgres?imgurl=http%3A%2F%2Fres.freestockphotos.biz%2Fpictures%2F17%2F17737-business-man-hand-pv.jpg&imgrefurl=http%3A%2F%2Fwww.freestockphotos.biz%2Fstockphoto%2F17737&h=663&w=958&tbnid=7O1-8kNWceOhqM%3A&docid=iIwyMJaKZu5L2M&ei=ReLqVaLeBIKzacyymvgL&tbm=isch&iact=rc&uact=3&dur=1309&page=1&start=0&ndsp=46&ved=0CEEQrQMwDGoVChMI4pTq2PTfxwIVglkaCh1MmQa_">Quelle</a></li> 
+                    </ul>
+
                 </article>
                 
 

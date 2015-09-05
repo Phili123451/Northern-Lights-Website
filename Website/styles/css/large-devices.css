@@ -285,8 +285,9 @@
     margin-top: 0.3em;
   }
   .bild {
-    width: 240px;
+    width: 50%;
     height: auto;
+    margin-bottom: 1em;
   }
   .bild img {
     width: 100%;
@@ -298,10 +299,10 @@
   .bild p {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
-    margin-top: 0px;
+    margin-top: 0;
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
   }
   article[role=main] h1 {
     margin-top: 1.3em;
@@ -326,6 +327,9 @@
   article[role=main] p {
     margin-top: 0.7em;
     margin-bottom: 0;
+  }
+  article[role=main] p[role=contentinfo] {
+    margin: 0;
   }
   article[role=main] a[role=article] {
     display: block;
@@ -483,25 +487,6 @@
     padding-top: 0em;
     margin-top: 0em;
     font-size: 1.1em;
-  }
-  .contact-headline {
-    color: #2c57b1;
-  }
-  .footer-dokumentation {
-    background-color: white;
-    border-top: 1px solid #1ba39e;
-  }
-  .footer-dokumentation li {
-    display: inline;
-    padding-right: 1.5em;
-    border: 0;
-  }
-  .footer-dokumentation li:last-child {
-    padding-right: 0px;
-  }
-  .footer-dokumentation ul {
-    text-align: center;
-    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) {

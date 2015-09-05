@@ -391,10 +391,9 @@
 ///////////////////////////////////////////////////
     .bild
     {
-        width: 240px;
+        width:50%;
         height: auto;
-   
-        //padding: 1em;
+        margin-bottom:1em;
 
         img
         {
@@ -409,10 +408,10 @@
         {
             padding-top:0.8em;
             padding-bottom:0.8em;
-            margin-top: 0px;
+            margin-top: 0;
             width:100%;
             text-align:center;
-            font-size: @font-size-standard;
+            font-size: 1em;
         }
     }
 
@@ -455,6 +454,11 @@
         {
             margin-top: 0.7em;
             margin-bottom: 0;
+        }
+
+        p[role=contentinfo]
+        {
+            margin:0;
         }
 
         a[role=article]
@@ -719,40 +723,6 @@
             padding-top: 0em;
             margin-top: 0em;
             font-size:1.1em;
-        }
-    }
-
-    .contact-headline
-    {
-        color:@color-secondary-blue;
-    }
-
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-// Dokumentation
-///////////////////////////////////////////////////
-    .footer-dokumentation
-    {
-        background-color:white;
-        border-top:1px solid @color-primary-green;
-        
-        li
-        {
-            display: inline;
-            padding-right:1.5em;
-            border:0;
-        }
-
-        li:last-child
-        {
-            padding-right:0px;
-        }
-
-        ul
-        {
-            text-align:center;
-            margin:0;
         }
     }
 }
