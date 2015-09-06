@@ -1,0 +1,205 @@
+﻿
+///////////////////////////////////////////////////
+// Stylesheet Dokumentation
+///////////////////////////////////////////////////
+// Hier finden sich Erweiterungen speziell für die Dokumentation.
+// Diese wurden ausgelagert, da es in weiterer Folge einfacher ist
+// die Erweiterungen für den späteren Livebetrieb zu entfernen
+///////////////////////////////////////////////////
+
+/*Import von Variablen*/
+@import "variables.less";
+
+/*Bootstrap Grid Mixin*/
+@import "less/bootstrap/mixins/grid.less";
+
+/*Row ohne Padding für die Dokumentation*/
+.row-doku
+{
+    .make-row(0px);
+    margin-top:2em;
+}
+
+
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+    ///////////////////////////////////////////////////
+    // Dokumentation Main "Navigation"
+    ///////////////////////////////////////////////////
+    .menu-main-doku
+    {
+        float:none;
+        margin-left:auto;
+        margin-right:auto;
+        li
+        {
+            background-color: white;
+            width: auto;
+            float: left;
+            padding-right:2.3em;
+            padding-left:2.3em;
+        }
+
+        ul
+        {
+            margin:0;
+        }
+    }
+
+
+
+    ///////////////////////////////////////////////////
+    // Dokumentation Footer
+    ///////////////////////////////////////////////////
+    .footer-dokumentation
+    {
+        background-color:white;
+        border-top:1px solid @color-primary-green;
+        
+        li
+        {
+            display: inline-block;
+            padding:0.8em;
+            padding-right:1.5em;
+            border:0;
+        }
+
+        li:last-child
+        {
+            padding-right:0px;
+        }
+
+        ul
+        {
+            text-align:center;
+            margin:0;
+        }
+    }
+
+    ///////////////////////////////////////////////////
+    // Dokumentation Artikel
+    ///////////////////////////////////////////////////
+    article[role=main]
+    {
+        ul[role=list]
+        {
+            ul
+            {
+                margin-top: 0;
+            }
+
+            li
+            {
+                font-size: 1em;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////
+    // Dokumentation Bilder
+    ///////////////////////////////////////////////////
+    .gallery-doku
+    {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    ///////////////////////////////////////////////////
+    // Timeline Artikel
+    ///////////////////////////////////////////////////
+    .article-timeline
+    {
+        margin-top: 1em;
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (min-width:1200px)
+{
+    ///////////////////////////////////////////////////
+    // Dokumentation Main "Navigation"
+    ///////////////////////////////////////////////////
+    .menu-main-doku
+    {
+        li
+        {
+            background-color: white;
+            width: auto;
+            float: left;
+            padding-right:2.3em;
+            padding-left:2.3em;
+        }
+
+        ul
+        {
+            margin:0;
+        }
+    }
+
+
+
+    ///////////////////////////////////////////////////
+    // Dokumentation Footer
+    ///////////////////////////////////////////////////
+    .footer-dokumentation
+    {
+        background-color:white;
+        border-top:1px solid @color-primary-green;
+        
+        li
+        {
+            display: inline-block;
+            padding:0.8em;
+            padding-right:1.5em;
+            border:0;
+        }
+
+        li:last-child
+        {
+            padding-right:0px;
+        }
+
+        ul
+        {
+            text-align:center;
+            margin:0;
+        }
+    }
+
+    ///////////////////////////////////////////////////
+    // Dokumentation Artikel
+    ///////////////////////////////////////////////////
+    article[role=main]
+    {
+        ul[role=list]
+        {
+            ul
+            {
+                margin-top: 0;
+            }
+
+            li
+            {
+                font-size: 1em;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////
+    // Dokumentation Bilder
+    ///////////////////////////////////////////////////
+    .gallery-doku
+    {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    ///////////////////////////////////////////////////
+    // Timeline Artikel
+    ///////////////////////////////////////////////////
+    .article-timeline
+    {
+        margin-top: 1em;
+        margin-bottom: 5em;
+    }
+}
