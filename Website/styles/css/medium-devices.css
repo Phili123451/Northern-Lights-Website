@@ -79,11 +79,6 @@
     letter-spacing: 0.01em;
     line-height: 150%;
   }
-  /*Fließtext*/
-  .fliesstext {
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
-  }
   .infotext {
     font-size: 0.9em;
   }
@@ -110,19 +105,19 @@
   #header {
     margin-bottom: 2em;
   }
-  .main-menu {
+  .menu-main {
     float: none;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .main-menu li {
+  .menu-main li {
     background-color: white;
     width: auto;
     float: left;
   }
-  .main-menu a {
+  .menu-main a {
     text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -130,11 +125,11 @@
     padding-right: 2em;
     font-size: 1.2em;
   }
-  .main-menu a:hover {
+  .menu-main a:hover {
     background-color: #1ba39e;
     color: white;
   }
-  .main-menu a:active {
+  .menu-main a:active {
     background-color: #ffb42a;
   }
   #navigation {
@@ -144,23 +139,23 @@
   .show-menu {
     display: none;
   }
-  #sub-menu-navigation {
+  #menu-sub-navigation {
     position: fixed;
     width: 27%;
   }
   /*Untermenü (Dienstleistungen, Über uns, etc.*/
-  .sub-menu {
+  .menu-sub {
     /*Abstand*/
     margin-top: 10em;
   }
-  .sub-menu div {
+  .menu-sub div {
     padding-bottom: 0.4em;
     max-width: 70%;
   }
-  .sub-menu a {
+  .menu-sub a {
     padding-left: 0.2em;
   }
-  .sub-menu h3 {
+  .menu-sub h3 {
     line-height: 1.3em;
     color: black;
     padding: 0.5em,0.5em,0.5em,0em;
@@ -168,49 +163,49 @@
     margin: 0;
     border-bottom: 1px solid #1ba39e;
   }
-  .sub-menu ul {
+  .menu-sub ul {
     margin-top: 0.5em;
   }
-  .sub-menu li {
+  .menu-sub li {
     width: auto;
   }
-  .sub-menu a {
+  .menu-sub a {
     font-size: 1em;
     padding: 0.25em;
     line-height: none;
     width: auto;
     color: black;
   }
-  .sub-menu a:hover,
-  .sub-menu li:hover {
+  .menu-sub a:hover,
+  .menu-sub li:hover {
     color: white;
     background-color: #1ba39e;
   }
-  .sub-menu a:active {
+  .menu-sub a:active {
     background-color: #ffb42a;
   }
   /*Footer*/
-  .footer-menu {
+  .menu-footer {
     background-color: white;
     border-top: 1px solid #1ba39e;
   }
-  .footer-menu li {
+  .menu-footer li {
     display: inline;
     border-right: 0;
   }
-  .footer-menu a {
+  .menu-footer a {
     display: inline-block;
     padding: 0.5em;
     font-size: 1.1em;
     color: black;
   }
-  .footer-menu a:hover {
+  .menu-footer a:hover {
     background-color: transparent;
   }
-  .footer-menu li:last-child {
+  .menu-footer li:last-child {
     border-width: 0px;
   }
-  .footer-menu ul {
+  .menu-footer ul {
     text-align: center;
     margin: 0;
   }
@@ -291,8 +286,9 @@
     resize: none;
   }
   .bild {
-    width: 240px;
+    width: 40%;
     height: auto;
+    margin-bottom: 1em;
   }
   .bild img {
     width: 100%;
@@ -300,14 +296,18 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
   }
   .bild p {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
-    margin-top: 0px;
+    margin-top: 0;
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 0.9em;
+  }
+  .bild a {
+    text-decoration: none;
   }
   article[role=main] h1 {
     margin-top: 1.3em;
@@ -333,13 +333,16 @@
     margin-top: 0.7em;
     margin-bottom: 0;
   }
-  article[role=main] a[role=article] {
+  article[role=main] p[role=contentinfo] {
+    margin: 0;
+  }
+  article[role=main] a.article-link-standalone {
     display: block;
     font-size: 1.1em;
     margin-top: 0.7em;
     margin-bottom: 1.5em;
   }
-  article[role=main] a[role=navigation] {
+  article[role=main] a.article-link {
     font-size: 1.1em;
   }
   article[role=main] ul {
@@ -348,9 +351,6 @@
   article[role=main] li {
     list-style: disc;
     margin-bottom: 0.3em;
-  }
-  article[role=main] ul[role=link] li {
-    list-style: none;
   }
   article[role=main] ul[role=list] {
     padding-left: 0;
@@ -388,6 +388,9 @@
     padding-left: 0;
     margin-top: 0.3em;
     margin-bottom: 1em;
+  }
+  .referenzen-article li {
+    list-style: none;
   }
   .referenzen-article p {
     margin: 0;

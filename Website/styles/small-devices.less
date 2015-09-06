@@ -74,7 +74,6 @@
         line-height: 150%;
     }
 
-    /*Fließtext*/
     .infotext
     {
         font-size: 0.9em;
@@ -102,7 +101,7 @@
 ///////////////////////////////////////////////////
 // Menüs
 ///////////////////////////////////////////////////
-    .mobile-menu
+    .menu-mobile
     {
         padding:0;
 
@@ -166,7 +165,7 @@
     }
 
     /*Untermenü (Dienstleistungen, Über uns, etc.*/
-    .sub-menu
+    .menu-sub
     {
         /*Abstand*/
         margin-top: 0em;
@@ -223,7 +222,7 @@
     }
 
     /*Footer*/
-    .footer-menu
+    .menu-footer
     {
         li
         {
@@ -348,7 +347,6 @@
 
         input,select
         {
-            //display:block;
             width:50%;
             float:right;
             margin-right:15em;
@@ -364,30 +362,35 @@
 ///////////////////////////////////////////////////
 // Bild in Texten, mit Beschreibungstext
 ///////////////////////////////////////////////////
-    .bild
+   .bild
     {
-        width: 240px;
+        width: 30%;
         height: auto;
-   
-        //padding: 1em;
+        margin-bottom: 1em;
 
         img
         {
             width: 100%;
             height: auto;
-            display:block;
-            margin-left:auto;
-            margin-right:auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom:0;
         }
 
         p
         {
-            padding-top:0.8em;
-            padding-bottom:0.8em;
-            margin-top: 0px;
-            width:100%;
-            text-align:center;
-            font-size: @font-size-standard;
+            padding-top: 0.8em;
+            padding-bottom: 0.8em;
+            margin-top: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+        a
+        {
+            text-decoration:none;
         }
     }
 
@@ -401,12 +404,8 @@
         {
             margin-top: 1.3em;
             margin-bottom: 0.7em;
+            //border-bottom:1px solid @color-primary-green;
         }
-
-        /*h1.contact-headline,h2.contact-headline
-        {
-            color:@color-secondary-blue;
-        }*/
 
         h2
         {
@@ -432,15 +431,20 @@
             margin-bottom: 0;
         }
 
-        a[role=article]
+        p[role=contentinfo]
+        {
+            margin:0;
+        }
+
+        a.article-link-standalone
         {
             display: block;
             font-size: 1.1em;
             margin-top: 0.5em;
-            margin-bottom:1.5em;
+            margin-bottom: 1.5em;
         }
 
-        a[role=navigation]
+        a.article-link
         {
             font-size: 1.1em;
         }
@@ -454,14 +458,6 @@
         {
             list-style: disc;
             margin-bottom: 0.3em;
-        }
-
-        ul[role=link]
-        {
-            li
-            {
-                list-style:none;
-            }
         }
 
         ul[role=list]
@@ -528,6 +524,11 @@
             padding-left:0;
             margin-top:0.5em;
             margin-bottom:1em;
+        }
+
+        li
+        {
+            list-style:none;
         }
     }
 
@@ -608,11 +609,6 @@
             display: block;
             margin-top: 1em;
         }
-    }
-
-        .article-small-container
-    {
-
     }
 
 ///////////////////////////////////////////////////

@@ -64,7 +64,6 @@
     letter-spacing: 0.01em;
     line-height: 150%;
   }
-  /*Fließtext*/
   .infotext {
     font-size: 0.9em;
   }
@@ -80,13 +79,13 @@
     padding-right: 2em;
     margin: 0;
   }
-  .mobile-menu {
+  .menu-mobile {
     padding: 0;
     /*Anzeigen der Dropdown Links inline*/
     /*Abstand zwischen den Links*/
     /*Anzeigen der Links über die volle Breite*/
   }
-  .mobile-menu img {
+  .menu-mobile img {
     max-width: 8em;
     min-width: 8em;
     max-height: 20%;
@@ -94,31 +93,31 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .mobile-menu label {
+  .menu-mobile label {
     width: 100%;
   }
-  .mobile-menu ul {
+  .menu-mobile ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  .mobile-menu li {
+  .menu-mobile li {
     padding: 0.5em;
     padding-left: 3em;
   }
-  .mobile-menu a {
+  .menu-mobile a {
     font-size: 1.2em;
     color: white;
   }
-  .mobile-menu ul {
+  .menu-mobile ul {
     position: static;
     display: none;
   }
-  .mobile-menu li {
+  .menu-mobile li {
     margin-bottom: 1px;
   }
-  .mobile-menu ul li,
-  .mobile-menu li a {
+  .menu-mobile ul li,
+  .menu-mobile li a {
     width: 100%;
   }
   /*Anzeigen des mobilen Menüs*/
@@ -126,7 +125,7 @@
     display: block;
   }
   /*Untermenü (Dienstleistungen, Über uns, etc.*/
-  .sub-menu {
+  .menu-sub {
     /*Abstand*/
     margin-top: 0em;
     float: none;
@@ -134,54 +133,54 @@
     margin-right: auto;
     margin-bottom: 2em;
   }
-  .sub-menu div {
+  .menu-sub div {
     background-color: rgba(26, 162, 158, 0.5);
     padding-bottom: 0.4em;
   }
-  .sub-menu h3,
-  .sub-menu a {
+  .menu-sub h3,
+  .menu-sub a {
     padding-left: 0.2em;
   }
-  .sub-menu h3 {
+  .menu-sub h3 {
     line-height: 1.3em;
     background-color: #1ba39e;
     color: white;
     padding: 0.5em;
     font-size: 1.3em;
   }
-  .sub-menu li {
+  .menu-sub li {
     width: auto;
     text-align: center;
   }
-  .sub-menu a {
+  .menu-sub a {
     font-size: 1.15em;
     padding: 0.2em;
     line-height: normal;
     width: auto;
     color: white;
   }
-  .sub-menu a:hover,
-  .sub-menu li:hover {
+  .menu-sub a:hover,
+  .menu-sub li:hover {
     color: black;
     background-color: #ffb42a;
   }
-  .sub-menu a:active {
+  .menu-sub a:active {
     background-color: #ffb42a;
   }
   /*Footer*/
-  .footer-menu li {
+  .menu-footer li {
     display: inline;
     border-right: 1px solid white;
   }
-  .footer-menu a {
+  .menu-footer a {
     display: inline-block;
     padding: 0.5em;
     font-size: 1.1em;
   }
-  .footer-menu li:last-child {
+  .menu-footer li:last-child {
     border-width: 0px;
   }
-  .footer-menu ul {
+  .menu-footer ul {
     text-align: center;
     margin: 0;
     padding-top: 0.5em;
@@ -264,8 +263,9 @@
     resize: none;
   }
   .bild {
-    width: 240px;
+    width: 30%;
     height: auto;
+    margin-bottom: 1em;
   }
   .bild img {
     width: 100%;
@@ -273,20 +273,18 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
   }
   .bild p {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
-    margin-top: 0px;
+    margin-top: 0;
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 0.8em;
   }
-  article[role=main] {
-    /*h1.contact-headline,h2.contact-headline
-        {
-            color:@color-secondary-blue;
-        }*/
+  .bild a {
+    text-decoration: none;
   }
   article[role=main] h1 {
     margin-top: 1.3em;
@@ -308,13 +306,16 @@
     margin-top: 0.5em;
     margin-bottom: 0;
   }
-  article[role=main] a[role=article] {
+  article[role=main] p[role=contentinfo] {
+    margin: 0;
+  }
+  article[role=main] a.article-link-standalone {
     display: block;
     font-size: 1.1em;
     margin-top: 0.5em;
     margin-bottom: 1.5em;
   }
-  article[role=main] a[role=navigation] {
+  article[role=main] a.article-link {
     font-size: 1.1em;
   }
   article[role=main] ul {
@@ -323,9 +324,6 @@
   article[role=main] li {
     list-style: disc;
     margin-bottom: 0.3em;
-  }
-  article[role=main] ul[role=link] li {
-    list-style: none;
   }
   article[role=main] ul[role=list] {
     padding-left: 0;
@@ -361,6 +359,9 @@
     padding-left: 0;
     margin-top: 0.5em;
     margin-bottom: 1em;
+  }
+  .referenzen-article li {
+    list-style: none;
   }
   .referenzen-article:last-child {
     margin-bottom: 0;

@@ -32,20 +32,6 @@
   font-weight: 700;
   font-style: normal;
 }
-/*FIMXE: kann raus Serifenlose Schrift für Infotext, Links und Überschriften*/
-/*@font-face 
-{
-    font-family: 'cabinmedium';
-    src: url('../../fonts/cabin/cabin-medium-webfont.eot');
-    src: url('../../fonts/cabin/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/cabin/cabin-medium-webfont.woff2') format('woff2'),
-         url('../../fonts/cabin/cabin-medium-webfont.woff') format('woff'),
-         url('../../fonts/cabin/cabin-medium-webfont.ttf') format('truetype'),
-         url('../../fonts/cabin/cabin-medium-webfont.svg#cabinmedium') format('svg');
-    font-weight: @font-weight-normal;
-    font-style: normal;
-
-}*/
 /*Serifenlose Schrift für Infotext, Links und Überschriften*/
 @font-face {
   font-family: 'cabinregular';
@@ -90,6 +76,7 @@ body {
 h1 {
   font-family: cabinbold, 'Arial', sans-serif;
   color: #1ba39e;
+  border-bottom: 1px solid #1ba39e;
 }
 h2 {
   font-family: 'cabinsemibold', 'Arial', sans-serif;
@@ -113,6 +100,7 @@ a:hover {
 a:visited {
   text-decoration: underline;
 }
+/*Fließtexte*/
 p {
   font-family: 'merriweatherregular', 'Times New Roman', serif;
 }
@@ -123,6 +111,7 @@ li {
 ul {
   list-style-type: none;
 }
+/*Hauptartikel*/
 article[role=main] li {
   font-family: merriweatherregular, 'Times New Roman', serif;
 }
@@ -132,6 +121,7 @@ article[role=main] li {
 .infotext {
   font-family: 'cabinregular', 'Arial', sans-serif;
 }
+/*Blog Beitrag*/
 .blog-article li {
   font-family: merriweatherregular, 'Times New Roman', serif;
   list-style: disc;
@@ -168,28 +158,28 @@ article[role=main] li {
   background-color: #ffb42a;
 }
 /*Menü für mobile Endgeräte*/
-.mobile-menu {
+.menu-mobile {
   /*Verstecken der Checkbox*/
   /*Anzeigen des Menüs, wenn die Checkbox angeklickt wird*/
 }
-.mobile-menu label {
+.menu-mobile label {
   padding: 1em;
 }
-.mobile-menu li {
+.menu-mobile li {
   background-color: #1ba39e;
   border-top-width: 1px;
   border-color: white;
   color: black;
 }
-.mobile-menu li:hover,
-.mobile-menu a:hover {
+.menu-mobile li:hover,
+.menu-mobile a:hover {
   background-color: #ffb42a;
   color: black;
 }
-.mobile-menu input[type=checkbox] {
+.menu-mobile input[type=checkbox] {
   display: none;
 }
-.mobile-menu input[type=checkbox]:checked ~ #navigation {
+.menu-mobile input[type=checkbox]:checked ~ #navigation {
   display: block;
 }
 /*Menü Label*/
@@ -205,22 +195,22 @@ article[role=main] li {
 .link-active {
   background-color: #ffb42a;
 }
-.sub-menu a,
-.sub-menu span {
+.menu-sub a,
+.menu-sub span {
   font-family: cabinregular, 'Arial', sans-serif;
 }
-.footer-menu {
+.menu-footer {
   background-color: #1ba39e;
 }
-.footer-menu a {
+.menu-footer a {
   color: white;
   text-decoration: none;
 }
-.footer-menu a:hover {
+.menu-footer a:hover {
   color: #ffb42a;
   text-decoration: underline;
 }
-.footer-menu a:active {
+.menu-footer a:active {
   background-color: transparent;
 }
 /*FORMS*/
@@ -242,7 +232,7 @@ button:active {
   background-color: #2c57b1;
   color: white;
 }
-/*FIXME: Width für die Elemente wie Label, Textarea, etc. setzen --> aber für responsive*/
+/*Form*/
 input,
 textarea,
 select,
@@ -251,7 +241,6 @@ label,
 legend,
 fieldset,
 form {
-  /*Text*/
   font-family: cabinregular, 'Arial', sans-serif;
 }
 legend {
@@ -313,12 +302,15 @@ blockquote:before {
 blockquote:after {
   content: close-quote;
 }
+/*Kleine Artikel für die Sidebar*/
 .article-small h2 {
   color: #1ba39e;
 }
+.stellenanzeige li {
+  font-family: merriweatherregular, 'Times New Roman', serif;
+}
 article[role=main] h1 {
   color: #1ba39e;
-  border-bottom: 1px solid #1ba39e;
 }
 article[role=main] h1.contact-headline,
 article[role=main] h2.contact-headline {

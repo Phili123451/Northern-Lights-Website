@@ -32,7 +32,7 @@
         <div class="clearfix"></div>
         
         <!--Hauptnavigation-->
-            <div class="menu main-menu-doku col-xs-12 col-sm-12 col-md-10 col-lg-7-navigation col-lg-push-2">
+            <div class="menu menu-main-doku col-xs-12 col-sm-12 col-md-10 col-lg-7-navigation col-lg-push-2">
                   <nav>
                     <ul>
                         <li><strong>Name:</strong> Thomas Tonder</li>
@@ -49,8 +49,8 @@
         <div class="row">
             
             <!--Linke Spalte-->
-            <div class="menu sub-menu col-xs-12 col-sm-12 col-md-3 col-lg-2">
-                <nav id="sub-menu-navigation">
+            <div class="menu menu-sub col-xs-12 col-sm-12 col-md-3 col-lg-2">
+                <nav id="menu-sub-navigation">
                     <div>
                         <h3>Für die Hausarbeit ...</h3>
                         <ul>
@@ -71,8 +71,8 @@
                         Die geforderten Angaben, wie Name, Loginname und Matrikelnummer sind zusätzlich im Footer erneut aufgeführt.
                         Dieser wurde speziell für die Dokumentation angepasst. Die Anpassungen für Dokumentation und Timeline
                         wurden in einen eigenen Stylesheet (dokumentation.css) ausgelagert, um die Website in weiterer Folge für
-                        den Produktivbetrieb, schneller vorbereiten zu können. Darüber hinaus sind die Anpassungen auch reponsive,
-                        sodass die Dokumentation und Timeline auf jedem Endgerät eingesehen werden kann.
+                        den Produktivbetrieb, schneller vorbereiten zu können. Die Dokumentation ist aus Gründen der Übersicht, nur
+                        für die Desktop Versionen responsive.
                     </p>
                     <p>
                         Die Website wurde für das Unternehmen Northern-Lights GmbH, mit Sitz in Flensburg erstellt und wird im Folgenden
@@ -84,10 +84,6 @@
                     </p>
                     
                     <h2>Projekt</h2>
-                    <p>
-                        In diesem Kapitel wird der Aufbau der Projektstruktur kurz erklärt.
-                    </p>
-                    
                     <h3>Testumgebung</h3>
                     <p>
                         Getestet wurde wie gefordert auf Firefox (40.0.3), Chrome (45.0.2454.85 m) und Safari (5.1.7). Darüber hinaus wurden die Breakpoints
@@ -115,8 +111,8 @@
 
                     <h3>Erstellung der Dokumentation</h3>
                     <p>
-                        Die Dokumentation wurde anfangs mit dem MarkdownPad2 erstellt. Allerdings ist die Handhabung von Visual Studio als viel angenehmer.
-                        Da auch die DummyTexte direkt in Visual Studio erstellt und formatiert wurden, behielt ich diese Vorgehensweise für die Dokumentation und
+                        Die Dokumentation wurde anfangs mit dem MarkdownPad2 erstellt. Allerdings ist die Handhabung von Visual Studio viel angenehmer,
+                        da auch die DummyTexte direkt in Visual Studio erstellt und formatiert wurden, behielt ich diese Vorgehensweise für die Dokumentation und
                         die Timeline bei. Für das Erstellen einer Dokumentation für andere Inhalte ist Markdown allerdings sehr zu empfehlen.
                     </p>
 
@@ -130,21 +126,24 @@
                     <h2>Styletiles</h2>
                     <h3>Entwürfe</h3>
                     <h4>Style Tile 1</h4>
-                    <div class="gallery-doku col-lg-12">
-                        <div class="bild col-lg-3">
+                    <div class="gallery-doku">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_1-01.png"><img src="../images/dokumentation/style_tiles/style_tile_1-01.png" alt="Style Tile 1 Seite 1" /></a>
                             <p role="contentinfo">Style Tile Entwurf 1 Seite 1</p>
                         </div>
+                        
 
-                        <div class="bild col-lg-3">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_1-02.png"><img src="../images/dokumentation/style_tiles/style_tile_1-02.png" alt="Style Tile 1 Seite 2" /></a>
                             <p role="contentinfo">Style Tile Entwurf 1 Seite 2</p>
                         </div>
+                        
 
-                        <div class="bild col-lg-3">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_1-03.png"><img src="../images/dokumentation/style_tiles/style_tile_1-03.png" alt="Style Tile 1 Seite 3" /></a>
                             <p role="contentinfo">Style Tile Entwurf 1 Seite 3</p>
                         </div>
+                        <div class="clearfix"></div>
                     </div>
                     <p>
                         Die Farben für diesen Entwurf wurden vom Unternehmen vorgegeben. Dieser sollte sich ursprünglich bunt und vor allem auffallend gestalten.
@@ -158,24 +157,25 @@
                     
                     
                     <h4>Style Tile 2</h4>
-                    <div class="gallery-doku col-lg-12">
-                        <div class="bild col-lg-3">
+                    <div class="gallery-doku">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_2-01.png"><img class="bild" src="../images/dokumentation/style_tiles/style_tile_2-01.png" alt="Style Tile 2 Seite 1" /></a>
                             <p role="contentinfo">Style Tile Entwurf 1 Seite 1</p>
                         </div>
 
-                        <div class="bild col-lg-3">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_2-02.png"><img class="bild" src="../images/dokumentation/style_tiles/style_tile_2-02.png" alt="Style Tile 2 Seite 2" /></a>
                             <p role="contentinfo">Style Tile Entwurf 1 Seite 2</p>
                         </div>
 
-                        <div class="bild col-lg-3">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_2-03.png"><img src="../images/dokumentation/style_tiles/style_tile_2-03.png" alt="Style Tile 2 Seite 3" /></a>
                             <p role="contentinfo">Style Tile Entwurf 1 Seite 3</p>
                         </div>
+                        <div class="clearfix"></div>
                     </div>
                     <p>
-                        Bei Style Tile 2 führte der Weg weg, von bunt hin zu mordern, schlicht und seriös. Die Elemente der Website sind von dünnen Rahmen eingefasst, die für
+                        Bei Style Tile 2 führte der Weg weg, von bunt hin zu modern, schlicht und seriös. Die Elemente der Website sind von dünnen Rahmen eingefasst, die für
                         eine bessere Abgrenzung untereinander sorgen. Der dezente Schatten bei den Elementen verleiht der gesamten Website eine zusätzliche Tiefe. Der Grundgedanke hinter 
                         diesem Entwurf ist der Versuch ein schlichtes, modernes und seriöses Aussehen mit auffallenden Elementen zu gestalten. Allerdings sollten diese nicht soweit im
                         Fokus stehen, weshalb hier auch kein entsprechendes Adjektiv erwähnt wurde.
@@ -183,26 +183,27 @@
 
 
                     <h4>Style Tile 3</h4>
-                    <div class="gallery-doku col-lg-12">
-                        <div class="bild col-lg-3">
+                    <div class="gallery-doku">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_3-01.png"><img class="bild" src="../images/dokumentation/style_tiles/style_tile_3-01.png" alt="Style Tile 3 Seite 1" /></a>
                             <p role="contentinfo">Style Tile Entwurf 3 Seite 1</p>
                         </div>
 
-                        <div class="bild col-lg-3">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_3-02.png"><img class="bild" src="../images/dokumentation/style_tiles/style_tile_3-02.png" alt="Style Tile 3 Seite 2" /></a>
                             <p role="contentinfo">Style Tile Entwurf 3 Seite 2</p>
                         </div>
 
-                        <div class="bild col-lg-3">
+                        <div class="bild  col-md-3 col-lg-3">
                             <a href="../images/dokumentation/style_tiles/style_tile_3-03.png"><img src="../images/dokumentation/style_tiles/style_tile_3-03.png" alt="Style Tile 3 Seite 3" /></a>
                             <p role="contentinfo">Style Tile Entwurf 3 Seite 3</p>
                         </div>
+                        <div class="clearfix"></div>
                     </div>
 
                     <p>
                         Beim dritten Entwurf wurde ein flaches Design gewählt. Die Farben sind dezenter und wurden aus einer Farbpalette ausgewählt, die speziell für das flache Design
-                        gedacht ist. Außerdem wird hier versucht die Inhalte übersichtlich und mordern zu gestalten. Ohne Effekte, oder ähnliches, das den Betrachter von den Inhalten
+                        gedacht ist. Außerdem wird hier versucht die Inhalte übersichtlich und modern zu gestalten. Ohne Effekte, oder ähnliches, das den Betrachter von den Inhalten
                         ablenkt. Es stehen die Inhalte im Mittelpunkt und nicht der Gewinn der Aufmerksamkeit, durch Effekthascherei. Das gesetzte Ziel wird mit diesem Entwurf erfüllt.
                     </p>
 
@@ -344,19 +345,20 @@
                     </p>
 
                     <div class="row-doku">
-                        <div class="gallery-doku col-lg-12">
-                            <div class="bild col-lg-4">
+                        <div class="gallery-doku">
+                            <div class="bild  col-md-3 col-lg-3">
                                 <a href="../images/dokumentation/fonts/font_cabin_example.PNG"><img src="../images/dokumentation/fonts/font_cabin_example.PNG" alt="Beispiel Cabin Schriftart"/></a>
                                 <p role="contentinfo">Serifenlose Schriftart Cabin</p>
                             </div>
-                            <div class="bild col-lg-4">
+                            <div class="bild  col-md-3 col-lg-3">
                                 <a href="../images/dokumentation/fonts/font_merri_example.PNG"><img src="../images/dokumentation/fonts/font_merri_example.PNG" alt="Beispiel Merriweather Schriftart"/></a>
                                 <p role="contentinfo">Serifen Schriftart Merriweather Regular</p>
                             </div>
-                            <div class="bild col-lg-4">
+                            <div class="bild  col-md-3 col-lg-3">
                                 <a href="../images/dokumentation/fonts/font_merri_italic_example.PNG"><img src="../images/dokumentation/fonts/font_merri_italic_example.PNG" alt="Beispiel Merriweather Italic Schriftart"/></a>
                                 <p role="contentinfo">Serifen Schriftart Merriweather Italic</p>
                             </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
 

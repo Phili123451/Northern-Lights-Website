@@ -130,7 +130,7 @@
 ///////////////////////////////////////////////////
 // Menüs
 ///////////////////////////////////////////////////
-    .main-menu
+    .menu-main
     {
         li
         {
@@ -170,14 +170,14 @@
         display:none;
     }
 
-    #sub-menu-navigation
+    #menu-sub-navigation
     {
         position:fixed;
         width:27%;
     }
 
     /*Untermenü (Dienstleistungen, Über uns, etc.*/
-    .sub-menu
+    .menu-sub
     {
         /*Abstand*/
         margin-top: 10em;
@@ -236,7 +236,7 @@
     }
 
     /*Footer*/
-    .footer-menu
+    .menu-footer
     {
         background-color:white;
         border-top:1px solid @color-primary-green;
@@ -402,6 +402,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom:0;
         }
 
         p
@@ -466,7 +467,7 @@
             margin:0;
         }
 
-        a[role=article]
+        a.article-link-standalone
         {
             display: block;
             font-size: 1.2em;
@@ -474,7 +475,7 @@
             margin-bottom: 1.5em;
         }
 
-        a[role=navigation]
+        a.article-link
         {
             font-size: 1.1em;
         }
@@ -488,14 +489,6 @@
         {
             list-style: disc;
             margin-bottom: 0.3em;
-        }
-
-        ul[role=link]
-        {
-            li
-            {
-                list-style:none;
-            }
         }
 
         ul[role=list]
@@ -561,6 +554,11 @@
             padding-left: 0;
             margin-top: 0.5em;
             margin-bottom: 1em;
+        }
+
+        li
+        {
+            list-style:none;
         }
 
         p

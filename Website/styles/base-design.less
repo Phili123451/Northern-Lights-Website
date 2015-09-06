@@ -2,12 +2,10 @@
 
 /*Import LESS Files*/
 @import "variables.less";
-@import "mixins.less";
 
 ///////////////////////////////////////////////////
 // Schriftarten
 ///////////////////////////////////////////////////
-
 /*Zitate*/
 @font-face 
 {
@@ -52,21 +50,6 @@
     font-style: normal;
 
 }
-
-/*FIMXE: kann raus Serifenlose Schrift für Infotext, Links und Überschriften*/
-/*@font-face 
-{
-    font-family: 'cabinmedium';
-    src: url('../../fonts/cabin/cabin-medium-webfont.eot');
-    src: url('../../fonts/cabin/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/cabin/cabin-medium-webfont.woff2') format('woff2'),
-         url('../../fonts/cabin/cabin-medium-webfont.woff') format('woff'),
-         url('../../fonts/cabin/cabin-medium-webfont.ttf') format('truetype'),
-         url('../../fonts/cabin/cabin-medium-webfont.svg#cabinmedium') format('svg');
-    font-weight: @font-weight-normal;
-    font-style: normal;
-
-}*/
 
 /*Serifenlose Schrift für Infotext, Links und Überschriften*/
 @font-face 
@@ -137,6 +120,7 @@ h1
 {
     font-family: cabinbold, 'Arial' , sans-serif;
     color: @color-primary-green;
+    border-bottom: 1px solid @color-primary-green;
 }
 
 h2
@@ -170,6 +154,7 @@ a
     }
 }
 
+/*Fließtexte*/
 p
 {
     font-family: 'merriweatherregular', 'Times New Roman',serif;
@@ -186,6 +171,7 @@ ul
     list-style-type:none;
 }
 
+/*Hauptartikel*/
 article[role=main]
 {
     li
@@ -203,6 +189,7 @@ article[role=main]
     font-family: 'cabinregular', 'Arial' , sans-serif;
 }
 
+/*Blog Beitrag*/
 .blog-article
 {
     li
@@ -267,7 +254,7 @@ article[role=main]
 }
 
 /*Menü für mobile Endgeräte*/
-.mobile-menu
+.menu-mobile
 {
     label
     {
@@ -319,7 +306,7 @@ article[role=main]
 }
 
 //Untermenü in der linken Spalte
-.sub-menu
+.menu-sub
 {
     a, span
     {
@@ -328,7 +315,7 @@ article[role=main]
 }
 
 //Footer Menü am unteren Ende der Seite
-.footer-menu
+.menu-footer
 {
     background-color: @color-primary-green;
 
@@ -376,9 +363,7 @@ button:hover, button:active
     color: white;
 }
 
-
-/*FIXME: Width für die Elemente wie Label, Textarea, etc. setzen --> aber für responsive*/
-
+/*Form*/
 input,
 textarea,
 select,
@@ -388,7 +373,6 @@ legend,
 fieldset,
 form
 {
-    /*Text*/
     font-family: cabinregular, 'Arial' , sans-serif;
 }
 
@@ -460,8 +444,6 @@ select:focus
     p
     {
         font-family:cabinregular, Arial,sans-serif;
-        //font-family:merriweatherregular,'Times New Roman',serif;
-        //color:@color-secondary-blue-hsla;
     }
 }
 
@@ -469,7 +451,6 @@ select:focus
 blockquote
 {
     font-family: 'merriweatheritalic', 'Times New Roman',serif;
-    //color: @color-primary-green;
 
     p
     {
@@ -487,11 +468,20 @@ blockquote:after
     content:close-quote;
 }
 
+/*Kleine Artikel für die Sidebar*/
 .article-small
 {
     h2
     {
         color:@color-primary-green;
+    }
+}
+
+.stellenanzeige
+{
+    li
+    {
+        font-family:merriweatherregular,'Times New Roman',serif;
     }
 }
 
@@ -504,7 +494,6 @@ article[role=main]
     h1
     {
         color: @color-primary-green;
-        border-bottom: 1px solid @color-primary-green;
     }
 
     h1.contact-headline, h2.contact-headline

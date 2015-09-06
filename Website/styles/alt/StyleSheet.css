@@ -166,7 +166,7 @@ p {
     Klassen
 */
 /*Fließtext*/
-.fliesstext p {
+ p {
   margin-top: 0.25em;
   margin-bottom: 1.5em;
 }
@@ -219,7 +219,7 @@ header {
   background-color: #ffb42a;
 }
 /*FIXME: Mit Variablen ergänzen*/
-.main-menu {
+.menu-main {
   /*
     width: 940px;
     height: 40px;
@@ -228,7 +228,7 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-.main-menu a {
+.menu-main a {
   padding-left: 25px;
   padding-right: 25px;
   float: left;
@@ -236,23 +236,23 @@ header {
   line-height: 40px;
   vertical-align: middle;
 }
-.sub-menu a {
+.menu-sub a {
   font-family: cabinbold, 'Arial', sans-serif;
   font-size: 1.2em;
   padding: 1em;
   line-height: normal;
 }
-.footer-menu {
+.menu-footer {
   background-color: #1ba39e;
 }
-.footer-menu a {
+.menu-footer a {
   float: left;
   padding-left: 25px;
   padding-right: 25px;
   color: white;
   text-decoration: none;
 }
-.footer-menu a:hover {
+.menu-footer a:hover {
   color: #ffb42a;
   text-decoration: underline;
 }

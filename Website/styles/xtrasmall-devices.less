@@ -84,13 +84,6 @@
         line-height: 150%;
     }
 
-    /*Fließtext*/
-    .fliesstext
-    {
-        margin-top: 0.5em;
-        margin-bottom: 1.5em;
-    }
-
     .infotext
     {
         font-size: 0.75em;
@@ -118,7 +111,7 @@
 ///////////////////////////////////////////////////
 // Menüs
 ///////////////////////////////////////////////////
-    .mobile-menu
+    .menu-mobile
     {
         padding:0;
 
@@ -182,7 +175,7 @@
     }
 
     /*Untermenü (Dienstleistungen, Über uns, etc.*/
-    .sub-menu
+    .menu-sub
     {
         /*Abstand*/
         margin-top: 0em;
@@ -235,7 +228,7 @@
     }
 
     /*Footer*/
-    .footer-menu
+    .menu-footer
     {
         li
         {
@@ -362,35 +355,40 @@
 ///////////////////////////////////////////////////
 // Bild in Texten, mit Beschreibungstext
 ///////////////////////////////////////////////////
-    .bild
+   .bild
     {
-        width: 240px;
+        width: 30%;
         height: auto;
-   
-        //padding: 1em;
+        margin-bottom: 1em;
 
         img
         {
             width: 100%;
             height: auto;
-            display:block;
-            margin-left:auto;
-            margin-right:auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom:0;
         }
 
         p
         {
-            padding-top:0.8em;
-            padding-bottom:0.8em;
-            margin-top: 0px;
-            width:100%;
-            text-align:center;
-            font-size: @font-size-standard;
+            padding-top: 0.8em;
+            padding-bottom: 0.8em;
+            margin-top: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+        a
+        {
+            text-decoration:none;
         }
     }
 
 
-    ///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 // Artikel (Hauptinhalt)
 ///////////////////////////////////////////////////
     article[role=main]
@@ -400,11 +398,6 @@
             margin-top: 1.3em;
             margin-bottom: 0.7em;
         }
-        
-        /*h1.contact-headline,h2.contact-headline
-        {
-            color:@color-secondary-blue;
-        }*/
 
         h2
         {
@@ -430,15 +423,20 @@
             margin-bottom: 0em;
         }
 
-        a[role=article]
+        p[role=contentinfo]
+        {
+            margin:0;
+        }
+
+        a.article-link-standalone
         {
             display: block;
             font-size: 1em;
             margin-top: 0.7em;
-            margin-bottom:1.5em;
+            margin-bottom: 1.5em;
         }
 
-        a[role=navigation]
+        a.article-link
         {
             font-size: 1em;
         }
@@ -452,14 +450,6 @@
         {
             list-style: disc;
             margin-bottom: 0.3em;
-        }
-
-        ul[role=link]
-        {
-            li
-            {
-                list-style:none;
-            }
         }
 
         ul[role=list]
@@ -526,6 +516,11 @@
             padding-left:0;
             margin-top:0.5em;
             margin-bottom:1em;
+        }
+
+        li
+        {
+            list-style:none;
         }
     }
 
@@ -602,10 +597,6 @@
         }
     }
 
-        .article-small-container
-    {
-
-    }
 
 ///////////////////////////////////////////////////
 // Stellenanzeige
@@ -656,13 +647,14 @@
         {
             margin-bottom:0em;
             padding-bottom:0em;
-            
+            font-size:1em;
         }
 
         p
         {
             padding-top:0em;
             margin-top:0em;
+            font-size:0.8em;
         }
     }
 }
